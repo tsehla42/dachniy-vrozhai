@@ -1,5 +1,9 @@
 {
   "name": "nuxt-app",
+  "version": "0.0.1",
+  "repository": "https://github.com/asteof/dachniy-vrozhai.git",
+  "author": "Kyrylo Brezhniev <kirill.brezhnev02@gmail.com>",
+  "license": "MIT",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,7 +15,15 @@
   },
   "devDependencies": {
     "nuxt": "^3.9.0",
+    "sass": "^1.69.7",
     "vue": "^3.4.5",
-    "vue-router": "^4.2.5"
-  }
+    "vue-eslint-parser": "^9.3.2",
+    "vue-router": "^4.2.5",
+    "@nuxtjs/eslint-module": "^4.1.0",
+    "@typescript-eslint/parser": "^6.18.0",
+    "@vue/eslint-config-typescript": "^12.0.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-vue": "^9.19.2"
+  },
+  "dependencies": {}
 }
