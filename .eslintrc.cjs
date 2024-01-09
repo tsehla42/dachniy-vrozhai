@@ -1,20 +1,26 @@
 module.export = {
+  root: true,
   env: {
-    'browser': true,
+    browser: true,
     'es2024': true,
+    node: true,
   },
   extends: [
-    'plugin:vue/vue3-essential',
-    '@vue/eslint-config-typescript',
+    '@nuxt/eslint-config-typescript'
   ],
-  rules: {
-    'vue/multi-word-component-names': 0,
-    'no-debugger': 0,
-  },
+  // plugins: [
+  //   'vue',
+  //   '@typescript-eslint',
+  // ],
   parser: 'vue-eslint-parser',
   parserOptions: {
     parser: '@typescript-eslint/parser',
     'ecmaVersion': 'latest',
     'sourceType': 'module',
+    extraFileExtensions: ['.vue'],
+  },
+  rules: {
+    'vue/multi-word-component-names': 0,
+    'no-debugger': 0,
   },
 };

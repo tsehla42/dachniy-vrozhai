@@ -17,6 +17,6 @@ export default defineNuxtConfig({
     '~/assets/scss/main.scss'
   ],
   modules: [
-    ['@nuxtjs/eslint-module', { /* module options */ }]
+    ['@nuxtjs/eslint-module', { cache: false }]
   ]
 });
