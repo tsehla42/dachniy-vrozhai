@@ -2,21 +2,22 @@ module.export = {
   root: true,
   env: {
     browser: true,
-    'es2024': true,
+    es2024: true,
     node: true,
   },
   extends: [
-    '@nuxt/eslint-config-typescript'
+    '@nuxt/eslint-config-typescript',
+    'plugin:nuxt/recommended',
   ],
-  // plugins: [
-  //   'vue',
-  //   '@typescript-eslint',
-  // ],
+  plugins: [
+    'vue',
+    '@typescript-eslint',
+  ],
   parser: 'vue-eslint-parser',
   parserOptions: {
     parser: '@typescript-eslint/parser',
-    'ecmaVersion': 'latest',
-    'sourceType': 'module',
+    ecmaVersion: 'latest',
+    sourceType: 'module',
     extraFileExtensions: ['.vue'],
   },
   rules: {
