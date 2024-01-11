@@ -1,0 +1,31 @@
+/*
+styles.scss serves for styling content globally
+Also can use variables
+*/
+
+@import "styles/style-reset";
+
+body {
+  font-family: $font-family-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-primary;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+span,
+a     {
+  font-family: $font-family-secondary;
+}

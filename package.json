@@ -30,5 +30,7 @@
     "vue-router": "^4.2.5",
     "vue-tsc": "^1.8.27"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@nuxt/ui": "^2.12.0"
+  }
 }

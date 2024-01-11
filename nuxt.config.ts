@@ -12,11 +12,31 @@ export default defineNuxtConfig({
       ],
     },
   },
+
   devtools: { enabled: true },
+
+  // base styles
   css: [
-    '~/assets/scss/main.scss'
+    '~/assets/scss/styles.scss'
   ],
+
+  // variables, fonts, mixins, etc.
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@use "~/assets/scss/main.scss" as *;'
+        }
+      }
+    }
+  },
+
   modules: [
-    ['@nuxtjs/eslint-module', { cache: false }]
-  ]
+    '@nuxt/ui',
+    ['@nuxtjs/eslint-module', { cache: false }],
+  ],
+
+  colorMode: {
+    preference: 'light'
+  }
 });
