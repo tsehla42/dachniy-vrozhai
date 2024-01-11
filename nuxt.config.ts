@@ -35,8 +35,4 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     ['@nuxtjs/eslint-module', { cache: false }],
   ],
-
-  colorMode: {
-    preference: 'light'
-  }
 });
