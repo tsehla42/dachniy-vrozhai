@@ -1,7 +1,20 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps({
+  item: {
+    type: Object,
+    required: true,
+  },
+});
+</script>
 
 <template>
-  <UButton color="white" label="Options" trailing-icon="i-heroicons-chevron-down-20-solid" />
+  <div class="subcategory-link">
+    {{ item.label }}
+  </div>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.subcategory-link {
+  background-color: #3f4b07;
+}
+</style>

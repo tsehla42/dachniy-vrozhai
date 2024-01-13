@@ -1,10 +1,6 @@
 <script setup>
 defineProps({
-  label: {
-    type: String,
-    required: true,
-  },
-  items2: {
+  items: {
     type: Array,
     required: true,
   },
@@ -20,40 +16,22 @@ defineProps({
     type: Number,
     default: 0,
   },
+  ui: {
+    type: Object,
+  },
 });
-
-const items = [
-  [
-    {
-      label: 'Profile',
-    },
-    {
-      label: 'Profile',
-    },
-    {
-      label: 'Profile',
-    },
-    {
-      label: 'Profile',
-    },
-    {
-      label: 'Profile',
-    },
-    {
-      label: 'Profile',
-    },
-  ],
-];
 </script>
 
 <template>
-  <UDropdown :items="items" :mode="mode" :popper="{ placement, offsetDistance: offset }">
-    <UButton color="white" :label="label" />
+  <ClientOnly>
+    <UDropdown :items="items" :mode="mode" :popper="{ placement, offsetDistance: offset }" :ui="ui">
+      <slot name="trigger" />
 
-    <template #item="{ item }">
-      {{ JSON.stringify(item) }}
-    </template>
-  </UDropdown>
+      <template #item="{ item }">
+        <slot name="item" :item="item" />
+      </template>
+    </UDropdown>
+  </ClientOnly>
 </template>
 
 <style scoped lang="scss"></style>

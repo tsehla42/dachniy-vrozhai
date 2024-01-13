@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    <h1>test</h1>
+    <h1 class="category-link">test</h1>
   </div>
 </template>
 
