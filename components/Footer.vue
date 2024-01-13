@@ -1,18 +1,16 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
-<footer>
-  <div>
-    <h3>footer</h3>
-  </div>
-</footer>
+  <footer>
+    <div>
+      <h3>footer</h3>
+    </div>
+  </footer>
 </template>
 
 <style scoped lang="scss">
 footer {
   height: 150px;
-  background: #778E11;
+  background: #778e11;
 }
 </style>

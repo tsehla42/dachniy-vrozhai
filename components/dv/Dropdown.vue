@@ -1,5 +1,9 @@
 <script setup>
 defineProps({
+  label: {
+    type: String,
+    required: true,
+  },
   items2: {
     type: Array,
     required: true,
@@ -18,39 +22,38 @@ defineProps({
   },
 });
 
-const items = [[
-  {
-    label: 'Profile',
-  },
-  {
-    label: 'Profile',
-  },
-  {
-    label: 'Profile',
-  },
-  {
-    label: 'Profile',
-  },
-  {
-    label: 'Profile',
-  },
-  {
-    label: 'Profile',
-  },
-],
+const items = [
+  [
+    {
+      label: 'Profile',
+    },
+    {
+      label: 'Profile',
+    },
+    {
+      label: 'Profile',
+    },
+    {
+      label: 'Profile',
+    },
+    {
+      label: 'Profile',
+    },
+    {
+      label: 'Profile',
+    },
+  ],
 ];
 </script>
 
 <template>
-  <UDropdown
-      :items="items"
-      :mode="mode"
-      :popper="{ placement, offsetDistance: offset }"
-  >
-    <UButton color="white" label="Options" trailing-icon="i-heroicons-chevron-down-20-solid"/>
+  <UDropdown :items="items" :mode="mode" :popper="{ placement, offsetDistance: offset }">
+    <UButton color="white" :label="label" />
+
+    <template #item="{ item }">
+      {{ JSON.stringify(item) }}
+    </template>
   </UDropdown>
 </template>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

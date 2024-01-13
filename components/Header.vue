@@ -1,18 +1,14 @@
-<script setup lang="ts">
-
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <header>
     <section class="header-top">
       <NuxtLink to="/" class="logo-wrapper">
-        <SvgIconDachiy class="header-logo-icon" width="250"/>
-        <SvgIconVrozhai class="header-logo-icon" width="250"/>
+        <SvgIconDachiy class="header-logo-icon" width="250" />
+        <SvgIconVrozhai class="header-logo-icon" width="250" />
       </NuxtLink>
 
-      <div class="header-text">
-        Вирощуй з нами на дачному врожаї!
-      </div>
+      <div class="header-text">Вирощуй з нами на дачному врожаї!</div>
     </section>
 
     <section class="header-links">
@@ -27,9 +23,11 @@
 header {
   .header-top {
     display: flex;
+    justify-content: space-between;
     height: 180px;
-    background: linear-gradient(290deg, #FFA859 20.28%, #92A92C 52.52%);
-    border-bottom: 6px solid #3F4B07;
+    padding: 0 24px;
+    background: linear-gradient(290deg, #ffa859 20.28%, #92a92c 52.52%);
+    border-bottom: 6px solid #3f4b07;
   }
 
   .logo-wrapper {
@@ -46,7 +44,7 @@ header {
   }
 
   .link {
-    font-family: $font-family-secondary
+    font-family: $font-family-secondary;
   }
 }
 </style>
