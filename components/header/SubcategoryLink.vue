@@ -8,7 +8,7 @@ defineProps({
 </script>
 
 <template>
-  <div class="subcategory-link">
+  <div class="subcategory-link-content">
     {{ item.label }}
   </div>
 </template>

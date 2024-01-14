@@ -1,4 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { HEADER_LINKS } from '~/utils/constants/HeaderLinks';
+
+const headerLinks = HEADER_LINKS;
+
+const label = 'Капустяні';
+</script>
 
 <template>
   <header>
@@ -8,13 +14,19 @@
         <SvgIconVrozhai class="header-logo-icon" width="250" />
       </NuxtLink>
 
-      <div class="header-text">Вирощуй з нами на дачному врожаї!</div>
+      <div class="header-text">
+        <p>Вирощуй з нами на дачному врожаї!</p>
+      </div>
     </section>
 
     <section class="header-links">
-      <HeaderCategoryLink />
-      <NuxtLink to="/" class="link">Home</NuxtLink>
-      <NuxtLink to="/test">Test</NuxtLink>
+      <HeaderCategoryLink
+        v-for="link in headerLinks"
+        :key="link.category.label"
+        :label="link.category.label"
+        :to="link.category.to"
+        :items="link.subcategories"
+      />
     </section>
   </header>
 </template>
@@ -28,19 +40,28 @@ header {
     padding: 0 24px;
     background: linear-gradient(290deg, $orange-400 20.28%, $secondary 52.52%);
     border-bottom: 6px solid #3f4b07;
-  }
 
-  .logo-wrapper {
-    display: flex;
+    .logo-wrapper {
+      display: flex;
 
-    .header-logo-icon {
-      height: 180px;
+      .header-logo-icon {
+        height: 180px;
+      }
+    }
+
+    .header-text {
+      @include flex-center();
+
+      p {
+        margin: 28px 0 0;
+        font-family: $font-family-primary;
+      }
     }
   }
 
-  .header-text {
-    @include flex-center();
-    font-family: $font-family-primary;
+  .header-links {
+    height: 52px;
+    display: flex;
   }
 
   .link {
