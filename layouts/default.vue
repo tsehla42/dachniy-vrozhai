@@ -1,15 +1,14 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="app-wrapper">
-    <Header/>
+    <Header />
 
     <main>
-      <slot/>
+      <slot />
     </main>
 
-    <Footer/>
+    <Footer />
   </div>
 </template>
 
@@ -20,7 +19,8 @@
   grid-template-rows: auto 1fr auto;
 
   main {
-    background: #FFF9F3;
+    background: #fff9f3;
+    margin: 18px 0;
   }
 }
 </style>
