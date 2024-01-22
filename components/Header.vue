@@ -10,12 +10,12 @@ const label = 'Капустяні';
   <header>
     <section class="header-top">
       <NuxtLink to="/" class="logo-wrapper">
-        <SvgIconDachiy class="header-logo-icon" width="250" />
-        <SvgIconVrozhai class="header-logo-icon" width="250" />
+        <SvgIconLogoDachniy class="header-logo-icon" width="250" />
+        <SvgIconLogoVrozhai class="header-logo-icon" width="250" />
       </NuxtLink>
 
       <div class="header-text">
-        <p>Вирощуй з нами на дачному врожаї!</p>
+        <p>Вирощуй разом з нами на дачному врожаї!</p>
       </div>
     </section>
 
@@ -43,6 +43,7 @@ header {
 
     .logo-wrapper {
       display: flex;
+      filter: drop-shadow(0 0 10px rgba($black, 0.5));
 
       .header-logo-icon {
         height: 180px;

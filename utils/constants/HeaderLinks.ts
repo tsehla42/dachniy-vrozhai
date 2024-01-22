@@ -45,11 +45,11 @@ export const HEADER_LINKS = [
     subcategories: [
       [
         {
-          label: 'Боби 1',
+          label: 'Горох',
           to: '/test',
         },
         {
-          label: 'Боби 2',
+          label: 'Квасоля',
           to: '/test',
         },
         {
@@ -71,11 +71,11 @@ export const HEADER_LINKS = [
     subcategories: [
       [
         {
-          label: 'Ягоди 1',
+          label: 'Полуниця',
           to: '/test',
         },
         {
-          label: 'Ягоди 2',
+          label: 'Малина',
           to: '/test',
         },
         {
