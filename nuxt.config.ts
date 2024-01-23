@@ -25,9 +25,13 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxt/ui', ['@nuxtjs/eslint-module', { cache: false }]],
+  modules: ['@nuxt/ui', ['@nuxtjs/eslint-module', { cache: false }], 'vue3-carousel-nuxt', '@nuxt/image'],
 
   colorMode: {
     preference: 'light',
+  },
+
+  carousel: {
+    prefix: 'MyPrefix',
   },
 });
