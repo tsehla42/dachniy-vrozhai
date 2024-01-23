@@ -32,6 +32,6 @@ export default defineNuxtConfig({
   },
 
   carousel: {
-    prefix: 'MyPrefix',
+    prefix: 'U',
   },
 });

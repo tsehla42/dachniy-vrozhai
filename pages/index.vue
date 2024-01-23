@@ -18,12 +18,10 @@
       iste natus quasi ratione!
     </p>
 
-    <ImageCarousel />
+    <Carousel />
   </div>
 </template>
 
-<script setup lang="ts">
-import ImageCarousel from '~/components/ImageCarousel.vue';
-</script>
+<script setup lang="ts"></script>
 
 <style scoped lang="scss"></style>
