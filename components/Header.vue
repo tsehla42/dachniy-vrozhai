@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import { HEADER_LINKS } from '~/utils/constants/HeaderLinks';
+import { CONTENT_SECTIONS } from '~/utils/constants/ContentSections';
 
-const headerLinks = HEADER_LINKS;
-
-const label = 'Капустяні';
+const headerSections = CONTENT_SECTIONS;
 </script>
 
 <template>
@@ -20,19 +18,15 @@ const label = 'Капустяні';
     </section>
 
     <section class="header-links">
-      <HeaderCategoryLink
-        v-for="link in headerLinks"
-        :key="link.category.label"
-        :label="link.category.label"
-        :to="link.category.to"
-        :items="link.subcategories"
-      />
+      <HeaderSection v-for="section in headerSections" :key="section.sectionName" :section="section" />
     </section>
   </header>
 </template>
 
 <style scoped lang="scss">
 header {
+  z-index: 1;
+
   .header-top {
     display: flex;
     justify-content: space-between;

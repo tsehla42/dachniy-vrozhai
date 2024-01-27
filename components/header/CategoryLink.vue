@@ -1,28 +1,24 @@
 <script setup lang="ts">
-defineProps({
-  items: {
-    type: Array,
+const props = defineProps({
+  category: {
+    type: Object,
     required: true,
   },
-  to: {
-    type: String,
-    required: true,
-    default: '/',
-  },
-  label: {
-    type: String,
-    required: true,
-    default: '',
-  },
+});
+
+const categorySubcategories = computed(() => {
+  const { category } = props;
+  return category.subcategories ? category.subcategories : [[]];
 });
 
 const dropdownUi = {
   strategy: 'override',
-  wrapper: 'header-category-link',
-  trigger: 'trigger-wrapper',
-  container: 'dropdown-container',
-  base: 'category-dropdown bg-none',
+  wrapper: 'category-link',
+  trigger: 'category-trigger-wrapper',
+  container: 'subcategory-dropdown-container',
+  base: 'subcategory-dropdown bg-none',
   background: 'bg-none',
+  width: '',
   shadow: '',
   ring: '',
   item: {
@@ -36,7 +32,7 @@ const dropdownUi = {
 
 const triggerUi = {
   strategy: 'override',
-  base: 'activator',
+  base: 'activator-second-level',
   rounded: '',
   inline: '',
   color: {
@@ -53,35 +49,21 @@ const triggerUi = {
 </script>
 
 <template>
-  <DvDropdown :items="items" :ui="dropdownUi">
+  <DvDropdown :items="categorySubcategories" :ui="dropdownUi" placement="right-start">
     <template #trigger>
-      <DvButton :ui="triggerUi" :label="label" :to="to" />
+      <DvButton :ui="triggerUi" :label="category.label" :to="category.to" />
     </template>
 
     <template #item="{ item }">
       {{ item.label }}
-      <!--      <HeaderSubcategoryLink :item="item" />-->
     </template>
   </DvDropdown>
 </template>
 
 <style lang="scss">
-.header-category-link {
-  .trigger-wrapper .activator {
-    padding: 6px 18px;
-    background: $green-400;
-    border: 3px solid $green-800;
-    border-top: none;
-    border-radius: 0 0 18px 18px;
-    outline: none;
-    transition: all 0.3s;
-
-    &:hover {
-      padding: 8px 18px;
-      background: $orange-300;
-      border: 3px solid $orange-900;
-      border-top: none;
-    }
+.category-link {
+  .category-trigger-wrapper .activator-second-level {
+    padding: 5px 18px;
 
     span {
       font-family: $font-family-primary;
@@ -89,46 +71,23 @@ const triggerUi = {
     }
 
     &.active {
-      padding: 12px 18px;
-      background: $orange-400;
-      border: 3px solid $orange-focus;
-      border-top: none;
     }
   }
 
-  .dropdown-container {
-    width: fit-content;
-    padding-top: 2px !important;
+  .subcategory-dropdown-container {
+    width: max-content;
+    margin-top: -5px !important;
 
-    .category-dropdown {
-      div {
-        display: flex;
-        flex-flow: column;
-        gap: 2px;
-      }
+    .subcategory-dropdown div {
+      @include dropdown-style;
     }
 
     .subcategory-link {
       display: block;
-      padding: 5px 18px;
+      padding: 6px 18px;
       font-family: $font-family-primary;
       font-size: 16px;
-      background-color: $green-400;
-      border: 3px solid $green-800;
-      transition: all 0.1s;
-
-      &:first-of-type {
-        border-radius: 0 18px 0 0;
-      }
-
-      &:last-of-type {
-        border-radius: 0 0 18px 18px;
-      }
-
-      &:hover {
-        background: $orange-300;
-        border: 3px solid $orange-900;
-      }
+      @include section-category-dropdown-link;
     }
   }
 }

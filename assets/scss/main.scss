@@ -2,6 +2,5 @@
 main.scss imports all variables and styles that are used in components without them being imported
 */
 
-@import "abstracts/mixins";
-@import "abstracts/colors";
-@import "abstracts/fonts";
+@import "abstracts";
+@import "components";

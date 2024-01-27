@@ -1,15 +1,19 @@
 <script setup lang="ts">
+import { CAROUSEL_TRANSLATIONS } from '@/utils/constants/CarouselTranslations';
+
 const getPicturePath = (pictureName: string) => {
   return `images/${pictureName}.png`;
 };
+
+const translations = CAROUSEL_TRANSLATIONS;
 
 const slides = [
   {
     to: '/test',
     heading: 'Вирощування полуниці',
     text: 'Поради та інструкції',
-    picture: 'template-1200x600',
-    meta: '1',
+    picture: 'полуниця',
+    meta: '1', // todo: investigate data attributes SEO
   },
   {
     to: '/test',
@@ -65,15 +69,15 @@ const slides = [
 
 <template>
   <article class="carousel-container">
-    <UCarousel :wrap-around="true">
+    <UCarousel :wrap-around="true" :i18n="translations">
       <USlide v-for="slide in slides" :key="slide.meta">
-        <div class="carousel__item">
+        <NuxtLink :to="slide.to" class="carousel__item">
           <NuxtImg :src="getPicturePath(slide.picture)" :placeholder="[100, 50]" />
           <div class="bottom-text">
             <h3>{{ slide.heading }}</h3>
             <p>{{ slide.text }}</p>
           </div>
-        </div>
+        </NuxtLink>
       </USlide>
 
       <template #addons>
@@ -89,9 +93,11 @@ const slides = [
   @include flex-center;
   position: relative;
   width: 100%;
+
   background-color: $orange-150;
   color: $white;
   font-size: 20px;
+  border: 4px solid $black;
   border-radius: 20px;
   overflow: hidden;
 
@@ -135,6 +141,7 @@ const slides = [
 .carousel__prev,
 .carousel__next {
   box-sizing: content-box;
+  height: 90%;
 }
 
 .carousel__pagination {

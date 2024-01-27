@@ -15,7 +15,6 @@ defineProps({
   },
   to: {
     type: String,
-    required: true,
     default: '/',
   },
   color: {
