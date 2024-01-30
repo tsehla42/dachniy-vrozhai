@@ -11,3 +11,33 @@
   overflow: hidden;
 }
 
+@mixin custom-scrollbar(
+  $width: 10px,
+  $border-radius: 4px,
+  $thumb-color: $green-600,
+  $track-color: $orange-100
+) {
+  &::-webkit-scrollbar {
+    width: $width;
+    background-color: #2F1701;
+  }
+
+  &::-webkit-scrollbar-track {
+    width: $width;
+    background: $track-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: $width;
+    background-color: $thumb-color;
+    border-radius: $border-radius;
+
+    &:hover {
+      background-color: $green-800;
+    }
+  }
+
+  ::-webkit-scrollbar-corner {
+    background: $track-color;
+  }
+}

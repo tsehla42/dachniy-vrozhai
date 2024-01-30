@@ -8,6 +8,7 @@ Also can use variables
 body {
   font-family: $font-family-primary;
   background: $orange-100;
+  @include custom-scrollbar()
 }
 
 h1,
