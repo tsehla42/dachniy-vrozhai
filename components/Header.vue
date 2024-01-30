@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { CONTENT_SECTIONS } from '~/utils/constants/ContentSections';
-import Section from '~/components/header/Section.vue';
 
 const headerSections = CONTENT_SECTIONS;
 </script>
@@ -23,7 +22,7 @@ const headerSections = CONTENT_SECTIONS;
     </section>
 
     <section class="header-links">
-      <HeaderSection v-for="section in headerSections" :key="section.sectionName" :section="section" />
+      <HeaderSectionDropdown v-for="section in headerSections" :key="section.sectionName" :section="section" />
     </section>
   </header>
 </template>
