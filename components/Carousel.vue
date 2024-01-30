@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { CAROUSEL_TRANSLATIONS } from '@/utils/constants/CarouselTranslations';
-
 const getPicturePath = (pictureName: string) => {
   return `images/${pictureName}.png`;
 };
@@ -65,11 +64,19 @@ const slides = [
     meta: '8',
   },
 ];
+
+const carousel = ref(null);
+const next = () => {
+  carousel.value?.next();
+};
+const prev = () => {
+  carousel.value?.prev();
+};
 </script>
 
 <template>
   <article class="carousel-container">
-    <UCarousel :wrap-around="true" :i18n="translations">
+    <UCarousel ref="carousel" :wrap-around="true" :i18n="translations">
       <USlide v-for="slide in slides" :key="slide.meta">
         <NuxtLink :to="slide.to" class="carousel__item">
           <NuxtImg :src="getPicturePath(slide.picture)" :placeholder="[100, 50]" />
@@ -81,7 +88,8 @@ const slides = [
       </USlide>
 
       <template #addons>
-        <UNavigation />
+        <DvCarouselNavigationButton direction="prev" :handler="prev" />
+        <DvCarouselNavigationButton direction="next" :handler="next" />
         <UPagination />
       </template>
     </UCarousel>
@@ -142,6 +150,17 @@ const slides = [
 .carousel__next {
   box-sizing: content-box;
   height: 90%;
+  padding: 0 16px;
+
+  &:hover {
+    svg g {
+      opacity: 0.8;
+    }
+  }
+}
+
+.carousel__prev {
+  transform: translateY(-50%) scaleX(-1);
 }
 
 .carousel__pagination {
