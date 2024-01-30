@@ -1,6 +1,6 @@
 {
-  "name": "nuxt-app",
-  "version": "0.0.1",
+  "name": "dachiny-vrozhay",
+  "version": "0.1.0",
   "repository": "https://github.com/asteof/dachniy-vrozhai.git",
   "author": "Kyrylo Brezhniev <kirill.brezhnev02@gmail.com>",
   "license": "MIT",
@@ -28,6 +28,7 @@
     "nuxt": "^3.9.3",
     "prettier": "^3.1.1",
     "sass": "^1.69.7",
+    "sass-loader": "^14.1.0",
     "typescript": "^5.3.3",
     "vue": "^3.4.5",
     "vue-eslint-parser": "^9.3.2",

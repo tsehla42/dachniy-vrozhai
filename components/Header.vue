@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { CONTENT_SECTIONS } from '~/utils/constants/ContentSections';
+import Section from '~/components/header/Section.vue';
 
 const headerSections = CONTENT_SECTIONS;
 </script>
@@ -17,6 +18,10 @@ const headerSections = CONTENT_SECTIONS;
       </div>
     </section>
 
+    <section class="progress-bar">
+      <HeaderReadingProgressBar />
+    </section>
+
     <section class="header-links">
       <HeaderSection v-for="section in headerSections" :key="section.sectionName" :section="section" />
     </section>
@@ -24,16 +29,20 @@ const headerSections = CONTENT_SECTIONS;
 </template>
 
 <style scoped lang="scss">
+$header-height: 180px;
+$progress-bar-height: 8px;
+
 header {
+  position: sticky;
+  top: -$header-height;
   z-index: 1;
 
   .header-top {
     display: flex;
     justify-content: space-between;
-    height: 180px;
+    height: $header-height;
     padding: 0 24px;
     background: linear-gradient(290deg, $orange-400 20.28%, $secondary 52.52%);
-    border-bottom: 6px solid #3f4b07;
 
     .logo-wrapper {
       display: flex;
@@ -54,7 +63,13 @@ header {
     }
   }
 
+  .progress-bar {
+    border-bottom: 3px solid $green-800;
+  }
+
   .header-links {
+    position: sticky;
+    top: 0;
     height: 52px;
     display: flex;
   }
