@@ -4,6 +4,11 @@ import defaultTheme from 'tailwindcss/defaultTheme';
 export default <Partial<Config>>{
   theme: {
     extend: {
+      fontFamily: {
+        primary: ['"Anime Ace v05"', 'Montserrat', 'Calibri', 'Helvetica', 'sans-serif'],
+        secondary: ['Montserrat', 'Calibri', 'Helvetica', 'sans-serif'],
+        tertiary: ['Calibri', 'Helvetica', 'sans-serif'],
+      },
       colors: {
         green: {
           50: '#EFFDF5',

@@ -19,7 +19,7 @@
   grid-template-rows: auto 1fr auto;
 
   main {
-    background: #fff9f3;
+    background: $orange-100;
     margin: 18px 0;
   }
 }
