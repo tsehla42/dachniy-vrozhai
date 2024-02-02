@@ -5,7 +5,7 @@ const headerSections = CONTENT_SECTIONS;
 </script>
 
 <template>
-  <header>
+  <header class="hidden md:block">
     <section class="header-top">
       <NuxtLink to="/" class="logo-wrapper">
         <SvgIconLogoDachniy class="header-logo-icon" width="250" />
@@ -34,7 +34,7 @@ $progress-bar-height: 8px;
 header {
   position: sticky;
   top: -$header-height;
-  z-index: 1;
+  z-index: 10;
 
   .header-top {
     display: flex;
