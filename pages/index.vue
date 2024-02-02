@@ -1,5 +1,11 @@
+<script setup lang="ts">
+import { VEGETABLES } from '~/utils/constants/content/Vegetables';
+
+const vegetables = VEGETABLES;
+</script>
+
 <template>
-  <div class="page container mx-auto">
+  <div class="page container mx-auto px-4 sm:px-8 md:px-16">
     <h1 class="text-center">Сайт про город</h1>
     <p>
       На цьому сайті ви знайдете інформацію про аааааааааааа ааааааааааа аааааааааа аааааааааааааа аааааааааааааааа
@@ -18,12 +24,22 @@
       iste natus quasi ratione!
     </p>
 
-    <Carousel />
+    <Carousel class="hidden lg:block" />
 
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid dicta eaque laboriosam optio placeat quasi rerum
       similique totam velit, vero.
     </p>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-y-3 sm:gap-5">
+      <CategoryCard
+        v-for="v in vegetables"
+        :key="v.category.label"
+        :label="v.category.label"
+        :to="v.category.to"
+        :picture-path="`/images/categories/${v.category.picture}.png`"
+      />
+    </div>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda consectetur consequatur corporis deserunt
       dignissimos est explicabo fuga fugit libero magni, nesciunt, nostrum obcaecati quidem repellat veritatis
@@ -127,7 +143,5 @@
     </p>
   </div>
 </template>
-
-<script setup lang="ts"></script>
 
 <style scoped lang="scss"></style>
