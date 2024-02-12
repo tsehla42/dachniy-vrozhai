@@ -1,12 +1,12 @@
 <script setup lang="ts">
-const props = defineProps({
+const { section } = defineProps({
   section: {
     type: Object,
     required: true,
   },
 });
 
-const sectionCategories = [props.section.categories];
+const sectionCategories = [section.categories];
 
 const dropdownUi = {
   strategy: 'override',
@@ -48,7 +48,7 @@ const triggerUi = {
 <template>
   <DvDropdown :items="sectionCategories" :ui="dropdownUi">
     <template #trigger>
-      <DvButton :ui="triggerUi" :label="section.sectionName" :is-link="false" />
+      <DvButton :ui="triggerUi" :label="section.sectionLabel" :is-link="false" />
     </template>
 
     <template #item="{ item }">
@@ -82,7 +82,6 @@ const triggerUi = {
 
     &.active {
       padding: 12px 18px;
-      //margin: 9px 0 0; // todo: fix selector
       background: $orange-400;
       border: 3px solid $orange-focus;
     }

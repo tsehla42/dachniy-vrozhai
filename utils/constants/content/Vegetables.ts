@@ -50,7 +50,7 @@ export const VEGETABLES = [
     category: {
       label: 'Бобові',
       to: '/test',
-      picture: 'капустяні',
+      picture: 'бобові',
 
       subcategories: [
         [
@@ -72,7 +72,7 @@ export const VEGETABLES = [
     category: {
       label: 'Бульбоплоди',
       to: '/test',
-      picture: 'капустяні',
+      picture: 'бульбоплоди',
 
       subcategories: [
         [
@@ -94,7 +94,7 @@ export const VEGETABLES = [
     category: {
       label: 'Коренеплоди',
       to: '/test',
-      picture: 'капустяні',
+      picture: 'Коренеплоди',
 
       subcategories: [
         [
@@ -161,7 +161,7 @@ export const VEGETABLES = [
     category: {
       label: 'Цибулеві',
       to: '/test',
-      picture: 'капустяні',
+      picture: 'цибулеві',
 
       subcategories: [
         [
@@ -213,7 +213,7 @@ export const VEGETABLES = [
     category: {
       label: 'Пасльонові',
       to: '/test',
-      picture: 'капустяні',
+      picture: 'пасльонові',
 
       subcategories: [
         [
@@ -245,7 +245,7 @@ export const VEGETABLES = [
     category: {
       label: 'Пряно-смакові рослини',
       to: '/test',
-      picture: 'капустяні',
+      picture: 'пряно-смакові',
 
       subcategories: [
         [
@@ -292,7 +292,7 @@ export const VEGETABLES = [
     category: {
       label: 'Гарбузові',
       to: '/test',
-      picture: 'капустяні',
+      picture: 'гарбузові',
 
       subcategories: [
         [
@@ -322,9 +322,9 @@ export const VEGETABLES = [
   },
   {
     category: {
-      label: 'Лістові',
+      label: 'Салатні',
       to: '/test',
-      picture: 'капустяні',
+      picture: 'салатні',
 
       subcategories: [
         [
@@ -371,7 +371,7 @@ export const VEGETABLES = [
     category: {
       label: 'Ягідні рослини',
       to: '/test',
-      picture: 'капустяні',
+      picture: 'ягідні',
 
       subcategories: [
         [
@@ -423,7 +423,7 @@ export const VEGETABLES = [
     category: {
       label: 'Вирощування розсади',
       to: '/test',
-      picture: 'капустяні',
+      picture: 'розсада',
 
       subcategories: [
         [

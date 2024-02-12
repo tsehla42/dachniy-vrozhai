@@ -34,30 +34,35 @@ export const INVENTORY = [
     category: {
       label: 'Лопати',
       to: '/test',
+      picture: 'template-200x200',
     },
   },
   {
     category: {
       label: 'Граблі',
       to: '/test',
+      picture: 'template-200x200',
     },
   },
   {
     category: {
       label: 'Вила',
       to: '/test',
+      picture: 'template-200x200',
     },
   },
   {
     category: {
       label: 'Тяпки',
       to: '/test',
+      picture: 'template-200x200',
     },
   },
   {
     category: {
       label: 'Шланги',
       to: '/test',
+      picture: 'template-200x200',
     },
   },
 ];

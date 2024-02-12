@@ -3,6 +3,7 @@ export const FLOWERS = [
     category: {
       label: 'Однорічні квіти',
       to: '/test',
+      picture: 'template-200x200',
 
       subcategories: [
         [
@@ -34,6 +35,7 @@ export const FLOWERS = [
     category: {
       label: 'Дворічні квіти',
       to: '/test',
+      picture: 'template-200x200',
 
       subcategories: [
         [
@@ -49,6 +51,7 @@ export const FLOWERS = [
     category: {
       label: 'Багаторічні квіти',
       to: '/test',
+      picture: 'template-200x200',
 
       subcategories: [
         [
@@ -144,6 +147,7 @@ export const FLOWERS = [
     category: {
       label: 'Цибулинні квіти',
       to: '/test',
+      picture: 'template-200x200',
 
       subcategories: [
         [
@@ -179,6 +183,7 @@ export const FLOWERS = [
     category: {
       label: 'Кучеряві рослини',
       to: '/test',
+      picture: 'template-200x200',
 
       subcategories: [
         [
@@ -202,6 +207,7 @@ export const FLOWERS = [
     category: {
       label: 'Дерева та чагарники',
       to: '/test',
+      picture: 'template-200x200',
 
       subcategories: [
         [
@@ -221,6 +227,7 @@ export const FLOWERS = [
     category: {
       label: 'Інше',
       to: '/test',
+      picture: 'template-200x200',
 
       subcategories: [
         [
