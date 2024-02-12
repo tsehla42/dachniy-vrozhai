@@ -3,6 +3,7 @@ export const PESTS_AND_DISEASES = [
     category: {
       label: 'Хвороби ягідників',
       to: '/test',
+      picture: 'template-200x200',
 
       subcategories: [
         [
@@ -26,6 +27,7 @@ export const PESTS_AND_DISEASES = [
     category: {
       label: 'Шкідники ягідників',
       to: '/test',
+      picture: 'template-200x200',
 
       subcategories: [
         [
@@ -49,6 +51,7 @@ export const PESTS_AND_DISEASES = [
     category: {
       label: 'Хвороби овочів',
       to: '/test',
+      picture: 'template-200x200',
 
       subcategories: [
         [
@@ -76,6 +79,7 @@ export const PESTS_AND_DISEASES = [
     category: {
       label: 'Шкідники овочів',
       to: '/test',
+      picture: 'template-200x200',
 
       subcategories: [
         [

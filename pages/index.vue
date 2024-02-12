@@ -31,15 +31,8 @@ const vegetables = VEGETABLES;
       similique totam velit, vero.
     </p>
 
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-y-3 sm:gap-5">
-      <CategoryCard
-        v-for="v in vegetables"
-        :key="v.category.label"
-        :label="v.category.label"
-        :to="v.category.to"
-        :picture-path="`/images/categories/${v.category.picture}.png`"
-      />
-    </div>
+    <Accordion />
+
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda consectetur consequatur corporis deserunt
       dignissimos est explicabo fuga fugit libero magni, nesciunt, nostrum obcaecati quidem repellat veritatis
