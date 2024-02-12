@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { CAROUSEL_TRANSLATIONS } from '@/utils/constants/CarouselTranslations';
+import { CAROUSEL_TRANSLATIONS } from '~/utils/constants/localizations/CarouselTranslations';
 const getPicturePath = (pictureName: string) => {
   return `images/${pictureName}.png`;
 };

@@ -1,33 +1,13 @@
-import { VEGETABLES } from './content/Vegetables';
-import { FLOWERS } from './content/Flowers';
-import { PESTS_AND_DISEASES } from './content/PestsAndDiseases';
-import { FERTILIZERS } from './content/Fertilizers';
-import { INVENTORY } from './content/Inventory';
+import { SECTION_TRANSLATIONS } from '~/utils/constants/localizations/SectionTranslations';
+import { SectionsEnum, type SectionsMapInterface } from '~/utils/types/SectionsTypes';
+import { SVG_ICON_COMPONENTS_MAP } from '~/utils/constants/SvgIconComponentsMap';
+import { SECTION_MAP } from '~/utils/constants/SectionsMap';
 
-export const CONTENT_SECTIONS = [
-  {
-    sectionName: 'Овочі',
-    svgIcon: '',
-    categories: [...VEGETABLES],
-  },
-  {
-    sectionName: 'Квіти',
-    svgIcon: '',
-    categories: [...FLOWERS],
-  },
-  {
-    sectionName: 'Хвороби і шкідники',
-    svgIcon: '',
-    categories: [...PESTS_AND_DISEASES],
-  },
-  {
-    sectionName: 'Добрива',
-    svgIcon: '',
-    categories: [...FERTILIZERS],
-  },
-  {
-    sectionName: 'Дачниий інвентар',
-    svgIcon: '',
-    categories: [...INVENTORY],
-  },
-];
+export const CONTENT_SECTIONS = Object.values(SectionsEnum).map((value: SectionsEnum) => {
+  return {
+    sectionName: value,
+    sectionLabel: SECTION_TRANSLATIONS[value],
+    svgIcon: SVG_ICON_COMPONENTS_MAP[value],
+    categories: SECTION_MAP[value],
+  };
+});

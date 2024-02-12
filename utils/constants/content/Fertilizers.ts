@@ -3,6 +3,7 @@ export const FERTILIZERS = [
     category: {
       label: 'Макроелементи',
       to: '/test2',
+      picture: 'template-200x200',
 
       subcategories: [
         [
@@ -38,6 +39,7 @@ export const FERTILIZERS = [
     category: {
       label: 'Мікроелементи',
       to: '/test',
+      picture: 'template-200x200',
 
       subcategories: [
         [
@@ -73,6 +75,7 @@ export const FERTILIZERS = [
     category: {
       label: 'Органічні добрива',
       to: '/test',
+      picture: 'template-200x200',
 
       subcategories: [
         [
@@ -108,6 +111,7 @@ export const FERTILIZERS = [
     category: {
       label: 'Мінеральні добрива',
       to: '/test',
+      picture: 'template-200x200',
 
       subcategories: [
         [
