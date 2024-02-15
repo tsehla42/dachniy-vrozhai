@@ -129,6 +129,7 @@ const prev = () => {
     background-color: rgba($black, 42%);
 
     h3 {
+      font-family: $font-family-primary;
       font-size: 1.8em;
       -webkit-text-stroke: 2px $black;
     }

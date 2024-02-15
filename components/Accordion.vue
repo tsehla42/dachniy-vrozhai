@@ -1,14 +1,20 @@
 <script setup lang="ts">
 import { CONTENT_SECTIONS } from '~/utils/constants/ContentSections';
-// import { SvgIconTomato } from '#components';
-//
-// const componentsMap = {
-//   tomato: SvgIconTomato,
-// };
+import type { PropType } from 'vue';
+import { SectionsEnum } from '~/utils/types/SectionsTypes';
 
-const items = CONTENT_SECTIONS.map(({ sectionName, sectionLabel, svgIcon }, index) => {
-  // const svgIconComponent = componentsMap[svgIcon];
+const { activeSections } = defineProps({
+  activeSections: {
+    type: Array as PropType<Array<SectionsEnum>>,
+    default: [],
+  },
+});
 
+const sectionsToDisplay = CONTENT_SECTIONS.filter(
+  (section) => activeSections.includes(section.sectionName) || !activeSections.length,
+);
+
+const items = sectionsToDisplay.map(({ sectionName, sectionLabel, svgIcon }, index) => {
   return {
     label: sectionLabel,
     sectionName: sectionName,

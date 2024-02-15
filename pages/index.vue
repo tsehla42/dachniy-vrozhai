@@ -1,8 +1,4 @@
-<script setup lang="ts">
-import { VEGETABLES } from '~/utils/constants/content/Vegetables';
-
-const vegetables = VEGETABLES;
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="page container mx-auto px-4 sm:px-8 md:px-16">
@@ -31,7 +27,11 @@ const vegetables = VEGETABLES;
       similique totam velit, vero.
     </p>
 
+    <h2 class="text-center mt-10 mb-4">Розділи</h2>
     <Accordion />
+
+    <h2 class="text-center mt-10 mb-4">Статті та поради</h2>
+    <AdvicesList />
 
     <p>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda consectetur consequatur corporis deserunt
