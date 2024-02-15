@@ -11,19 +11,25 @@ body {
   @include custom-scrollbar()
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $font-family-primary;
-  font-weight: 400;
-  text-transform: uppercase;
+page {
+  & > h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $font-family-primary;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
 }
 
 h1 {
   font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
 }
 
 a {
@@ -37,6 +43,6 @@ a {
   //word-break: break-all;
 }
 
-.page p {
+.page > p {
   margin: 1em 0;
 }
