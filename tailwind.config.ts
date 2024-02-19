@@ -47,6 +47,9 @@ export default <Partial<Config>>{
           950: '#121212',
         },
       },
+      borderWidth: {
+        '3': '3px',
+      },
       keyframes: {
         'slide-off': {
           '0%': { transform: 'translateX(0)' },
