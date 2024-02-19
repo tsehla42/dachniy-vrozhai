@@ -31,7 +31,7 @@ const pictureSrc = `${basePath}/${pictureName}.png` || fallbackPictureSrc;
     :to="to"
   >
     <h3
-      class="name absolute z-[2] text-center text-lg text-orange-100 p-1 bg-black bg-opacity-35 backdrop-blur-md rounded-lg group-hover:text-orange-300 w-min max-w-48 overflow-hidden text-ellipsis transition-colors"
+      class="name absolute z-[2] p-1 bg-black bg-opacity-35 backdrop-blur-sm rounded-lg text-center text-lg text-orange-100 font-primary group-hover:text-orange-300 w-min max-w-48 overflow-hidden text-ellipsis transition-colors"
     >
       {{ label }}
     </h3>
