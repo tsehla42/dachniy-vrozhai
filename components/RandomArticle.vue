@@ -5,21 +5,26 @@ const items = [
   { id: 2, articleLabel: 'Бульбоплоди', to: '/test', picturePath: '/images/categories/бульбоплоди.png' },
   { id: 3, articleLabel: 'Коренеплоди', to: '/test', picturePath: '/images/categories/коренеплоди.png' },
   { id: 4, articleLabel: 'Пасльонові', to: '/test', picturePath: '/images/categories/пасльонові.png' },
-  { id: 5, articleLabel: 'Пряно смакові рослини', to: '/test', picturePath: '/images/categories/пряно-смакові.png' },
-  { id: 6, articleLabel: 'Розсада', to: '/test', picturePath: '/images/categories/розсада.png' },
+  {
+    id: 5,
+    articleLabel: 'Пряно смакові рослини',
+    to: '/test',
+    picturePath: '/images/categories/пряно-смакові-рослини.png',
+  },
+  { id: 6, articleLabel: 'Розсада', to: '/test', picturePath: '/images/categories/вирощування-розсади.png' },
   { id: 7, articleLabel: 'Салатні', to: '/test', picturePath: '/images/categories/салатні.png' },
   { id: 8, articleLabel: 'Цибулеві', to: '/test', picturePath: '/images/categories/цибулеві.png' },
   { id: 9, articleLabel: 'Гарбузові', to: '/test', picturePath: '/images/categories/гарбузові.png' },
-  { id: 10, articleLabel: 'Ягідні', to: '/test', picturePath: '/images/categories/ягідні.png' },
+  { id: 10, articleLabel: 'Ягідні', to: '/test', picturePath: '/images/categories/ягідні-рослини.png' },
   { id: 11, articleLabel: 'template-200x200', to: '/test', picturePath: '/images/categories/template-200x200.png' },
   { id: 12, articleLabel: 'fallback-200x200', to: '/test', picturePath: '/images/categories/fallback-200x200.png' },
-  { id: 13, articleLabel: 'Капустяні 14', to: '/test', picturePath: '/images/categories/капустяні.png' },
+  { id: 13, articleLabel: 'Капустяні 14', to: '/test', picturePath: '/images/categories/капустяні2.png' },
   { id: 14, articleLabel: 'Капустяні 15', to: '/test', picturePath: '/images/categories/капустяні.png' },
 ];
 
 type CardRefValue<T = HTMLDivElement> = T | null;
 const highlightedCardClass = ['rounded-sm', 'shadow-[0_0_40px_16px_rgba(255,222,54,1)]', 'z-[1]'];
-const fullscreenCardClass = ['absolute', 'z-[5]', 'duration-1000', 'blur-sm'];
+const fullscreenCardClass = ['absolute', 'z-[5]', 'duration-1000'];
 const background = ref<CardRefValue>(null);
 const articleLabel = ref<CardRefValue<HTMLHeadingElement>>(null);
 const cardsRefs = ref<Array<CardRefValue>>([]);
@@ -88,6 +93,13 @@ const cardProperties = {
   },
   resetScaleSelectedCard: () => {
     cardProperties.updateCardClasses(randomArticleId.value, { remove: ['scale-[200%]'] });
+  },
+
+  setCardBlur: () => {
+    cardProperties.updateCardClasses(randomArticleId.value, { add: ['blur-sm'] });
+  },
+  resetCardBlur: () => {
+    cardProperties.updateCardClasses(previousRandomArticleId.value, { remove: ['blur-sm'] });
   },
 
   setSelectedCardFullscreen: () => {
@@ -176,6 +188,7 @@ const animateSelectedCard = () => {
   setTimeout(() => backgroundProperties.showBackground(), 200);
   setTimeout(() => cardProperties.scaleSelectedCard(), 800);
   setTimeout(() => backgroundProperties.darkenBackground(), 1600);
+  setTimeout(() => cardProperties.setCardBlur(), 2000);
   setTimeout(() => {
     cardProperties.setSelectedCardFullscreen();
     articleProperties.setRandomArticleName();
@@ -184,10 +197,11 @@ const animateSelectedCard = () => {
 };
 
 const resetAllToDefaultState = () => {
-  cardProperties.unscaleSelectedCard();
   resetAnimationPlayCount();
   resetRandomArticleHighlighting();
+  cardProperties.unscaleSelectedCard();
   cardProperties.unsetSelectedCardFullscreen();
+  cardProperties.resetCardBlur();
   backgroundProperties.resetDarkBackground();
 };
 </script>
