@@ -1,8 +1,5 @@
 <script setup lang="ts">
-import fs from 'fs';
-import path from 'path';
-
-const { pictureName, ...props } = defineProps({
+const { pictureName } = defineProps({
   label: {
     type: String,
     required: true,
@@ -22,7 +19,11 @@ const { pictureName, ...props } = defineProps({
 
 const basePath = '/images/categories';
 const fallbackPictureSrc = `${basePath}/fallback-200x200.png`;
-const pictureSrc = `${basePath}/${pictureName}.png` || fallbackPictureSrc;
+const pictureSrc = `${basePath}/${pictureName}` || fallbackPictureSrc;
+
+const onImgError = (e: any) => {
+  console.log(e);
+};
 </script>
 
 <template>
@@ -45,6 +46,7 @@ const pictureSrc = `${basePath}/${pictureName}.png` || fallbackPictureSrc;
       height="200"
       :placeholder="[20, 20]"
       loading="lazy"
+      @onerror="onImgError"
     />
   </NuxtLink>
 </template>
