@@ -52,7 +52,7 @@ const triggerUi = {
     </template>
 
     <template #item="{ item }">
-      <HeaderCategoryLink :category="item.category" />
+      <HeaderCategoryLink :category="item" />
     </template>
   </DvDropdown>
 </template>
