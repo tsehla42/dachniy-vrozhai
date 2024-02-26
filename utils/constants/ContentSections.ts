@@ -3,6 +3,9 @@ import { SectionsEnum, type SectionsMapInterface } from '~/utils/types/SectionsT
 import { SVG_ICON_COMPONENTS_MAP } from '~/utils/constants/SvgIconComponentsMap';
 import { SECTION_MAP } from '~/utils/constants/SectionsMap';
 
+/**
+ * Секції що відображаються в хедері, та акордеоні
+ * */
 export const CONTENT_SECTIONS = Object.values(SectionsEnum).map((value: SectionsEnum) => {
   return {
     sectionName: value,
