@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import { CONTENT_SECTIONS } from '~/utils/constants/ContentSections';
 import type { PropType } from 'vue';
 import { SectionsEnum } from '~/utils/types/SectionsTypes';
 
@@ -10,7 +9,8 @@ const { activeSections } = defineProps({
   },
 });
 
-const sectionsToDisplay = CONTENT_SECTIONS.filter(
+const { contentSections } = useSectionsStore();
+const sectionsToDisplay = contentSections.filter(
   (section) => activeSections.includes(section.sectionName) || !activeSections.length,
 );
 
@@ -54,33 +54,35 @@ const activatorBtnUi = {
 
 <template>
   <div>
-    <UAccordion :items="items" :ui="accordionUi" size="xl" multiple>
-      <template #default="{ item, open }">
-        <UButton color="gray" variant="solid" block :ui="activatorBtnUi">
-          <template #leading>
-            <div
-              class="w-11 h-11 p-1 rounded-full bg-primary-500 group-hover:bg-green-400 flex items-center justify-center -my-1 transform transition-transform duration-200"
-            >
-              <component :is="item.svgIconComponent" :class="[open && '-mb-1.5 animate-bounce']" />
-            </div>
-          </template>
+    <DelayHydration>
+      <UAccordion :items="items" :ui="accordionUi" size="xl" multiple>
+        <template #default="{ item, open }">
+          <UButton color="gray" variant="solid" block :ui="activatorBtnUi">
+            <template #leading>
+              <div
+                class="w-11 h-11 p-1 rounded-full bg-primary-500 group-hover:bg-green-400 flex items-center justify-center -my-1 transform transition-transform duration-200"
+              >
+                <component :is="item.svgIconComponent" :class="[open && '-mb-1.5 animate-bounce']" />
+              </div>
+            </template>
 
-          <span class="truncate font-primary text-2xl leading-none">{{ item.label }}</span>
+            <span class="truncate font-primary text-2xl leading-none">{{ item.label }}</span>
 
-          <template #trailing>
-            <UIcon
-              name="i-heroicons-chevron-down-20-solid"
-              class="w-8 h-8 ms-auto scale-[1.2] transform transition-transform duration-200"
-              :class="[open && 'rotate-180']"
-            />
-          </template>
-        </UButton>
-      </template>
+            <template #trailing>
+              <UIcon
+                name="i-heroicons-chevron-down-20-solid"
+                class="w-8 h-8 ms-auto scale-[1.2] transform transition-transform duration-200"
+                :class="[open && 'rotate-180']"
+              />
+            </template>
+          </UButton>
+        </template>
 
-      <template #item="{ item }">
-        <CategoryList :section-name="item.sectionName" />
-      </template>
-    </UAccordion>
+        <template #item="{ item }">
+          <CategoryList :section-name="item.sectionName" />
+        </template>
+      </UAccordion>
+    </DelayHydration>
   </div>
 </template>
 

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { CAROUSEL_TRANSLATIONS } from '~/utils/constants/localizations/CarouselTranslations';
+
 const getPicturePath = (pictureName: string) => {
   return `images/${pictureName}.png`;
 };
@@ -72,6 +73,8 @@ const next = () => {
 const prev = () => {
   carousel.value?.prev();
 };
+
+console.log('carousel, non delayed hydration', Date.now());
 </script>
 
 <template>

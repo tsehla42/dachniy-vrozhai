@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { SectionsEnum } from '~/utils/types/SectionsTypes';
-import { SECTION_MAP } from '~/utils/constants/SectionsMap';
+import type { Category } from '~/utils/Category';
 
 const { sectionName, categoryName } = defineProps({
   sectionName: {
@@ -13,7 +13,8 @@ const { sectionName, categoryName } = defineProps({
   },
 });
 
-const categoriesBySection = SECTION_MAP[sectionName];
+const { sectionsMap } = useSectionsStore();
+const categoriesBySection = sectionsMap[sectionName] as Category[];
 const isSubcategoryView = computed(() => !!categoryName);
 
 const subcategoriesByCategory = computed(() => {
