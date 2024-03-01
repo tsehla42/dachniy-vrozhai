@@ -1,7 +1,3 @@
-export const INVENTORY = [
-  new Category('Лопати', true),
-  new Category('Граблі', true),
-  new Category('Вила', true),
-  new Category('Тяпки', true),
-  new Category('Шланги', true),
-];
+import type { CategoryTemplateCollection } from '~/utils/types/CategoryTypes';
+
+export const INVENTORY: CategoryTemplateCollection = [['Лопати'], ['Граблі'], ['Вила'], ['Тяпки'], ['Шланги']];
