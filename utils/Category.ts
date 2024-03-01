@@ -1,5 +1,5 @@
 import { transliterate } from '~/utils/Transliteration';
-import { fileChecker } from '~/utils/FileChecker';
+import { useImagesStore } from '~/stores/imagesStore';
 
 export class Category {
   private readonly _isCategory: boolean;
@@ -7,15 +7,14 @@ export class Category {
   label: string = '';
   to: string = '';
   picture: string = '';
-  picture2: string = '';
   subcategories?: Category[];
 
-  constructor(categoryNameUkr: string, isCategory: boolean, subcategories?: string[]) {
-    this._isCategory = isCategory;
+  constructor(categoryNameUkr: string, subcategories?: string[]) {
+    this._isCategory = !!subcategories?.length;
 
     this.setLabel(categoryNameUkr);
     this.setCategoryName();
-    this.setToPath(isCategory);
+    this.setToPath();
     this.setSubcategories(subcategories);
     this.setPictureName();
   }
@@ -28,28 +27,21 @@ export class Category {
     this.label = label;
   }
 
-  setToPath(isCategory: boolean) {
-    const additionalPathData = isCategory ? 'category/' : '';
-    this.to = `/${additionalPathData}${this.transliteratedCategoryName}`;
+  setToPath() {
+    const additionalPathData = this._isCategory ? 'category/' : '';
+    // this.to = `/${additionalPathData}${this.transliteratedCategoryName}`;
+    this.to = `/${additionalPathData}kapustiani`;
   }
 
   setPictureName() {
-    const pictureName = this.label.toLowerCase().split(' ').join('-');
-    this.picture = `${pictureName}.png`;
-
     if (process.server) {
-      fileChecker(this.picture).then((exists) => {
-        console.log({ exists }, this);
-        if (!exists) {
-          console.log('set picture to fallback');
-          this.picture = 'fallback-200x200.png';
-          this.picture2 = 'fallback-200x200.png';
-          console.log({ exists }, this);
-        }
-      });
+      const { images } = useImagesStore();
+
+      const pictureName = this.label.toLowerCase().split(' ').join('-');
+      const pictureNameWithExtension = `${pictureName}.png`;
+      const doesImageExist = images.includes(pictureNameWithExtension);
+      this.picture = doesImageExist ? pictureNameWithExtension : 'fallback-200x200.png';
     }
-    // console.log('this.picture', this.picture);
-    // console.log('this.picture2', this.picture2);
   }
 
   setSubcategories(subcategories?: string[]) {
@@ -57,7 +49,7 @@ export class Category {
       return;
     }
 
-    this.subcategories = subcategories.map((subcategoryNameUkr) => new Category(subcategoryNameUkr, false, []));
+    this.subcategories = subcategories.map((subcategoryNameUkr) => new Category(subcategoryNameUkr, []));
   }
 
   get transliteratedCategoryName() {
