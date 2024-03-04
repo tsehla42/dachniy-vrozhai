@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const props = defineProps({
+const { category } = defineProps({
   category: {
     type: Object,
     required: true,
@@ -7,8 +7,7 @@ const props = defineProps({
 });
 
 const categorySubcategories = computed(() => {
-  const { category } = props;
-  return category.subcategories ? category.subcategories : [[]];
+  return category.subcategories ? [category.subcategories] : [[]];
 });
 
 const dropdownUi = {

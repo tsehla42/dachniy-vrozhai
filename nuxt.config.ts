@@ -25,7 +25,14 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxt/ui', ['@nuxtjs/eslint-module', { cache: false }], 'vue3-carousel-nuxt', '@nuxt/image'],
+  modules: [
+    '@nuxt/ui',
+    ['@nuxtjs/eslint-module', { cache: false }],
+    'nuxt-delay-hydration',
+    'vue3-carousel-nuxt',
+    '@nuxt/image',
+    '@pinia/nuxt',
+  ],
 
   colorMode: {
     preference: 'light',
@@ -33,5 +40,12 @@ export default defineNuxtConfig({
 
   carousel: {
     prefix: 'U',
+  },
+
+  delayHydration: {
+    // enables nuxt-delay-hydration in dev mode for testing
+    // NOTE: you should disable this once you've finished testing, it will break HMR
+    debug: process.env.NODE_ENV === 'development',
+    mode: 'manual',
   },
 });
