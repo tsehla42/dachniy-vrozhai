@@ -1,27 +1,41 @@
 <script setup lang="ts">
 import { SectionsEnum } from '~/utils/types/SectionsTypes';
-import { SECTION_MAP } from '~/utils/constants/SectionsMap';
+import type { Category } from '~/utils/Category';
 
-const { sectionName, ...props } = defineProps({
+const { sectionName, categoryName } = defineProps({
   sectionName: {
     type: String as PropType<SectionsEnum>,
     required: true,
   },
+  categoryName: {
+    type: String,
+    default: '',
+  },
 });
 
-const sectionMap = SECTION_MAP;
+const { sectionsMap } = useSectionsStore();
+const categoriesBySection = sectionsMap[sectionName] as Category[];
+const isSubcategoryView = computed(() => !!categoryName);
 
-const categories = computed(() => sectionMap[sectionName]);
+const subcategoriesByCategory = computed(() => {
+  return isSubcategoryView.value
+    ? categoriesBySection.find((category) => category.categoryName === categoryName)?.subcategories
+    : [];
+});
+
+const categoriesToDisplay = computed(() =>
+  isSubcategoryView.value ? subcategoriesByCategory.value : categoriesBySection,
+);
 </script>
 
 <template>
   <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-y-3 sm:gap-5">
     <CategoryCard
-      v-for="c in categories"
-      :key="c.category.label"
-      :label="c.category.label"
-      :to="c.category.to"
-      :picture-name="c.category.picture"
+      v-for="c in categoriesToDisplay"
+      :key="c.label"
+      :label="c.label"
+      :to="c.to"
+      :picture-name="c.picture"
     />
   </div>
 </template>

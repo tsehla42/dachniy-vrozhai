@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { CONTENT_SECTIONS } from '~/utils/constants/ContentSections';
-
-const headerSections = CONTENT_SECTIONS;
+const { contentSections } = useSectionsStore();
 </script>
 
 <template>
@@ -22,7 +20,7 @@ const headerSections = CONTENT_SECTIONS;
     </section>
 
     <section class="header-links">
-      <HeaderSectionDropdown v-for="section in headerSections" :key="section.sectionName" :section="section" />
+      <HeaderSectionDropdown v-for="section in contentSections" :key="section.sectionName" :section="section" />
     </section>
   </header>
 </template>
