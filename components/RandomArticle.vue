@@ -17,8 +17,8 @@ const items = [
   { id: 9, articleLabel: 'Гарбузові', to: '/test', picturePath: '/images/categories/гарбузові.png' },
   { id: 10, articleLabel: 'Ягідні', to: '/test', picturePath: '/images/categories/ягідні-рослини.png' },
   { id: 11, articleLabel: 'template-200x200', to: '/test', picturePath: '/images/categories/template-200x200.png' },
-  { id: 12, articleLabel: 'fallback-200x200', to: '/test', picturePath: '/images/categories/fallback-200x200.png' },
-  { id: 13, articleLabel: 'Капустяні 14', to: '/test', picturePath: '/images/categories/капустяні2.png' },
+  { id: 12, articleLabel: 'fallback-200x200', to: '/test', picturePath: '/images/fallback/fallback-200x200.png' },
+  { id: 13, articleLabel: 'Капустяні 14', to: '/test', picturePath: '/images/categories/капуста-білокачанна.png' },
   { id: 14, articleLabel: 'Капустяні 15', to: '/test', picturePath: '/images/categories/капустяні.png' },
 ];
 
@@ -234,9 +234,10 @@ const resetAllToDefaultState = () => {
           class="w-full mt-[-20%]"
           width="300"
           height="300"
-          :placeholder="[20, 20]"
           lazy
+          @error="(args) => console.log(args)"
         />
+        <!--          :placeholder="[20, 20]"-->
       </div>
     </article>
   </div>

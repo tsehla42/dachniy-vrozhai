@@ -29,7 +29,9 @@
 
     <h1 class="text-center">Різновиди</h1>
 
-    <CategoryList section-name="vegetables" category-name="kapustyani" />
+    <div class="my-8">
+      <CategoryList section-name="vegetables" category-name="kapustiani" />
+    </div>
 
     <RandomArticle />
   </div>
