@@ -1,13 +1,13 @@
 import { defineStore } from 'pinia';
 import { mapTemplateToSerializedCategory } from '~/utils/SerializeNonPOJOs';
 import { SectionsEnum } from '~/utils/types/SectionsTypes';
-import { SECTION_TRANSLATIONS } from '~/utils/constants/localizations/SectionTranslations';
-import { SVG_ICON_COMPONENTS_MAP } from '~/utils/constants/SvgIconComponentsMap';
-import { VEGETABLES } from '~/utils/constants/content/Vegetables';
-import { FLOWERS } from '~/utils/constants/content/Flowers';
-import { PESTS_AND_DISEASES } from '~/utils/constants/content/PestsAndDiseases';
-import { FERTILIZERS } from '~/utils/constants/content/Fertilizers';
-import { INVENTORY } from '~/utils/constants/content/Inventory';
+import { SECTION_TRANSLATIONS } from '~/constants/localizations/SectionTranslations';
+import { SVG_ICON_COMPONENTS_MAP } from '~/constants/SvgIconComponentsMap';
+import { VEGETABLES } from '~/constants/content/Vegetables';
+import { FLOWERS } from '~/constants/content/Flowers';
+import { PESTS_AND_DISEASES } from '~/constants/content/PestsAndDiseases';
+import { FERTILIZERS } from '~/constants/content/Fertilizers';
+import { INVENTORY } from '~/constants/content/Inventory';
 
 export const useSectionsStore = defineStore('sections', () => {
   const vegetables = mapTemplateToSerializedCategory(VEGETABLES);

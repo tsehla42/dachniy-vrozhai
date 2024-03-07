@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { CAROUSEL_TRANSLATIONS } from '~/utils/constants/localizations/CarouselTranslations';
+import { CAROUSEL_TRANSLATIONS } from '~/constants/localizations/CarouselTranslations';
 
 const props = defineProps({
   handler: {
