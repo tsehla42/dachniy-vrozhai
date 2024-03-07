@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const { pictureName } = defineProps({
+const { pictureSrc } = defineProps({
   label: {
     type: String,
     required: true,
@@ -10,16 +10,12 @@ const { pictureName } = defineProps({
     required: true,
     default: '/',
   },
-  pictureName: {
+  pictureSrc: {
     type: String,
     required: true,
     default: '/',
   },
 });
-
-const basePath = '/images/categories';
-const fallbackPictureSrc = `${basePath}/fallback-200x200.png`;
-const pictureSrc = `${basePath}/${pictureName}` || fallbackPictureSrc;
 
 // console.log('card, delayed hydration', Date.now());
 </script>

@@ -6,7 +6,7 @@ export class Category {
   categoryName: string = '';
   label: string = '';
   to: string = '';
-  picture: string = '';
+  pictureSrc: string = '';
   subcategories?: Category[];
 
   constructor(categoryNameUkr: string, subcategories?: string[]) {
@@ -16,7 +16,7 @@ export class Category {
     this.setCategoryName();
     this.setToPath();
     this.setSubcategories(subcategories);
-    this.setPictureName();
+    this.setPictureSrc();
   }
 
   setCategoryName() {
@@ -28,20 +28,34 @@ export class Category {
   }
 
   setToPath() {
-    const additionalPathData = this._isCategory ? 'category/' : '';
-    // this.to = `/${additionalPathData}${this.transliteratedCategoryName}`;
-    this.to = `/${additionalPathData}kapustiani`;
+    const pathPrefix = this._isCategory ? '/category' : '';
+    if (this._isCategory) {
+      this.to = `${pathPrefix}/${this.transliteratedCategoryName}`;
+    } else {
+      this.to = `${pathPrefix}/kapustiani`;
+    }
   }
 
-  setPictureName() {
+  setPictureSrc() {
     if (process.server) {
       const { images } = useImagesStore();
 
       const pictureName = this.label.toLowerCase().split(' ').join('-');
       const pictureNameWithExtension = `${pictureName}.png`;
       const doesImageExist = images.includes(pictureNameWithExtension);
-      this.picture = doesImageExist ? pictureNameWithExtension : 'fallback-200x200.png';
+      const { pictureSrc, fallbackPictureSrc } = this.createPictureSrc(pictureNameWithExtension);
+
+      this.pictureSrc = doesImageExist ? pictureSrc : fallbackPictureSrc;
     }
+  }
+
+  createPictureSrc(pictureNameWithExtension: string) {
+    const basePath = '/images';
+    const pathPrefix = this._isCategory ? 'categories' : 'articles/preview';
+    const fallbackPictureSrc = '/images/fallback/fallback-200x200.png';
+    const pictureSrc = `${basePath}/${pathPrefix}/${pictureNameWithExtension}`;
+
+    return { pictureSrc, fallbackPictureSrc };
   }
 
   setSubcategories(subcategories?: string[]) {
