@@ -6,7 +6,7 @@ import type { CategoryTemplateCollection } from '~/utils/types/CategoryTypes';
  * */
 export const VEGETABLES: CategoryTemplateCollection = [
   [
-    'Капустяніі',
+    'Капустяні',
     [
       'Капуста білокачанна',
       'Капуста червонокачанна',
