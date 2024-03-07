@@ -29,9 +29,10 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     ['@nuxtjs/eslint-module', { cache: false }],
     'nuxt-delay-hydration',
-    'vue3-carousel-nuxt',
     '@nuxt/image',
     '@pinia/nuxt',
+    '@nuxt/content',
+    'vue3-carousel-nuxt',
   ],
 
   colorMode: {
