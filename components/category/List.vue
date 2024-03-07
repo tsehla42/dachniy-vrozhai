@@ -35,7 +35,7 @@ const categoriesToDisplay = computed(() =>
       :key="c.label"
       :label="c.label"
       :to="c.to"
-      :picture-name="c.picture"
+      :picture-src="c.pictureSrc"
     />
   </div>
 </template>
