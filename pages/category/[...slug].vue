@@ -1,7 +1,7 @@
 <script setup lang="ts">
-const docRef = ref(null);
+const documentProperties = ref(null);
 const getDoc = (doc: any) => {
-  docRef.value = doc;
+  documentProperties.value = doc;
 };
 </script>
 
@@ -12,7 +12,7 @@ const getDoc = (doc: any) => {
         {{ getDoc(doc) }}
         <ContentRenderer :value="doc" />
         <div class="my-8">
-          <CategoryList :section-name="doc.section" :category-name="doc.category" />
+          <CategoryList :section-name="doc.section || ''" :category-name="doc.category" />
         </div>
       </template>
 
