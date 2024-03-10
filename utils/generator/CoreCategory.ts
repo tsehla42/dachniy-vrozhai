@@ -1,13 +1,12 @@
-import { transliterate } from '~/utils/Transliteration';
 import { useImagesStore } from '~/stores/imagesStore';
+import { transliterate } from '~/utils/Transliteration';
 
-export class Category {
+export class CoreCategory {
   private readonly _isCategory: boolean;
   categoryName: string = '';
   label: string = '';
   to: string = '';
   pictureSrc: string = '';
-  subcategories?: Category[];
 
   constructor(categoryNameUkr: string, subcategories?: string[]) {
     this._isCategory = !!subcategories?.length;
@@ -15,20 +14,19 @@ export class Category {
     this.setLabel(categoryNameUkr);
     this.setCategoryName();
     this.setToPath();
-    this.setSubcategories(subcategories);
     this.setPictureSrc();
-  }
-
-  setCategoryName() {
-    this.categoryName = this.transliteratedCategoryName;
   }
 
   setLabel(label: string) {
     this.label = label;
   }
 
+  setCategoryName() {
+    this.categoryName = this.transliteratedCategoryName;
+  }
+
   setToPath() {
-    const pathPrefix = this._isCategory ? '/category' : '';
+    const pathPrefix = this._isCategory ? '/category' : '/category';
     if (this._isCategory) {
       this.to = `${pathPrefix}/${this.transliteratedCategoryName}`;
     } else {
@@ -56,14 +54,6 @@ export class Category {
     const pictureSrc = `${basePath}/${pathPrefix}/${pictureNameWithExtension}`;
 
     return { pictureSrc, fallbackPictureSrc };
-  }
-
-  setSubcategories(subcategories?: string[]) {
-    if (!this._isCategory || !subcategories) {
-      return;
-    }
-
-    this.subcategories = subcategories.map((subcategoryNameUkr) => new Category(subcategoryNameUkr, []));
   }
 
   get transliteratedCategoryName() {
