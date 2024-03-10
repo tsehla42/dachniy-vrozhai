@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { SectionsEnum } from '~/utils/types/SectionsTypes';
-import type { Category } from '~/utils/Category';
+import type { Category } from '~/utils/generator/Category';
 
 const { sectionName, categoryName } = defineProps({
   sectionName: {
@@ -13,23 +13,26 @@ const { sectionName, categoryName } = defineProps({
   },
 });
 
-const { sectionsMap } = useSectionsStore();
-const categoriesBySection = sectionsMap[sectionName] as Category[];
-const isSubcategoryView = computed(() => !!categoryName);
+const categoriesToDisplay = ref<Category[]>();
 
-const subcategoriesByCategory = computed(() => {
-  return isSubcategoryView.value
+if (sectionName) {
+  const { sectionsMap } = useSectionsStore();
+  const categoriesBySection = sectionsMap[sectionName] as Category[];
+  const isSubcategoryView = !!categoryName;
+
+  const subcategoriesByCategory = isSubcategoryView
     ? categoriesBySection.find((category) => category.categoryName === categoryName)?.subcategories
     : [];
-});
 
-const categoriesToDisplay = computed(() =>
-  isSubcategoryView.value ? subcategoriesByCategory.value : categoriesBySection,
-);
+  categoriesToDisplay.value = isSubcategoryView ? subcategoriesByCategory : categoriesBySection;
+}
 </script>
 
 <template>
-  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-y-3 sm:gap-5">
+  <div
+    v-if="sectionName"
+    class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-y-3 sm:gap-5"
+  >
     <CategoryCard
       v-for="c in categoriesToDisplay"
       :key="c.label"
