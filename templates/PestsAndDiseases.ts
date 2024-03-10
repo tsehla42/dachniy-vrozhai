@@ -1,6 +1,6 @@
 import type { CategoryTemplateCollection } from '~/utils/types/CategoryTypes';
 
-export const PESTS_AND_DISEASES: CategoryTemplateCollection = [
+export const PESTS_AND_DISEASES_TEMPLATE: CategoryTemplateCollection = [
   ['Хвороби ягідників', ['Хвороби полуниці', 'Хвороби смородини і агрусу', 'Хвороби малини']],
   ['Шкідники ягідників', ['Шкідники полуниці', 'Шкідники смородини і агрусу', 'Шкідники малини']],
   ['Хвороби овочів', ['Хвороби капусти', 'Хвороби цибулі і часнику', 'Хвороби гарбузових', 'Хвороби картоплі']],

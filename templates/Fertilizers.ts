@@ -1,6 +1,6 @@
 import type { CategoryTemplateCollection } from '~/utils/types/CategoryTypes';
 
-export const FERTILIZERS: CategoryTemplateCollection = [
+export const FERTILIZERS_TEMPLATE: CategoryTemplateCollection = [
   ['Макроелементи', ['Азот', 'Фосфор', 'Калій', 'Магній', 'Залізо', 'Сірка']],
   ['Мікроелементи', ['Бор', 'Марганець', 'Мідь', 'Молібден', 'Цинк', 'Хлор']],
   [
