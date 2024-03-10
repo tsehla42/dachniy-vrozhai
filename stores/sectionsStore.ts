@@ -3,18 +3,18 @@ import { mapTemplateToSerializedCategory } from '~/utils/SerializeNonPOJOs';
 import { SectionsEnum } from '~/utils/types/SectionsTypes';
 import { SECTION_TRANSLATIONS } from '~/constants/localizations/SectionTranslations';
 import { SVG_ICON_COMPONENTS_MAP } from '~/constants/SvgIconComponentsMap';
-import { VEGETABLES } from '~/constants/content/Vegetables';
-import { FLOWERS } from '~/constants/content/Flowers';
-import { PESTS_AND_DISEASES } from '~/constants/content/PestsAndDiseases';
-import { FERTILIZERS } from '~/constants/content/Fertilizers';
-import { INVENTORY } from '~/constants/content/Inventory';
+import { VEGETABLES_TEMPLATE } from '~/templates/Vegetables';
+import { FLOWERS_TEMPLATE } from '~/templates/Flowers';
+import { PESTS_AND_DISEASES_TEMPLATE } from '~/templates/PestsAndDiseases';
+import { FERTILIZERS_TEMPLATE } from '~/templates/Fertilizers';
+import { INVENTORY_TEMPLATE } from '~/templates/Inventory';
 
 export const useSectionsStore = defineStore('sections', () => {
-  const vegetables = mapTemplateToSerializedCategory(VEGETABLES);
-  const flowers = mapTemplateToSerializedCategory(FLOWERS);
-  const pestsAndDiseases = mapTemplateToSerializedCategory(PESTS_AND_DISEASES);
-  const fertilizers = mapTemplateToSerializedCategory(FERTILIZERS);
-  const inventory = mapTemplateToSerializedCategory(INVENTORY);
+  const vegetables = mapTemplateToSerializedCategory(VEGETABLES_TEMPLATE);
+  const flowers = mapTemplateToSerializedCategory(FLOWERS_TEMPLATE);
+  const pestsAndDiseases = mapTemplateToSerializedCategory(PESTS_AND_DISEASES_TEMPLATE);
+  const fertilizers = mapTemplateToSerializedCategory(FERTILIZERS_TEMPLATE);
+  const inventory = mapTemplateToSerializedCategory(INVENTORY_TEMPLATE);
 
   const sectionsMap = reactive({
     [SectionsEnum.vegetables]: vegetables,

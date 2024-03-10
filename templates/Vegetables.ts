@@ -4,7 +4,7 @@ import type { CategoryTemplateCollection } from '~/utils/types/CategoryTypes';
  * Список категорій овочів.
  *
  * */
-export const VEGETABLES: CategoryTemplateCollection = [
+export const VEGETABLES_TEMPLATE: CategoryTemplateCollection = [
   [
     'Капустяні',
     [
