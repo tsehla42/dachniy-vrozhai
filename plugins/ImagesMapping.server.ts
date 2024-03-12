@@ -1,4 +1,3 @@
-import { fileChecker } from '~/utils/FileChecker';
 import fs from 'fs';
 import path from 'path';
 import { useImagesStore } from '~/stores/imagesStore';

@@ -1,19 +1,11 @@
-module.export = {
+module.exports = {
   root: true,
   env: {
     browser: true,
     es2024: true,
     node: true,
   },
-  extends: [
-    '@nuxt/eslint-config-typescript',
-    'plugin:nuxt/recommended',
-    'plugin:prettier/recommended',
-  ],
-  plugins: [
-    'vue',
-    '@typescript-eslint',
-  ],
+  extends: ['@nuxt/eslint-config', 'plugin:prettier/recommended'],
   parser: 'vue-eslint-parser',
   parserOptions: {
     parser: '@typescript-eslint/parser',
