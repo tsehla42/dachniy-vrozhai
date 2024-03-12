@@ -18,6 +18,7 @@ defineProps({
   },
   ui: {
     type: Object,
+    default: () => {},
   },
 });
 </script>

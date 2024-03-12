@@ -225,9 +225,9 @@ const resetAllToDefaultState = () => {
       <div
         v-for="(item, index) in items"
         :key="item.id"
+        :ref="(el) => functionRef(el, index)"
         :class="{ [index]: true, [`id${item.id}`]: true }"
         class="image-container w-full h-32 border border-black overflow-hidden transition duration-200"
-        :ref="(el) => functionRef(el, index)"
       >
         <NuxtImg
           :src="item.picturePath"
