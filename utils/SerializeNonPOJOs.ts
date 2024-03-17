@@ -1,5 +1,5 @@
 import type { CategoryTemplateCollection } from '~/utils/types/CategoryTypes';
-import { Category } from '~/utils/generator/Category';
+import { Category } from '~/utils/generator/classes/Category';
 
 const serializeNonPOJOs = (value: object | null) => {
   return structuredClone(value);
