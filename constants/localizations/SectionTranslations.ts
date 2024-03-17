@@ -1,6 +1,6 @@
-import { type SectionsMapInterface } from '~/utils/types/SectionsTypes';
+import { type SectionsMap } from '~/utils/types/SectionsTypes';
 
-export const SECTION_TRANSLATIONS: SectionsMapInterface<string> = {
+export const SECTION_TRANSLATIONS: SectionsMap<string> = {
   vegetables: 'Овочі',
   flowers: 'Квіти',
   pestsAndDiseases: 'Хвороби і шкідники',
