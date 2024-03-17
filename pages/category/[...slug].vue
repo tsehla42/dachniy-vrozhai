@@ -8,7 +8,7 @@ const getDoc = (doc: any) => {
 <template>
   <div class="category-page container mx-auto px-4 sm:px-8 md:px-16">
     <ContentDoc>
-      <template v-slot="{ doc }">
+      <template #default="{ doc }">
         {{ getDoc(doc) }}
         <ContentRenderer :value="doc" />
         <div class="my-8">
