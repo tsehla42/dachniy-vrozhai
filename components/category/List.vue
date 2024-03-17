@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { SectionsEnum } from '~/utils/types/SectionsTypes';
-import type { Category } from '~/utils/generator/Category';
+import type { Category } from '~/utils/generator/classes/Category';
 
 const { sectionName, categoryName } = defineProps({
   sectionName: {

@@ -1,6 +1,6 @@
 import type { CategoryTemplateCollection } from '~/utils/types/CategoryTypes';
 
-export const FLOWERS_TEMPLATE: CategoryTemplateCollection = [
+export const KVITY_TEMPLATE: CategoryTemplateCollection = [
   ['Однорічні квіти', ['Чорнобривці', 'Настурція', 'Петунія', 'Портулак', 'Ромашка аптечна']],
   ['Дворічні квіти', ['Мальва']],
   [
