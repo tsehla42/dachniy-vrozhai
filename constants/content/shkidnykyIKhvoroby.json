@@ -1,0 +1,168 @@
+[
+  {
+    "_isCategory": true,
+    "categoryName": "khvoroby-yahidnykiv",
+    "sectionName": "shkidnykyIKhvoroby",
+    "label": "Хвороби ягідників",
+    "to": "/category/khvoroby-yahidnykiv",
+    "pictureSrc": "/images/fallback/fallback-200x200.png",
+    "subcategories": [
+      {
+        "_isCategory": false,
+        "categoryName": "khvoroby-polunytsi",
+        "sectionName": "shkidnykyIKhvoroby",
+        "label": "Хвороби полуниці",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "khvoroby-yahidnykiv"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "khvoroby-smorodyny-i-ahrusu",
+        "sectionName": "shkidnykyIKhvoroby",
+        "label": "Хвороби смородини і агрусу",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "khvoroby-yahidnykiv"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "khvoroby-malyny",
+        "sectionName": "shkidnykyIKhvoroby",
+        "label": "Хвороби малини",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "khvoroby-yahidnykiv"
+      }
+    ]
+  },
+  {
+    "_isCategory": true,
+    "categoryName": "shkidnyky-yahidnykiv",
+    "sectionName": "shkidnykyIKhvoroby",
+    "label": "Шкідники ягідників",
+    "to": "/category/shkidnyky-yahidnykiv",
+    "pictureSrc": "/images/fallback/fallback-200x200.png",
+    "subcategories": [
+      {
+        "_isCategory": false,
+        "categoryName": "shkidnyky-polunytsi",
+        "sectionName": "shkidnykyIKhvoroby",
+        "label": "Шкідники полуниці",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "shkidnyky-yahidnykiv"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "shkidnyky-smorodyny-i-ahrusu",
+        "sectionName": "shkidnykyIKhvoroby",
+        "label": "Шкідники смородини і агрусу",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "shkidnyky-yahidnykiv"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "shkidnyky-malyny",
+        "sectionName": "shkidnykyIKhvoroby",
+        "label": "Шкідники малини",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "shkidnyky-yahidnykiv"
+      }
+    ]
+  },
+  {
+    "_isCategory": true,
+    "categoryName": "khvoroby-ovochiv",
+    "sectionName": "shkidnykyIKhvoroby",
+    "label": "Хвороби овочів",
+    "to": "/category/khvoroby-ovochiv",
+    "pictureSrc": "/images/fallback/fallback-200x200.png",
+    "subcategories": [
+      {
+        "_isCategory": false,
+        "categoryName": "khvoroby-kapusty",
+        "sectionName": "shkidnykyIKhvoroby",
+        "label": "Хвороби капусти",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "khvoroby-ovochiv"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "khvoroby-tsybuli-i-chasnyku",
+        "sectionName": "shkidnykyIKhvoroby",
+        "label": "Хвороби цибулі і часнику",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "khvoroby-ovochiv"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "khvoroby-harbuzovykh",
+        "sectionName": "shkidnykyIKhvoroby",
+        "label": "Хвороби гарбузових",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "khvoroby-ovochiv"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "khvoroby-kartopli",
+        "sectionName": "shkidnykyIKhvoroby",
+        "label": "Хвороби картоплі",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "khvoroby-ovochiv"
+      }
+    ]
+  },
+  {
+    "_isCategory": true,
+    "categoryName": "shkidnyky-ovochiv",
+    "sectionName": "shkidnykyIKhvoroby",
+    "label": "Шкідники овочів",
+    "to": "/category/shkidnyky-ovochiv",
+    "pictureSrc": "/images/fallback/fallback-200x200.png",
+    "subcategories": [
+      {
+        "_isCategory": false,
+        "categoryName": "shkidnyky-kapusty",
+        "sectionName": "shkidnykyIKhvoroby",
+        "label": "Шкідники капусти",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "shkidnyky-ovochiv"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "shkidnyky-tsybuli-i-chasnyku",
+        "sectionName": "shkidnykyIKhvoroby",
+        "label": "Шкідники цибулі і часнику",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "shkidnyky-ovochiv"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "shkidnyky-harbuzovykh",
+        "sectionName": "shkidnykyIKhvoroby",
+        "label": "Шкідники гарбузових",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "shkidnyky-ovochiv"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "shkidnyky-kartopli",
+        "sectionName": "shkidnykyIKhvoroby",
+        "label": "Шкідники картоплі",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "shkidnyky-ovochiv"
+      }
+    ]
+  }
+]
