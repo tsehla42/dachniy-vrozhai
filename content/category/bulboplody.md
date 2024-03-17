@@ -1,4 +1,9 @@
-# bulboplody
+---
+title: 'Бульбоплоди'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'ovochi'
+category: 'bulboplody'
+---
 
+# Бульбоплоди

@@ -1,4 +1,9 @@
-# dereva-ta-chaharnyky
+---
+title: 'Дерева та чагарники'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'kvity'
+category: 'dereva-ta-chaharnyky'
+---
 
+# Дерева та чагарники

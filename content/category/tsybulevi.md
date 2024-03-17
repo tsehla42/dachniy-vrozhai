@@ -1,4 +1,9 @@
-# tsybulevi
+---
+title: 'Цибулеві'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'ovochi'
+category: 'tsybulevi'
+---
 
+# Цибулеві

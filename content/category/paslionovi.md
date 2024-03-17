@@ -1,4 +1,9 @@
-# paslionovi
+---
+title: 'Пасльонові'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'ovochi'
+category: 'paslionovi'
+---
 
+# Пасльонові

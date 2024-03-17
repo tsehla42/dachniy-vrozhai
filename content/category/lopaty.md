@@ -1,4 +1,9 @@
-# lopaty
+---
+title: 'Лопати'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'inventar'
+category: 'lopaty'
+---
 
+# Лопати

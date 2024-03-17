@@ -1,4 +1,9 @@
-# inshe
+---
+title: 'Інше'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'kvity'
+category: 'inshe'
+---
 
+# Інше

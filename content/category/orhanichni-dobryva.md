@@ -1,4 +1,9 @@
-# orhanichni-dobryva
+---
+title: 'Органічні добрива'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'dobryva'
+category: 'orhanichni-dobryva'
+---
 
+# Органічні добрива

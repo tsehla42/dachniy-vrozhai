@@ -1,4 +1,9 @@
-# shkidnyky-ovochiv
+---
+title: 'Шкідники овочів'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'shkidnykyIKhvoroby'
+category: 'shkidnyky-ovochiv'
+---
 
+# Шкідники овочів

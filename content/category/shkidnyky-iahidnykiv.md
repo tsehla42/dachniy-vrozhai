@@ -1,4 +1,0 @@
-# shkidnyky-iahidnykiv
-
-Subcategories:
-

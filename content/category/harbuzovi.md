@@ -1,4 +1,9 @@
-# harbuzovi
+---
+title: 'Гарбузові'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'ovochi'
+category: 'harbuzovi'
+---
 
+# Гарбузові

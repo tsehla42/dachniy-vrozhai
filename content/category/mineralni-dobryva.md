@@ -1,4 +1,9 @@
-# mineralni-dobryva
+---
+title: 'Мінеральні добрива'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'dobryva'
+category: 'mineralni-dobryva'
+---
 
+# Мінеральні добрива

@@ -1,4 +1,9 @@
-# hrabli
+---
+title: 'Граблі'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'inventar'
+category: 'hrabli'
+---
 
+# Граблі
