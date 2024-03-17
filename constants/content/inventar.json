@@ -1,0 +1,47 @@
+[
+  {
+    "_isCategory": false,
+    "categoryName": "lopaty",
+    "sectionName": "inventar",
+    "label": "Лопати",
+    "to": "/category/kapustiani",
+    "pictureSrc": "/images/fallback/fallback-200x200.png",
+    "subcategories": []
+  },
+  {
+    "_isCategory": false,
+    "categoryName": "hrabli",
+    "sectionName": "inventar",
+    "label": "Граблі",
+    "to": "/category/kapustiani",
+    "pictureSrc": "/images/fallback/fallback-200x200.png",
+    "subcategories": []
+  },
+  {
+    "_isCategory": false,
+    "categoryName": "vyla",
+    "sectionName": "inventar",
+    "label": "Вила",
+    "to": "/category/kapustiani",
+    "pictureSrc": "/images/fallback/fallback-200x200.png",
+    "subcategories": []
+  },
+  {
+    "_isCategory": false,
+    "categoryName": "tiapky",
+    "sectionName": "inventar",
+    "label": "Тяпки",
+    "to": "/category/kapustiani",
+    "pictureSrc": "/images/fallback/fallback-200x200.png",
+    "subcategories": []
+  },
+  {
+    "_isCategory": false,
+    "categoryName": "shlanhy",
+    "sectionName": "inventar",
+    "label": "Шланги",
+    "to": "/category/kapustiani",
+    "pictureSrc": "/images/fallback/fallback-200x200.png",
+    "subcategories": []
+  }
+]

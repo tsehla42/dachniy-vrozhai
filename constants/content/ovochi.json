@@ -1,0 +1,715 @@
+[
+  {
+    "_isCategory": true,
+    "categoryName": "kapustiani",
+    "sectionName": "ovochi",
+    "label": "Капустяні",
+    "to": "/category/kapustiani",
+    "pictureSrc": "/images/categories/капустяні.png",
+    "subcategories": [
+      {
+        "_isCategory": false,
+        "categoryName": "kapusta-bilokachanna",
+        "sectionName": "ovochi",
+        "label": "Капуста білокачанна",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/articles/preview/капуста-білокачанна.png",
+        "mainCategoryName": "kapustiani"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "kapusta-chervonokachanna",
+        "sectionName": "ovochi",
+        "label": "Капуста червонокачанна",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "kapustiani"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "kapusta-savoiska",
+        "sectionName": "ovochi",
+        "label": "Капуста савойська",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "kapustiani"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "kapusta-briusselska",
+        "sectionName": "ovochi",
+        "label": "Капуста брюссельська",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "kapustiani"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "kapusta-tsvitna",
+        "sectionName": "ovochi",
+        "label": "Капуста цвітна",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "kapustiani"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "kapusta-kolrabi",
+        "sectionName": "ovochi",
+        "label": "Капуста кольрабі",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "kapustiani"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "kapusta-brokoli",
+        "sectionName": "ovochi",
+        "label": "Капуста броколі",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "kapustiani"
+      }
+    ]
+  },
+  {
+    "_isCategory": true,
+    "categoryName": "bobovi",
+    "sectionName": "ovochi",
+    "label": "Бобові",
+    "to": "/category/bobovi",
+    "pictureSrc": "/images/categories/бобові.png",
+    "subcategories": [
+      {
+        "_isCategory": false,
+        "categoryName": "horokh",
+        "sectionName": "ovochi",
+        "label": "Горох",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "bobovi"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "kvasolia",
+        "sectionName": "ovochi",
+        "label": "Квасоля",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "bobovi"
+      }
+    ]
+  },
+  {
+    "_isCategory": true,
+    "categoryName": "bulboplody",
+    "sectionName": "ovochi",
+    "label": "Бульбоплоди",
+    "to": "/category/bulboplody",
+    "pictureSrc": "/images/categories/бульбоплоди.png",
+    "subcategories": [
+      {
+        "_isCategory": false,
+        "categoryName": "kartoplia",
+        "sectionName": "ovochi",
+        "label": "Картопля",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "bulboplody"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "topinambur",
+        "sectionName": "ovochi",
+        "label": "Топінамбур",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "bulboplody"
+      }
+    ]
+  },
+  {
+    "_isCategory": true,
+    "categoryName": "koreneplody",
+    "sectionName": "ovochi",
+    "label": "Коренеплоди",
+    "to": "/category/koreneplody",
+    "pictureSrc": "/images/categories/коренеплоди.png",
+    "subcategories": [
+      {
+        "_isCategory": false,
+        "categoryName": "morkva",
+        "sectionName": "ovochi",
+        "label": "Морква",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "koreneplody"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "buriak",
+        "sectionName": "ovochi",
+        "label": "Буряк",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "koreneplody"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "redyska",
+        "sectionName": "ovochi",
+        "label": "Редиска",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "koreneplody"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "redka",
+        "sectionName": "ovochi",
+        "label": "Редька",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "koreneplody"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "petrushka",
+        "sectionName": "ovochi",
+        "label": "Петрушка",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "koreneplody"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "selera",
+        "sectionName": "ovochi",
+        "label": "Селера",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "koreneplody"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "pasternak",
+        "sectionName": "ovochi",
+        "label": "Пастернак",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "koreneplody"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "khrin",
+        "sectionName": "ovochi",
+        "label": "Хрін",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "koreneplody"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "ripa",
+        "sectionName": "ovochi",
+        "label": "Ріпа",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "koreneplody"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "brukva",
+        "sectionName": "ovochi",
+        "label": "Бруква",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "koreneplody"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "manhold",
+        "sectionName": "ovochi",
+        "label": "Мангольд",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "koreneplody"
+      }
+    ]
+  },
+  {
+    "_isCategory": true,
+    "categoryName": "tsybulevi",
+    "sectionName": "ovochi",
+    "label": "Цибулеві",
+    "to": "/category/tsybulevi",
+    "pictureSrc": "/images/categories/цибулеві.png",
+    "subcategories": [
+      {
+        "_isCategory": false,
+        "categoryName": "tsybulia-ripchasta",
+        "sectionName": "ovochi",
+        "label": "Цибуля ріпчаста",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "tsybulevi"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "tsybulia-batun",
+        "sectionName": "ovochi",
+        "label": "Цибуля-батун",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "tsybulevi"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "tsybulia-zelena",
+        "sectionName": "ovochi",
+        "label": "Цибуля зелена",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "tsybulevi"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "tsybulia-slyzun",
+        "sectionName": "ovochi",
+        "label": "Цибуля-слизун",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "tsybulevi"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "tsybulia-shalot",
+        "sectionName": "ovochi",
+        "label": "Цибуля-шалот",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "tsybulevi"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "tsybulia-batun",
+        "sectionName": "ovochi",
+        "label": "Цибуля-батун",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "tsybulevi"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "tsybulia-chornushka",
+        "sectionName": "ovochi",
+        "label": "Цибуля-чорнушка",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "tsybulevi"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "chasnyk",
+        "sectionName": "ovochi",
+        "label": "Часник",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "tsybulevi"
+      }
+    ]
+  },
+  {
+    "_isCategory": true,
+    "categoryName": "paslionovi",
+    "sectionName": "ovochi",
+    "label": "Пасльонові",
+    "to": "/category/paslionovi",
+    "pictureSrc": "/images/categories/пасльонові.png",
+    "subcategories": [
+      {
+        "_isCategory": false,
+        "categoryName": "tomaty",
+        "sectionName": "ovochi",
+        "label": "Томати",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "paslionovi"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "baklazhany",
+        "sectionName": "ovochi",
+        "label": "Баклажани",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "paslionovi"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "perets",
+        "sectionName": "ovochi",
+        "label": "Перець",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "paslionovi"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "kimnatnyi-perets",
+        "sectionName": "ovochi",
+        "label": "Кімнатний перець",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "paslionovi"
+      }
+    ]
+  },
+  {
+    "_isCategory": true,
+    "categoryName": "priano-smakovi-roslyny",
+    "sectionName": "ovochi",
+    "label": "Пряно-смакові рослини",
+    "to": "/category/priano-smakovi-roslyny",
+    "pictureSrc": "/images/categories/пряно-смакові-рослини.png",
+    "subcategories": [
+      {
+        "_isCategory": false,
+        "categoryName": "krip",
+        "sectionName": "ovochi",
+        "label": "Кріп",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "priano-smakovi-roslyny"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "kmyn",
+        "sectionName": "ovochi",
+        "label": "Кмин",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "priano-smakovi-roslyny"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "miata-pertseva",
+        "sectionName": "ovochi",
+        "label": "М'ята перцева",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "priano-smakovi-roslyny"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "maioran",
+        "sectionName": "ovochi",
+        "label": "Майоран",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "priano-smakovi-roslyny"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "bazylik",
+        "sectionName": "ovochi",
+        "label": "Базилік",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "priano-smakovi-roslyny"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "estrahon",
+        "sectionName": "ovochi",
+        "label": "Естрагон",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "priano-smakovi-roslyny"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "imbyr",
+        "sectionName": "ovochi",
+        "label": "Імбир",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "priano-smakovi-roslyny"
+      }
+    ]
+  },
+  {
+    "_isCategory": true,
+    "categoryName": "harbuzovi",
+    "sectionName": "ovochi",
+    "label": "Гарбузові",
+    "to": "/category/harbuzovi",
+    "pictureSrc": "/images/categories/гарбузові.png",
+    "subcategories": [
+      {
+        "_isCategory": false,
+        "categoryName": "ohirky",
+        "sectionName": "ovochi",
+        "label": "Огірки",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "harbuzovi"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "kabachky,-patysony",
+        "sectionName": "ovochi",
+        "label": "Кабачки, патисони",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "harbuzovi"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "posadka-kabachkiv",
+        "sectionName": "ovochi",
+        "label": "Посадка кабачків",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "harbuzovi"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "harbuz",
+        "sectionName": "ovochi",
+        "label": "Гарбуз",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "harbuzovi"
+      }
+    ]
+  },
+  {
+    "_isCategory": true,
+    "categoryName": "salatni",
+    "sectionName": "ovochi",
+    "label": "Салатні",
+    "to": "/category/salatni",
+    "pictureSrc": "/images/categories/салатні.png",
+    "subcategories": [
+      {
+        "_isCategory": false,
+        "categoryName": "salat",
+        "sectionName": "ovochi",
+        "label": "Салат",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "salatni"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "salat-latuk",
+        "sectionName": "ovochi",
+        "label": "Салат-латук",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "salatni"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "kres-salat",
+        "sectionName": "ovochi",
+        "label": "Крес-салат",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "salatni"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "schavel",
+        "sectionName": "ovochi",
+        "label": "Щавель",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "salatni"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "shpinat",
+        "sectionName": "ovochi",
+        "label": "Шпінат",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "salatni"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "revin",
+        "sectionName": "ovochi",
+        "label": "Ревінь",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "salatni"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "rukola",
+        "sectionName": "ovochi",
+        "label": "Рукола",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "salatni"
+      }
+    ]
+  },
+  {
+    "_isCategory": true,
+    "categoryName": "yahidni-roslyny",
+    "sectionName": "ovochi",
+    "label": "Ягідні рослини",
+    "to": "/category/yahidni-roslyny",
+    "pictureSrc": "/images/categories/ягідні-рослини.png",
+    "subcategories": [
+      {
+        "_isCategory": false,
+        "categoryName": "polunytsia",
+        "sectionName": "ovochi",
+        "label": "Полуниця",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/articles/preview/полуниця.png",
+        "mainCategoryName": "yahidni-roslyny"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "polunytsia-remontantna",
+        "sectionName": "ovochi",
+        "label": "Полуниця ремонтантна",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "yahidni-roslyny"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "kucheriava-polunytsia",
+        "sectionName": "ovochi",
+        "label": "Кучерява полуниця",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "yahidni-roslyny"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "polunytsia-iz-nasinnia",
+        "sectionName": "ovochi",
+        "label": "Полуниця із насіння",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "yahidni-roslyny"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "malyna",
+        "sectionName": "ovochi",
+        "label": "Малина",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "yahidni-roslyny"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "malyna-iz-nasinnia",
+        "sectionName": "ovochi",
+        "label": "Малина із насіння",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "yahidni-roslyny"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "agrus",
+        "sectionName": "ovochi",
+        "label": "Аґрус",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "yahidni-roslyny"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "smorodyna",
+        "sectionName": "ovochi",
+        "label": "Смородина",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "yahidni-roslyny"
+      }
+    ]
+  },
+  {
+    "_isCategory": true,
+    "categoryName": "vyroschuvannia-rozsady",
+    "sectionName": "ovochi",
+    "label": "Вирощування розсади",
+    "to": "/category/vyroschuvannia-rozsady",
+    "pictureSrc": "/images/categories/вирощування-розсади.png",
+    "subcategories": [
+      {
+        "_isCategory": false,
+        "categoryName": "rozsada-kapusty",
+        "sectionName": "ovochi",
+        "label": "Розсада капусти",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "vyroschuvannia-rozsady"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "rozsada-tomativ",
+        "sectionName": "ovochi",
+        "label": "Розсада томатів",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "vyroschuvannia-rozsady"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "rozsada-baklazhaniv",
+        "sectionName": "ovochi",
+        "label": "Розсада баклажанів",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "vyroschuvannia-rozsady"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "rozsada-pertsiu",
+        "sectionName": "ovochi",
+        "label": "Розсада перцю",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "vyroschuvannia-rozsady"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "rozsada-ohirkiv,-kabachkiv,-harbuza",
+        "sectionName": "ovochi",
+        "label": "Розсада огірків, кабачків, гарбуза",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "vyroschuvannia-rozsady"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "rozsada-selery",
+        "sectionName": "ovochi",
+        "label": "Розсада селери",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "vyroschuvannia-rozsady"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "rozsada-tsybuli",
+        "sectionName": "ovochi",
+        "label": "Розсада цибулі",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "vyroschuvannia-rozsady"
+      }
+    ]
+  }
+]

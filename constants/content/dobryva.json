@@ -1,0 +1,240 @@
+[
+  {
+    "_isCategory": true,
+    "categoryName": "makroelementy",
+    "sectionName": "dobryva",
+    "label": "Макроелементи",
+    "to": "/category/makroelementy",
+    "pictureSrc": "/images/fallback/fallback-200x200.png",
+    "subcategories": [
+      {
+        "_isCategory": false,
+        "categoryName": "azot",
+        "sectionName": "dobryva",
+        "label": "Азот",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "makroelementy"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "fosfor",
+        "sectionName": "dobryva",
+        "label": "Фосфор",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "makroelementy"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "kalii",
+        "sectionName": "dobryva",
+        "label": "Калій",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "makroelementy"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "mahnii",
+        "sectionName": "dobryva",
+        "label": "Магній",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "makroelementy"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "zalizo",
+        "sectionName": "dobryva",
+        "label": "Залізо",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "makroelementy"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "sirka",
+        "sectionName": "dobryva",
+        "label": "Сірка",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "makroelementy"
+      }
+    ]
+  },
+  {
+    "_isCategory": true,
+    "categoryName": "mikroelementy",
+    "sectionName": "dobryva",
+    "label": "Мікроелементи",
+    "to": "/category/mikroelementy",
+    "pictureSrc": "/images/fallback/fallback-200x200.png",
+    "subcategories": [
+      {
+        "_isCategory": false,
+        "categoryName": "bor",
+        "sectionName": "dobryva",
+        "label": "Бор",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "mikroelementy"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "marhanets",
+        "sectionName": "dobryva",
+        "label": "Марганець",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "mikroelementy"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "mid",
+        "sectionName": "dobryva",
+        "label": "Мідь",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "mikroelementy"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "molibden",
+        "sectionName": "dobryva",
+        "label": "Молібден",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "mikroelementy"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "tsynk",
+        "sectionName": "dobryva",
+        "label": "Цинк",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "mikroelementy"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "khlor",
+        "sectionName": "dobryva",
+        "label": "Хлор",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "mikroelementy"
+      }
+    ]
+  },
+  {
+    "_isCategory": true,
+    "categoryName": "orhanichni-dobryva",
+    "sectionName": "dobryva",
+    "label": "Органічні добрива",
+    "to": "/category/orhanichni-dobryva",
+    "pictureSrc": "/images/fallback/fallback-200x200.png",
+    "subcategories": [
+      {
+        "_isCategory": false,
+        "categoryName": "hnii",
+        "sectionName": "dobryva",
+        "label": "Гній",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "orhanichni-dobryva"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "hnoiova-zhyzha",
+        "sectionName": "dobryva",
+        "label": "Гнойова жижа",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "orhanichni-dobryva"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "ptashynyi-poslid",
+        "sectionName": "dobryva",
+        "label": "Пташиний послід",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "orhanichni-dobryva"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "torf-ta-komposty",
+        "sectionName": "dobryva",
+        "label": "Торф та компости",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "orhanichni-dobryva"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "syderalni-dobryva",
+        "sectionName": "dobryva",
+        "label": "Сидеральні добрива",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "orhanichni-dobryva"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "biohumus-(vermikompost",
+        "sectionName": "dobryva",
+        "label": "Біогумус (вермікомпост",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "orhanichni-dobryva"
+      }
+    ]
+  },
+  {
+    "_isCategory": true,
+    "categoryName": "mineralni-dobryva",
+    "sectionName": "dobryva",
+    "label": "Мінеральні добрива",
+    "to": "/category/mineralni-dobryva",
+    "pictureSrc": "/images/fallback/fallback-200x200.png",
+    "subcategories": [
+      {
+        "_isCategory": false,
+        "categoryName": "azotni",
+        "sectionName": "dobryva",
+        "label": "Азотні",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "mineralni-dobryva"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "fosforni",
+        "sectionName": "dobryva",
+        "label": "Фосфорні",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "mineralni-dobryva"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "kaliini",
+        "sectionName": "dobryva",
+        "label": "Калійні",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "mineralni-dobryva"
+      },
+      {
+        "_isCategory": false,
+        "categoryName": "kompleksni-dobryva",
+        "sectionName": "dobryva",
+        "label": "Комплексні добрива",
+        "to": "/category/kapustiani",
+        "pictureSrc": "/images/fallback/fallback-200x200.png",
+        "mainCategoryName": "mineralni-dobryva"
+      }
+    ]
+  }
+]

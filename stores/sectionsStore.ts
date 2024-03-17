@@ -1,27 +1,27 @@
 import { defineStore } from 'pinia';
 import { mapTemplateToSerializedCategory } from '~/utils/SerializeNonPOJOs';
 import { SectionsEnum } from '~/utils/types/SectionsTypes';
-import { SECTION_TRANSLATIONS } from '~/utils/constants/localizations/SectionTranslations';
-import { SVG_ICON_COMPONENTS_MAP } from '~/utils/constants/SvgIconComponentsMap';
-import { VEGETABLES } from '~/utils/constants/content/Vegetables';
-import { FLOWERS } from '~/utils/constants/content/Flowers';
-import { PESTS_AND_DISEASES } from '~/utils/constants/content/PestsAndDiseases';
-import { FERTILIZERS } from '~/utils/constants/content/Fertilizers';
-import { INVENTORY } from '~/utils/constants/content/Inventory';
+import { SECTION_TRANSLATIONS } from '~/constants/localizations/SectionTranslations';
+import { SVG_ICON_COMPONENTS_MAP } from '~/constants/SvgIconComponentsMap';
+import { OVOCHI_TEMPLATE } from '~/templates/Ovochi';
+import { KVITY_TEMPLATE } from '~/templates/Kvity';
+import { SHKIDNYKY_I_KHVOROBY_TEMPLATE } from '~/templates/ShkidnykyIKhvoroby';
+import { DOBRYVA_TEMPLATE } from '~/templates/Dobryva';
+import { INVENTAR_TEMPLATE } from '~/templates/Inventar';
 
 export const useSectionsStore = defineStore('sections', () => {
-  const vegetables = mapTemplateToSerializedCategory(VEGETABLES);
-  const flowers = mapTemplateToSerializedCategory(FLOWERS);
-  const pestsAndDiseases = mapTemplateToSerializedCategory(PESTS_AND_DISEASES);
-  const fertilizers = mapTemplateToSerializedCategory(FERTILIZERS);
-  const inventory = mapTemplateToSerializedCategory(INVENTORY);
+  const vegetables = mapTemplateToSerializedCategory(OVOCHI_TEMPLATE);
+  const flowers = mapTemplateToSerializedCategory(KVITY_TEMPLATE);
+  const pestsAndDiseases = mapTemplateToSerializedCategory(SHKIDNYKY_I_KHVOROBY_TEMPLATE);
+  const fertilizers = mapTemplateToSerializedCategory(DOBRYVA_TEMPLATE);
+  const inventory = mapTemplateToSerializedCategory(INVENTAR_TEMPLATE);
 
   const sectionsMap = reactive({
-    [SectionsEnum.vegetables]: vegetables,
-    [SectionsEnum.flowers]: flowers,
-    [SectionsEnum.pestsAndDiseases]: pestsAndDiseases,
-    [SectionsEnum.fertilizers]: fertilizers,
-    [SectionsEnum.inventory]: inventory,
+    [SectionsEnum.ovochi]: vegetables,
+    [SectionsEnum.kvity]: flowers,
+    [SectionsEnum.shkidnykyIKhvoroby]: pestsAndDiseases,
+    [SectionsEnum.dobryva]: fertilizers,
+    [SectionsEnum.inventar]: inventory,
   });
 
   const contentSections = Object.values(SectionsEnum).map((value: SectionsEnum) => {
