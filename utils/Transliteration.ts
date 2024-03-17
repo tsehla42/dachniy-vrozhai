@@ -1,8 +1,9 @@
-export const transliterate = (input: string, lowercase: boolean = true) => {
+export const transliterate = (input: string, camelCase: boolean = false, lowercase: boolean = true) => {
   input = input || '';
 
-  let output = input
-    .replace(/ /g, '-') // Naming convention
+  let output: string;
+
+  const transliteratedText = input
     .replace(/іє/g, 'ie') // Exception
     .replace(/Іє/g, 'Ie') // Exception
     .replace(/ія/g, 'ia') // Exception
@@ -88,6 +89,24 @@ export const transliterate = (input: string, lowercase: boolean = true) => {
     .replace(/Я/g, 'Ia')
     .replace(/'/g, '')
     .replace(/’/g, '');
+
+  if (camelCase) {
+    return transliteratedText
+      .toLowerCase()
+      .split(' ')
+      .map((word, i) => {
+        if (i === 0) {
+          return word;
+        }
+
+        const uppercaseLetter = word[0].toUpperCase();
+        const rest = word.slice(1);
+        return `${uppercaseLetter}${rest}`;
+      })
+      .join('');
+  }
+
+  output = transliteratedText.replace(/ /g, '-'); // kebab-case
 
   if (lowercase) {
     output = output.toLowerCase();

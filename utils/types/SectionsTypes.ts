@@ -1,15 +1,9 @@
-export interface SectionsMapInterface<T> {
-  [SectionsEnum.vegetables]: T;
-  [SectionsEnum.flowers]: T;
-  [SectionsEnum.pestsAndDiseases]: T;
-  [SectionsEnum.fertilizers]: T;
-  [SectionsEnum.inventory]: T;
-}
+export interface SectionsMap<T> extends Record<SectionsEnum, T> {}
 
 export enum SectionsEnum {
-  vegetables = 'vegetables',
-  flowers = 'flowers',
-  pestsAndDiseases = 'pestsAndDiseases',
-  fertilizers = 'fertilizers',
-  inventory = 'inventory',
+  ovochi = 'Овочі',
+  kvity = 'Квіти',
+  shkidnykyIKhvoroby = 'Шкідники і хвороби',
+  dobryva = 'Добрива',
+  inventar = 'Інвентар',
 }

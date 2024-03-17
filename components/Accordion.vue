@@ -5,7 +5,7 @@ import { SectionsEnum } from '~/utils/types/SectionsTypes';
 const { activeSections } = defineProps({
   activeSections: {
     type: Array as PropType<Array<SectionsEnum>>,
-    default: [],
+    default: () => [],
   },
 });
 

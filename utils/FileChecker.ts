@@ -2,8 +2,6 @@ import path from 'path';
 import fs from 'fs';
 
 export const fileChecker = (pictureName: string) => {
-  const __filename = new URL('', import.meta.url).pathname;
-  const __dirname = new URL('.', import.meta.url).pathname;
   const rootPath = process.cwd();
   const imagePath = path.resolve(rootPath, 'public', 'images', 'categories', pictureName);
 
