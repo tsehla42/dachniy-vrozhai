@@ -24,7 +24,7 @@ export class CoreCategory {
   }
 
   setSectionName(sectionName: string) {
-    this.sectionName = this._isCategory ? transliterate(sectionName, true) : sectionName;
+    this.sectionName = transliterate(sectionName, true);
   }
 
   setCategoryName() {
@@ -32,7 +32,7 @@ export class CoreCategory {
   }
 
   setToPath() {
-    const pathPrefix = this._isCategory ? '/category' : '/category';
+    const pathPrefix = this._isCategory ? '/category' : '/category'; // TODO: fix when ready
     if (this._isCategory) {
       this.to = `${pathPrefix}/${this.transliteratedCategoryName}`;
     } else {
