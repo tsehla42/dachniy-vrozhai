@@ -1,4 +1,9 @@
-# vyla
+---
+title: 'Вила'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'inventar'
+category: 'vyla'
+---
 
+# Вила

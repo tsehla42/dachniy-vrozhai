@@ -1,4 +1,9 @@
-# kucheriavi-roslyny
+---
+title: 'Кучеряві рослини'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'kvity'
+category: 'kucheriavi-roslyny'
+---
 
+# Кучеряві рослини

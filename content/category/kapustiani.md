@@ -1,4 +1,9 @@
-# kapustiani
+---
+title: 'Капустяні'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'ovochi'
+category: 'kapustiani'
+---
 
+# Капустяні

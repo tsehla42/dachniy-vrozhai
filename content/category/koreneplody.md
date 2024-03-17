@@ -1,4 +1,9 @@
-# koreneplody
+---
+title: 'Коренеплоди'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'ovochi'
+category: 'koreneplody'
+---
 
+# Коренеплоди

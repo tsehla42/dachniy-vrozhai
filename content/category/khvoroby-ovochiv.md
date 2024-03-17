@@ -1,4 +1,9 @@
-# khvoroby-ovochiv
+---
+title: 'Хвороби овочів'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'shkidnykyIKhvoroby'
+category: 'khvoroby-ovochiv'
+---
 
+# Хвороби овочів

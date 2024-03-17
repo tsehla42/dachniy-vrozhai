@@ -1,4 +1,9 @@
-# vyroschuvannia-rozsady
+---
+title: 'Вирощування розсади'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'ovochi'
+category: 'vyroschuvannia-rozsady'
+---
 
+# Вирощування розсади

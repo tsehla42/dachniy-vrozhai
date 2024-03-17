@@ -1,4 +1,9 @@
-# tiapky
+---
+title: 'Тяпки'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'inventar'
+category: 'tiapky'
+---
 
+# Тяпки

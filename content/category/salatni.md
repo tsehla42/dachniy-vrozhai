@@ -1,4 +1,9 @@
-# salatni
+---
+title: 'Салатні'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'ovochi'
+category: 'salatni'
+---
 
+# Салатні

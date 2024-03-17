@@ -1,4 +1,9 @@
-# makroelementy
+---
+title: 'Макроелементи'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'dobryva'
+category: 'makroelementy'
+---
 
+# Макроелементи

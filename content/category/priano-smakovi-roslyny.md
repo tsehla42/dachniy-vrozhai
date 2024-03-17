@@ -1,4 +1,9 @@
-# priano-smakovi-roslyny
+---
+title: 'Пряно-смакові рослини'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'ovochi'
+category: 'priano-smakovi-roslyny'
+---
 
+# Пряно-смакові рослини

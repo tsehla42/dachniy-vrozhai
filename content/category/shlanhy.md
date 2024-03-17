@@ -1,4 +1,9 @@
-# shlanhy
+---
+title: 'Шланги'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'inventar'
+category: 'shlanhy'
+---
 
+# Шланги

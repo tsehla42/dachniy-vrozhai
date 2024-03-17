@@ -1,4 +1,9 @@
-# yahidni-roslyny
+---
+title: 'Ягідні рослини'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'ovochi'
+category: 'yahidni-roslyny'
+---
 
+# Ягідні рослини

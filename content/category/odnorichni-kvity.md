@@ -1,4 +1,9 @@
-# odnorichni-kvity
+---
+title: 'Однорічні квіти'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'kvity'
+category: 'odnorichni-kvity'
+---
 
+# Однорічні квіти

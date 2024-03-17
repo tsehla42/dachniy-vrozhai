@@ -1,4 +1,9 @@
-# bobovi
+---
+title: 'Бобові'
+description: 'meta опис сторінки'
 
-Subcategories:
+section: 'ovochi'
+category: 'bobovi'
+---
 
+# Бобові
