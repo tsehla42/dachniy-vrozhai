@@ -7,4 +7,8 @@ export class Subcategory extends CoreCategory {
     super(categoryNameUkr, sectionName, allServerImages);
     this.mainCategoryName = mainCategoryName;
   }
+
+  setSectionName(sectionName: string) {
+    this.sectionName = sectionName;
+  }
 }

@@ -1,17 +1,17 @@
-import { Category } from '~/utils/generator/Category';
+import { Category } from '~/utils/generator/classes/Category';
 import fs from 'fs';
 
 export const generateCategoryPageContent = (categoryFolder: string, categories: Category[]) => {
   const createContent = (category: Category) => {
-    const { label, categoryName } = category;
+    const { label, categoryName, sectionName } = category;
     const tokens = [
       '---',
       `title: '${label}'`,
-      "description: 'meta опис сторінки'",
-      "section: 'vegetables'",
+      "description: 'meta опис сторінки'\n",
+      `section: '${sectionName}'`,
       `category: '${categoryName}'`,
       '---',
-      `# ${label}`,
+      `\n# ${label}`,
     ];
 
     return tokens.join('\n');
@@ -23,6 +23,7 @@ export const generateCategoryPageContent = (categoryFolder: string, categories: 
 
     if (!fs.existsSync(filePath)) {
       fs.writeFileSync(filePath, createContent(category));
+      console.log(`\nFile ${categoryName}.md created.\n`);
     } else {
       console.log(`File ${categoryName}.md already exists. Skipping creation.`);
     }
