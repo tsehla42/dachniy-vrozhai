@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import type { PropType } from 'vue';
 import { SectionsEnum } from '~/utils/types/SectionsTypes';
+import { SVG_ICON_COMPONENTS_MAP } from '~/constants/SvgIconComponentsMap';
 
 const { activeSections } = defineProps({
   activeSections: {
-    type: Array as PropType<Array<SectionsEnum>>,
+    type: Array as PropType<Array<keyof typeof SectionsEnum>>,
     default: () => [],
   },
 });
@@ -14,11 +15,11 @@ const sectionsToDisplay = contentSections.filter(
   (section) => activeSections.includes(section.sectionName) || !activeSections.length,
 );
 
-const items = sectionsToDisplay.map(({ sectionName, sectionLabel, svgIcon }, index) => {
+const items = sectionsToDisplay.map(({ sectionName, sectionLabel }, index) => {
   return {
     label: sectionLabel,
     sectionName: sectionName,
-    svgIconComponent: svgIcon,
+    svgIconComponent: SVG_ICON_COMPONENTS_MAP[sectionName],
     defaultOpen: index === 0,
   };
 });

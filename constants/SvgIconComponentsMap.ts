@@ -8,9 +8,9 @@ import type { SectionsMap } from '~/utils/types/SectionsTypes';
 import type { Component } from 'vue';
 
 export const SVG_ICON_COMPONENTS_MAP: SectionsMap<Component> = {
-  vegetables: markRaw(SvgIconTomato),
-  flowers: markRaw(SvgIconFlower),
-  pestsAndDiseases: markRaw(SvgIconBug),
-  fertilizers: markRaw(SvgIconBag),
-  inventory: markRaw(SvgIconPickaxe),
+  ovochi: markRaw(SvgIconTomato),
+  kvity: markRaw(SvgIconFlower),
+  shkidnykyIKhvoroby: markRaw(SvgIconBug),
+  dobryva: markRaw(SvgIconBag),
+  inventar: markRaw(SvgIconPickaxe),
 };
