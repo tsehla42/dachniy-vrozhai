@@ -1,37 +1,29 @@
 import { defineStore } from 'pinia';
-import { mapTemplateToSerializedCategory } from '~/utils/SerializeNonPOJOs';
+import type { ContentSection, SectionsMap } from '~/utils/types/SectionsTypes';
 import { SectionsEnum } from '~/utils/types/SectionsTypes';
-import { SECTION_TRANSLATIONS } from '~/constants/localizations/SectionTranslations';
-import { SVG_ICON_COMPONENTS_MAP } from '~/constants/SvgIconComponentsMap';
-import { OVOCHI_TEMPLATE } from '~/templates/Ovochi';
-import { KVITY_TEMPLATE } from '~/templates/Kvity';
-import { SHKIDNYKY_I_KHVOROBY_TEMPLATE } from '~/templates/ShkidnykyIKhvoroby';
-import { DOBRYVA_TEMPLATE } from '~/templates/Dobryva';
-import { INVENTAR_TEMPLATE } from '~/templates/Inventar';
+import type { Category } from '~/utils/generator/classes/Category';
+import type { Entries } from 'type-fest';
 
 export const useSectionsStore = defineStore('sections', () => {
-  const vegetables = mapTemplateToSerializedCategory(OVOCHI_TEMPLATE);
-  const flowers = mapTemplateToSerializedCategory(KVITY_TEMPLATE);
-  const pestsAndDiseases = mapTemplateToSerializedCategory(SHKIDNYKY_I_KHVOROBY_TEMPLATE);
-  const fertilizers = mapTemplateToSerializedCategory(DOBRYVA_TEMPLATE);
-  const inventory = mapTemplateToSerializedCategory(INVENTAR_TEMPLATE);
+  const sectionsMap = ref<SectionsMap<Category[]> | null>(null);
 
-  const sectionsMap = reactive({
-    [SectionsEnum.ovochi]: vegetables,
-    [SectionsEnum.kvity]: flowers,
-    [SectionsEnum.shkidnykyIKhvoroby]: pestsAndDiseases,
-    [SectionsEnum.dobryva]: fertilizers,
-    [SectionsEnum.inventar]: inventory,
-  });
+  const setSectionsMap = (sectionCategoriesMap: SectionsMap<Category[]>) => {
+    sectionsMap.value = sectionCategoriesMap;
+  };
 
-  const contentSections = Object.values(SectionsEnum).map((value: SectionsEnum) => {
-    return {
-      sectionName: value,
-      sectionLabel: SECTION_TRANSLATIONS[value],
-      svgIcon: SVG_ICON_COMPONENTS_MAP[value],
-      categories: sectionsMap[value],
-    };
-  });
+  const contentSections = ref<ContentSection[]>([]);
 
-  return { sectionsMap, contentSections };
+  const setContentSections = (sectionsMap: SectionsMap<Category[]>) => {
+    contentSections.value = (Object.entries(SectionsEnum) as Entries<typeof SectionsEnum>).map(
+      ([sectionName, sectionLabel]) => {
+        return {
+          sectionName,
+          sectionLabel,
+          categories: sectionsMap[sectionName] as Category[],
+        };
+      },
+    );
+  };
+
+  return { sectionsMap, contentSections, setSectionsMap, setContentSections };
 });
