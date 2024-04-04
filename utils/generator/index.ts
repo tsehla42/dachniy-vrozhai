@@ -1,27 +1,24 @@
 import path from 'path';
-import { OVOCHI_TEMPLATE } from '~/templates/Ovochi';
+import type { Entries } from 'type-fest';
+import { SectionsEnum } from '~/utils/types/SectionsTypes';
+import type { SectionsMapUA } from '~/utils/types/SectionsTypes';
+import type { CategoryTemplateCollection } from '~/utils/types/CategoryTypes';
 import { Category } from '~/utils/generator/classes/Category';
+import { generateCategoryPageContent } from '~/utils/generator/CategoryPageContentGenerator';
+import { generateConstants } from '~/utils/generator/CategoriesConstantGenerator';
+import { getAllImagesOnServer } from '~/utils/Images';
+import { OVOCHI_TEMPLATE } from '~/templates/Ovochi';
 import { KVITY_TEMPLATE } from '~/templates/Kvity';
 import { SHKIDNYKY_I_KHVOROBY_TEMPLATE } from '~/templates/ShkidnykyIKhvoroby';
 import { DOBRYVA_TEMPLATE } from '~/templates/Dobryva';
 import { INVENTAR_TEMPLATE } from '~/templates/Inventar';
-import { SectionsEnum } from '~/utils/types/SectionsTypes';
-import type { SectionsMap } from '~/utils/types/SectionsTypes';
-import type { CategoryTemplateCollection } from '~/utils/types/CategoryTypes';
-import { generateCategoryPageContent } from '~/utils/generator/CategoryPageContentGenerator';
-// import { SECTION_TRANSLATIONS } from '~/constants/localizations/SectionTranslations';
-// import { mapTemplateToSerializedCategory } from '~/utils/SerializeNonPOJOs';
-import type { Entries } from 'type-fest';
-import { generateConstants } from '~/utils/generator/CategoriesConstantGenerator';
-import { getAllImagesOnServer } from '~/utils/Images';
-// import { SVG_ICON_COMPONENTS_MAP } from '~/constants/SvgIconComponentsMap';
 
 const rootPath = process.cwd();
 const categoryFolder = path.resolve(rootPath, 'content', 'category');
 const constantsFolder = path.resolve(rootPath, 'constants', 'content');
 const allServerImages = getAllImagesOnServer();
 
-const sectionTemplatesMap: SectionsMap<CategoryTemplateCollection> = {
+const sectionTemplatesMap: SectionsMapUA<CategoryTemplateCollection> = {
   [SectionsEnum.ovochi]: OVOCHI_TEMPLATE,
   [SectionsEnum.kvity]: KVITY_TEMPLATE,
   [SectionsEnum.shkidnykyIKhvoroby]: SHKIDNYKY_I_KHVOROBY_TEMPLATE,
@@ -39,7 +36,7 @@ const sectionCategoriesMap = (Object.entries(sectionTemplatesMap) as Entries<typ
       [sectionName]: section,
     };
   },
-  {} as SectionsMap<Category[]>,
+  {} as SectionsMapUA<Category[]>,
 );
 
 const allCategories: Category[] = Object.values(sectionCategoriesMap).reduce((accumulator, section: Category[]) => {

@@ -1,10 +1,10 @@
 import fs from 'fs';
 import { Category } from '~/utils/generator/classes/Category';
-import type { SectionsMap } from '~/utils/types/SectionsTypes';
+import type { SectionsMapUA } from '~/utils/types/SectionsTypes';
 import type { Entries } from 'type-fest';
 import { transliterate } from '~/utils/Transliteration';
 
-export const generateConstants = (constantsFolder: string, sectionCategoriesMap: SectionsMap<Category[]>) => {
+export const generateConstants = (constantsFolder: string, sectionCategoriesMap: SectionsMapUA<Category[]>) => {
   const createContent = (sectionContent: Category[]) => {
     return JSON.stringify(sectionContent, null, 2);
   };
