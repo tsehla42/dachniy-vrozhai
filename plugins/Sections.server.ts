@@ -1,5 +1,5 @@
 import { SectionsEnum } from '~/utils/types/SectionsTypes';
-import type { SectionsMap } from '~/utils/types/SectionsTypes';
+import type { SectionsMapEN } from '~/utils/types/SectionsTypes';
 import { readFileSync } from 'fs';
 import path from 'path';
 import type { Category } from '~/utils/generator/classes/Category';
@@ -26,7 +26,7 @@ export default defineNuxtPlugin(() => {
         [sectionName]: categories,
       };
     },
-    {} as SectionsMap<Category[]>,
+    {} as SectionsMapEN<Category[]>,
   );
 
   const { setSectionsMap, setContentSections } = useSectionsStore();
