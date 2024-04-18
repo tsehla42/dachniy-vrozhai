@@ -18,18 +18,26 @@ export const generateCategoryPageContent = (categoryFolder: string, categories: 
   };
 
   const createMarkdownFile = (category: Category) => {
-    const { categoryName } = category;
+    const { categoryName, articles } = category;
     const filePath = `${categoryFolder}/${categoryName}.md`;
+
+    if (!articles.length) {
+      console.log(`[Category] File ${categoryName}.md doesn't belong to Categories folder. Skipping creation.`);
+
+      return;
+    }
 
     if (!fs.existsSync(filePath)) {
       fs.writeFileSync(filePath, createContent(category));
-      console.log(`\nFile ${categoryName}.md created.\n`);
+      console.log(`\n[Category] File ${categoryName}.md created.\n`);
     } else {
-      console.log(`File ${categoryName}.md already exists. Skipping creation.`);
+      console.log(`[Category] File ${categoryName}.md already exists. Skipping creation.`);
     }
   };
 
   categories.forEach((category: Category) => {
     createMarkdownFile(category);
   });
+
+  console.log('\n');
 };

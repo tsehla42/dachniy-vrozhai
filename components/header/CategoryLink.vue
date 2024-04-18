@@ -6,22 +6,22 @@ const { category } = defineProps({
   },
 });
 
-const categorySubcategories = computed(() => {
-  return category.subcategories ? [category.subcategories] : [[]];
+const categoryArticles = computed(() => {
+  return category.articles ? [category.articles] : [[]];
 });
 
 const dropdownUi = {
   strategy: 'override',
   wrapper: 'category-link',
   trigger: 'category-trigger-wrapper',
-  container: 'subcategory-dropdown-container',
-  base: 'subcategory-dropdown bg-none',
+  container: 'article-dropdown-container',
+  base: 'article-dropdown bg-none',
   background: 'bg-none',
   width: '',
   shadow: '',
   ring: '',
   item: {
-    base: 'subcategory-link',
+    base: 'article-link',
     rounded: '',
     padding: '',
     active: '',
@@ -48,7 +48,7 @@ const triggerUi = {
 </script>
 
 <template>
-  <DvDropdown :items="categorySubcategories" :ui="dropdownUi" placement="right-start">
+  <DvDropdown :items="categoryArticles" :ui="dropdownUi" placement="right-start">
     <template #trigger>
       <DvButton :ui="triggerUi" :label="category.label" :to="category.to" />
     </template>
@@ -73,15 +73,15 @@ const triggerUi = {
     }
   }
 
-  .subcategory-dropdown-container {
+  .article-dropdown-container {
     width: max-content;
     margin-top: -5px !important;
 
-    .subcategory-dropdown div {
+    .article-dropdown div {
       @include dropdown-style;
     }
 
-    .subcategory-link {
+    .article-link {
       display: block;
       padding: 6px 18px;
       font-family: $font-family-primary;

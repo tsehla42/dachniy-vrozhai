@@ -1,22 +1,16 @@
 import { transliterate } from '~/utils/Transliteration';
-import { getImageSrcForCategory } from '~/utils/Images';
 
 export class CoreCategory {
-  protected readonly _isCategory: boolean;
   categoryName: string = '';
   sectionName: string = '';
   label: string = '';
   to: string = '';
   pictureSrc: string = '';
 
-  constructor(categoryNameUkr: string, sectionName: string, allServerImages: string[], subcategories?: string[]) {
-    this._isCategory = !!subcategories?.length;
-
+  constructor(categoryNameUkr: string, sectionName: string) {
     this.setLabel(categoryNameUkr);
     this.setSectionName(sectionName);
     this.setCategoryName();
-    this.setToPath();
-    this.setPictureSrc(allServerImages);
   }
 
   setLabel(label: string) {
@@ -24,27 +18,18 @@ export class CoreCategory {
   }
 
   setSectionName(sectionName: string) {
-    this.sectionName = transliterate(sectionName, true);
+    this.sectionName = this.transliterateField(sectionName, true);
   }
 
   setCategoryName() {
-    this.categoryName = this.transliteratedCategoryName;
+    this.categoryName = this.transliteratedName;
   }
 
-  setToPath() {
-    const pathPrefix = this._isCategory ? '/category' : '/category'; // TODO: fix when ready
-    if (this._isCategory) {
-      this.to = `${pathPrefix}/${this.transliteratedCategoryName}`;
-    } else {
-      this.to = `${pathPrefix}/kapustiani`;
-    }
+  transliterateField(value: string, camelCase?: boolean) {
+    return transliterate(value, camelCase);
   }
 
-  setPictureSrc(allServerImages: string[]) {
-    this.pictureSrc = getImageSrcForCategory(this.label, this._isCategory, allServerImages);
-  }
-
-  get transliteratedCategoryName() {
-    return transliterate(this.label);
+  get transliteratedName() {
+    return this.transliterateField(this.label);
   }
 }
