@@ -7,6 +7,7 @@ import { Category } from '~/utils/generator/classes/Category';
 import { generateCategoryPageContent } from '~/utils/generator/CategoryPageContentGenerator';
 import { generateConstants } from '~/utils/generator/CategoriesConstantGenerator';
 import { getAllImagesOnServer } from '~/utils/Images';
+import { generateArticlesPageContent } from '~/utils/generator/ArticlesPageContentGenerator';
 import { OVOCHI_TEMPLATE } from '~/templates/Ovochi';
 import { KVITY_TEMPLATE } from '~/templates/Kvity';
 import { SHKIDNYKY_I_KHVOROBY_TEMPLATE } from '~/templates/ShkidnykyIKhvoroby';
@@ -14,7 +15,9 @@ import { DOBRYVA_TEMPLATE } from '~/templates/Dobryva';
 import { INVENTAR_TEMPLATE } from '~/templates/Inventar';
 
 const rootPath = process.cwd();
-const categoryFolder = path.resolve(rootPath, 'content', 'category');
+const contentFolder = path.resolve(rootPath, 'content');
+const categoryFolder = path.resolve(contentFolder, 'category');
+const articlesFolder = path.resolve(contentFolder, 'articles');
 const constantsFolder = path.resolve(rootPath, 'constants', 'content');
 const allServerImages = getAllImagesOnServer();
 
@@ -28,8 +31,8 @@ const sectionTemplatesMap: SectionsMapUA<CategoryTemplateCollection> = {
 
 const sectionCategoriesMap = (Object.entries(sectionTemplatesMap) as Entries<typeof sectionTemplatesMap>).reduce(
   (acc, [sectionName, sectionTemplate]: [SectionsEnum, CategoryTemplateCollection]) => {
-    const section = sectionTemplate.map(([categoryNameUkr, subcategories]) => {
-      return new Category(categoryNameUkr, sectionName, allServerImages, subcategories);
+    const section = sectionTemplate.map(([categoryNameUkr, articles]) => {
+      return new Category(categoryNameUkr, sectionName, allServerImages, articles);
     });
     return {
       ...acc,
@@ -56,4 +59,5 @@ console.log({ rootPath, categoryFolder, constantsFolder });
 // });
 
 generateCategoryPageContent(categoryFolder, allCategories);
+generateArticlesPageContent(articlesFolder, allCategories);
 generateConstants(constantsFolder, sectionCategoriesMap);
