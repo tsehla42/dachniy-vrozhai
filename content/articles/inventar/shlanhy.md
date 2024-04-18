@@ -1,9 +1,10 @@
 ---
-title: 'Лопати'
+title: "Шланги"
 description: 'meta опис сторінки'
 
 section: 'inventar'
-category: 'lopaty'
+category: 'shlanhy'
+article: 'shlanhy'
 ---
 
-# Лопати
+# Шланги

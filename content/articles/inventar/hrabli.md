@@ -1,9 +1,10 @@
 ---
-title: 'Тяпки'
+title: "Граблі"
 description: 'meta опис сторінки'
 
 section: 'inventar'
-category: 'tiapky'
+category: 'hrabli'
+article: 'hrabli'
 ---
 
-# Тяпки
+# Граблі
