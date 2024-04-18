@@ -1,431 +1,384 @@
 [
   {
-    "_isCategory": true,
     "categoryName": "odnorichni-kvity",
     "sectionName": "kvity",
     "label": "Однорічні квіти",
     "to": "/category/odnorichni-kvity",
     "pictureSrc": "/images/fallback/fallback-200x200.png",
-    "subcategories": [
+    "articles": [
       {
-        "_isCategory": false,
-        "categoryName": "chornobryvtsi",
+        "categoryName": "odnorichni-kvity",
         "sectionName": "kvity",
         "label": "Чорнобривці",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/chornobryvtsi",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "odnorichni-kvity"
+        "articleName": "chornobryvtsi"
       },
       {
-        "_isCategory": false,
-        "categoryName": "nasturtsia",
+        "categoryName": "odnorichni-kvity",
         "sectionName": "kvity",
         "label": "Настурція",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/nasturtsia",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "odnorichni-kvity"
+        "articleName": "nasturtsia"
       },
       {
-        "_isCategory": false,
-        "categoryName": "petunia",
+        "categoryName": "odnorichni-kvity",
         "sectionName": "kvity",
         "label": "Петунія",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/petunia",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "odnorichni-kvity"
+        "articleName": "petunia"
       },
       {
-        "_isCategory": false,
-        "categoryName": "portulak",
+        "categoryName": "odnorichni-kvity",
         "sectionName": "kvity",
         "label": "Портулак",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/portulak",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "odnorichni-kvity"
+        "articleName": "portulak"
       },
       {
-        "_isCategory": false,
-        "categoryName": "romashka-aptechna",
+        "categoryName": "odnorichni-kvity",
         "sectionName": "kvity",
         "label": "Ромашка аптечна",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/romashka-aptechna",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "odnorichni-kvity"
+        "articleName": "romashka-aptechna"
       }
     ]
   },
   {
-    "_isCategory": true,
     "categoryName": "dvorichni-kvity",
     "sectionName": "kvity",
     "label": "Дворічні квіти",
     "to": "/category/dvorichni-kvity",
     "pictureSrc": "/images/fallback/fallback-200x200.png",
-    "subcategories": [
+    "articles": [
       {
-        "_isCategory": false,
-        "categoryName": "malva",
+        "categoryName": "dvorichni-kvity",
         "sectionName": "kvity",
         "label": "Мальва",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/malva",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "dvorichni-kvity"
+        "articleName": "malva"
       }
     ]
   },
   {
-    "_isCategory": true,
     "categoryName": "bahatorichni-kvity",
     "sectionName": "kvity",
     "label": "Багаторічні квіти",
     "to": "/category/bahatorichni-kvity",
     "pictureSrc": "/images/fallback/fallback-200x200.png",
-    "subcategories": [
+    "articles": [
       {
-        "_isCategory": false,
-        "categoryName": "akvilehia",
+        "categoryName": "bahatorichni-kvity",
         "sectionName": "kvity",
         "label": "Аквілегія",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/akvilehia",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "bahatorichni-kvity"
+        "articleName": "akvilehia"
       },
       {
-        "_isCategory": false,
-        "categoryName": "bratky",
+        "categoryName": "bahatorichni-kvity",
         "sectionName": "kvity",
         "label": "Братки",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/bratky",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "bahatorichni-kvity"
+        "articleName": "bratky"
       },
       {
-        "_isCategory": false,
-        "categoryName": "aistry",
+        "categoryName": "bahatorichni-kvity",
         "sectionName": "kvity",
         "label": "Айстри",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/aistry",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "bahatorichni-kvity"
+        "articleName": "aistry"
       },
       {
-        "_isCategory": false,
-        "categoryName": "zhordyn",
+        "categoryName": "bahatorichni-kvity",
         "sectionName": "kvity",
         "label": "Жордин",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/zhordyn",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "bahatorichni-kvity"
+        "articleName": "zhordyn"
       },
       {
-        "_isCategory": false,
-        "categoryName": "herbera",
+        "categoryName": "bahatorichni-kvity",
         "sectionName": "kvity",
         "label": "Гербера",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/herbera",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "bahatorichni-kvity"
+        "articleName": "herbera"
       },
       {
-        "_isCategory": false,
-        "categoryName": "irys",
+        "categoryName": "bahatorichni-kvity",
         "sectionName": "kvity",
         "label": "Ірис",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/irys",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "bahatorichni-kvity"
+        "articleName": "irys"
       },
       {
-        "_isCategory": false,
-        "categoryName": "kanny",
+        "categoryName": "bahatorichni-kvity",
         "sectionName": "kvity",
         "label": "Канни",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/kanny",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "bahatorichni-kvity"
+        "articleName": "kanny"
       },
       {
-        "_isCategory": false,
-        "categoryName": "dzvonyk",
+        "categoryName": "bahatorichni-kvity",
         "sectionName": "kvity",
         "label": "Дзвоник",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/dzvonyk",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "bahatorichni-kvity"
+        "articleName": "dzvonyk"
       },
       {
-        "_isCategory": false,
-        "categoryName": "lavanda",
+        "categoryName": "bahatorichni-kvity",
         "sectionName": "kvity",
         "label": "Лаванда",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/lavanda",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "bahatorichni-kvity"
+        "articleName": "lavanda"
       },
       {
-        "_isCategory": false,
-        "categoryName": "konvalia",
+        "categoryName": "bahatorichni-kvity",
         "sectionName": "kvity",
         "label": "Конвалія",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/konvalia",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "bahatorichni-kvity"
+        "articleName": "konvalia"
       },
       {
-        "_isCategory": false,
-        "categoryName": "lileinyk",
+        "categoryName": "bahatorichni-kvity",
         "sectionName": "kvity",
         "label": "Лілейник",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/lileinyk",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "bahatorichni-kvity"
+        "articleName": "lileinyk"
       },
       {
-        "_isCategory": false,
-        "categoryName": "nezabudka",
+        "categoryName": "bahatorichni-kvity",
         "sectionName": "kvity",
         "label": "Незабудка",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/nezabudka",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "bahatorichni-kvity"
+        "articleName": "nezabudka"
       },
       {
-        "_isCategory": false,
-        "categoryName": "ochytok-(sedum",
+        "categoryName": "bahatorichni-kvity",
         "sectionName": "kvity",
         "label": "Очиток (седум",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/ochytok-(sedum",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "bahatorichni-kvity"
+        "articleName": "ochytok-(sedum"
       },
       {
-        "_isCategory": false,
-        "categoryName": "pivonia",
+        "categoryName": "bahatorichni-kvity",
         "sectionName": "kvity",
         "label": "Півонія",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/pivonia",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "bahatorichni-kvity"
+        "articleName": "pivonia"
       },
       {
-        "_isCategory": false,
-        "categoryName": "rododendron",
+        "categoryName": "bahatorichni-kvity",
         "sectionName": "kvity",
         "label": "Рододендрон",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/rododendron",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "bahatorichni-kvity"
+        "articleName": "rododendron"
       },
       {
-        "_isCategory": false,
-        "categoryName": "romashka-velyka-(hihantska",
+        "categoryName": "bahatorichni-kvity",
         "sectionName": "kvity",
         "label": "Ромашка велика (гігантська",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/romashka-velyka-(hihantska",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "bahatorichni-kvity"
+        "articleName": "romashka-velyka-(hihantska"
       },
       {
-        "_isCategory": false,
-        "categoryName": "rudbekia",
+        "categoryName": "bahatorichni-kvity",
         "sectionName": "kvity",
         "label": "Рудбекія",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/rudbekia",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "bahatorichni-kvity"
+        "articleName": "rudbekia"
       },
       {
-        "_isCategory": false,
-        "categoryName": "floksy",
+        "categoryName": "bahatorichni-kvity",
         "sectionName": "kvity",
         "label": "Флокси",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/floksy",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "bahatorichni-kvity"
+        "articleName": "floksy"
       },
       {
-        "_isCategory": false,
-        "categoryName": "khryzantema",
+        "categoryName": "bahatorichni-kvity",
         "sectionName": "kvity",
         "label": "Хризантема",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/khryzantema",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "bahatorichni-kvity"
+        "articleName": "khryzantema"
       },
       {
-        "_isCategory": false,
-        "categoryName": "tselozia",
+        "categoryName": "bahatorichni-kvity",
         "sectionName": "kvity",
         "label": "Целозія",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/tselozia",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "bahatorichni-kvity"
+        "articleName": "tselozia"
       },
       {
-        "_isCategory": false,
-        "categoryName": "ekhinatseia",
+        "categoryName": "bahatorichni-kvity",
         "sectionName": "kvity",
         "label": "Ехінацея",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/ekhinatseia",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "bahatorichni-kvity"
+        "articleName": "ekhinatseia"
       }
     ]
   },
   {
-    "_isCategory": true,
     "categoryName": "tsybulynni-kvity",
     "sectionName": "kvity",
     "label": "Цибулинні квіти",
     "to": "/category/tsybulynni-kvity",
     "pictureSrc": "/images/fallback/fallback-200x200.png",
-    "subcategories": [
+    "articles": [
       {
-        "_isCategory": false,
-        "categoryName": "hladiolus",
+        "categoryName": "tsybulynni-kvity",
         "sectionName": "kvity",
         "label": "Гладіолус",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/hladiolus",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "tsybulynni-kvity"
+        "articleName": "hladiolus"
       },
       {
-        "_isCategory": false,
-        "categoryName": "muskari",
+        "categoryName": "tsybulynni-kvity",
         "sectionName": "kvity",
         "label": "Мускарі",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/muskari",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "tsybulynni-kvity"
+        "articleName": "muskari"
       },
       {
-        "_isCategory": false,
-        "categoryName": "krokusy",
+        "categoryName": "tsybulynni-kvity",
         "sectionName": "kvity",
         "label": "Крокуси",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/krokusy",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "tsybulynni-kvity"
+        "articleName": "krokusy"
       },
       {
-        "_isCategory": false,
-        "categoryName": "nartsysy",
+        "categoryName": "tsybulynni-kvity",
         "sectionName": "kvity",
         "label": "Нарциси",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/nartsysy",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "tsybulynni-kvity"
+        "articleName": "nartsysy"
       },
       {
-        "_isCategory": false,
-        "categoryName": "prolisok",
+        "categoryName": "tsybulynni-kvity",
         "sectionName": "kvity",
         "label": "Пролісок",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/prolisok",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "tsybulynni-kvity"
+        "articleName": "prolisok"
       },
       {
-        "_isCategory": false,
-        "categoryName": "tiulpan",
+        "categoryName": "tsybulynni-kvity",
         "sectionName": "kvity",
         "label": "Тюльпан",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/tiulpan",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "tsybulynni-kvity"
+        "articleName": "tiulpan"
       }
     ]
   },
   {
-    "_isCategory": true,
     "categoryName": "kucheriavi-roslyny",
     "sectionName": "kvity",
     "label": "Кучеряві рослини",
     "to": "/category/kucheriavi-roslyny",
     "pictureSrc": "/images/fallback/fallback-200x200.png",
-    "subcategories": [
+    "articles": [
       {
-        "_isCategory": false,
-        "categoryName": "imopeia",
+        "categoryName": "kucheriavi-roslyny",
         "sectionName": "kvity",
         "label": "Імопея",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/imopeia",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "kucheriavi-roslyny"
+        "articleName": "imopeia"
       },
       {
-        "_isCategory": false,
-        "categoryName": "kampis-(tekoma",
+        "categoryName": "kucheriavi-roslyny",
         "sectionName": "kvity",
         "label": "Кампіс (текома",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/kampis-(tekoma",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "kucheriavi-roslyny"
+        "articleName": "kampis-(tekoma"
       },
       {
-        "_isCategory": false,
-        "categoryName": "klematys",
+        "categoryName": "kucheriavi-roslyny",
         "sectionName": "kvity",
         "label": "Клематис",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/klematys",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "kucheriavi-roslyny"
+        "articleName": "klematys"
       }
     ]
   },
   {
-    "_isCategory": true,
     "categoryName": "dereva-ta-chaharnyky",
     "sectionName": "kvity",
     "label": "Дерева та чагарники",
     "to": "/category/dereva-ta-chaharnyky",
     "pictureSrc": "/images/fallback/fallback-200x200.png",
-    "subcategories": [
+    "articles": [
       {
-        "_isCategory": false,
-        "categoryName": "chubushnyk-(zhasmyn",
+        "categoryName": "dereva-ta-chaharnyky",
         "sectionName": "kvity",
         "label": "Чубушник (жасмин",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/chubushnyk-(zhasmyn",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "dereva-ta-chaharnyky"
+        "articleName": "chubushnyk-(zhasmyn"
       },
       {
-        "_isCategory": false,
-        "categoryName": "buzok",
+        "categoryName": "dereva-ta-chaharnyky",
         "sectionName": "kvity",
         "label": "Бузок",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/buzok",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "dereva-ta-chaharnyky"
+        "articleName": "buzok"
       }
     ]
   },
   {
-    "_isCategory": true,
     "categoryName": "inshe",
     "sectionName": "kvity",
     "label": "Інше",
     "to": "/category/inshe",
     "pictureSrc": "/images/fallback/fallback-200x200.png",
-    "subcategories": [
+    "articles": [
       {
-        "_isCategory": false,
-        "categoryName": "landshaftnyi-dyzain",
+        "categoryName": "inshe",
         "sectionName": "kvity",
         "label": "Ландшафтний дизайн",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/landshaftnyi-dyzain",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "inshe"
+        "articleName": "landshaftnyi-dyzain"
       },
       {
-        "_isCategory": false,
-        "categoryName": "hazon",
+        "categoryName": "inshe",
         "sectionName": "kvity",
         "label": "Газон",
-        "to": "/category/kapustiani",
+        "to": "articles/kvity/hazon",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
-        "mainCategoryName": "inshe"
+        "articleName": "hazon"
       }
     ]
   }
