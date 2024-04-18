@@ -1,9 +1,10 @@
 ---
-title: 'Вила'
+title: "Лопати"
 description: 'meta опис сторінки'
 
 section: 'inventar'
-category: 'vyla'
+category: 'lopaty'
+article: 'lopaty'
 ---
 
-# Вила
+# Лопати

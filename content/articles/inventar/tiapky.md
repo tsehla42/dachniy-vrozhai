@@ -1,9 +1,10 @@
 ---
-title: 'Шланги'
+title: "Тяпки"
 description: 'meta опис сторінки'
 
 section: 'inventar'
-category: 'shlanhy'
+category: 'tiapky'
+article: 'tiapky'
 ---
 
-# Шланги
+# Тяпки
