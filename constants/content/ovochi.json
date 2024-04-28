@@ -10,7 +10,7 @@
         "categoryName": "kapustiani",
         "sectionName": "ovochi",
         "label": "Капуста білокачанна",
-        "to": "articles/ovochi/kapusta-bilokachanna",
+        "to": "/articles/ovochi/kapustiani/kapusta-bilokachanna",
         "pictureSrc": "/images/articles/preview/капуста-білокачанна.png",
         "articleName": "kapusta-bilokachanna"
       },
@@ -18,7 +18,7 @@
         "categoryName": "kapustiani",
         "sectionName": "ovochi",
         "label": "Капуста червонокачанна",
-        "to": "articles/ovochi/kapusta-chervonokachanna",
+        "to": "/articles/ovochi/kapustiani/kapusta-chervonokachanna",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "kapusta-chervonokachanna"
       },
@@ -26,7 +26,7 @@
         "categoryName": "kapustiani",
         "sectionName": "ovochi",
         "label": "Капуста савойська",
-        "to": "articles/ovochi/kapusta-savoiska",
+        "to": "/articles/ovochi/kapustiani/kapusta-savoiska",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "kapusta-savoiska"
       },
@@ -34,7 +34,7 @@
         "categoryName": "kapustiani",
         "sectionName": "ovochi",
         "label": "Капуста брюссельська",
-        "to": "articles/ovochi/kapusta-briusselska",
+        "to": "/articles/ovochi/kapustiani/kapusta-briusselska",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "kapusta-briusselska"
       },
@@ -42,7 +42,7 @@
         "categoryName": "kapustiani",
         "sectionName": "ovochi",
         "label": "Капуста цвітна",
-        "to": "articles/ovochi/kapusta-tsvitna",
+        "to": "/articles/ovochi/kapustiani/kapusta-tsvitna",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "kapusta-tsvitna"
       },
@@ -50,7 +50,7 @@
         "categoryName": "kapustiani",
         "sectionName": "ovochi",
         "label": "Капуста кольрабі",
-        "to": "articles/ovochi/kapusta-kolrabi",
+        "to": "/articles/ovochi/kapustiani/kapusta-kolrabi",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "kapusta-kolrabi"
       },
@@ -58,7 +58,7 @@
         "categoryName": "kapustiani",
         "sectionName": "ovochi",
         "label": "Капуста броколі",
-        "to": "articles/ovochi/kapusta-brokoli",
+        "to": "/articles/ovochi/kapustiani/kapusta-brokoli",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "kapusta-brokoli"
       }
@@ -75,7 +75,7 @@
         "categoryName": "bobovi",
         "sectionName": "ovochi",
         "label": "Горох",
-        "to": "articles/ovochi/horokh",
+        "to": "/articles/ovochi/bobovi/horokh",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "horokh"
       },
@@ -83,7 +83,7 @@
         "categoryName": "bobovi",
         "sectionName": "ovochi",
         "label": "Квасоля",
-        "to": "articles/ovochi/kvasolia",
+        "to": "/articles/ovochi/bobovi/kvasolia",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "kvasolia"
       }
@@ -100,7 +100,7 @@
         "categoryName": "bulboplody",
         "sectionName": "ovochi",
         "label": "Картопля",
-        "to": "articles/ovochi/kartoplia",
+        "to": "/articles/ovochi/bulboplody/kartoplia",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "kartoplia"
       },
@@ -108,7 +108,7 @@
         "categoryName": "bulboplody",
         "sectionName": "ovochi",
         "label": "Топінамбур",
-        "to": "articles/ovochi/topinambur",
+        "to": "/articles/ovochi/bulboplody/topinambur",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "topinambur"
       }
@@ -125,7 +125,7 @@
         "categoryName": "koreneplody",
         "sectionName": "ovochi",
         "label": "Морква",
-        "to": "articles/ovochi/morkva",
+        "to": "/articles/ovochi/koreneplody/morkva",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "morkva"
       },
@@ -133,7 +133,7 @@
         "categoryName": "koreneplody",
         "sectionName": "ovochi",
         "label": "Буряк",
-        "to": "articles/ovochi/buriak",
+        "to": "/articles/ovochi/koreneplody/buriak",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "buriak"
       },
@@ -141,7 +141,7 @@
         "categoryName": "koreneplody",
         "sectionName": "ovochi",
         "label": "Редиска",
-        "to": "articles/ovochi/redyska",
+        "to": "/articles/ovochi/koreneplody/redyska",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "redyska"
       },
@@ -149,7 +149,7 @@
         "categoryName": "koreneplody",
         "sectionName": "ovochi",
         "label": "Редька",
-        "to": "articles/ovochi/redka",
+        "to": "/articles/ovochi/koreneplody/redka",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "redka"
       },
@@ -157,7 +157,7 @@
         "categoryName": "koreneplody",
         "sectionName": "ovochi",
         "label": "Петрушка",
-        "to": "articles/ovochi/petrushka",
+        "to": "/articles/ovochi/koreneplody/petrushka",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "petrushka"
       },
@@ -165,7 +165,7 @@
         "categoryName": "koreneplody",
         "sectionName": "ovochi",
         "label": "Селера",
-        "to": "articles/ovochi/selera",
+        "to": "/articles/ovochi/koreneplody/selera",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "selera"
       },
@@ -173,7 +173,7 @@
         "categoryName": "koreneplody",
         "sectionName": "ovochi",
         "label": "Пастернак",
-        "to": "articles/ovochi/pasternak",
+        "to": "/articles/ovochi/koreneplody/pasternak",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "pasternak"
       },
@@ -181,7 +181,7 @@
         "categoryName": "koreneplody",
         "sectionName": "ovochi",
         "label": "Хрін",
-        "to": "articles/ovochi/khrin",
+        "to": "/articles/ovochi/koreneplody/khrin",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "khrin"
       },
@@ -189,7 +189,7 @@
         "categoryName": "koreneplody",
         "sectionName": "ovochi",
         "label": "Ріпа",
-        "to": "articles/ovochi/ripa",
+        "to": "/articles/ovochi/koreneplody/ripa",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "ripa"
       },
@@ -197,7 +197,7 @@
         "categoryName": "koreneplody",
         "sectionName": "ovochi",
         "label": "Бруква",
-        "to": "articles/ovochi/brukva",
+        "to": "/articles/ovochi/koreneplody/brukva",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "brukva"
       },
@@ -205,7 +205,7 @@
         "categoryName": "koreneplody",
         "sectionName": "ovochi",
         "label": "Мангольд",
-        "to": "articles/ovochi/manhold",
+        "to": "/articles/ovochi/koreneplody/manhold",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "manhold"
       }
@@ -222,7 +222,7 @@
         "categoryName": "tsybulevi",
         "sectionName": "ovochi",
         "label": "Цибуля ріпчаста",
-        "to": "articles/ovochi/tsybulia-ripchasta",
+        "to": "/articles/ovochi/tsybulevi/tsybulia-ripchasta",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "tsybulia-ripchasta"
       },
@@ -230,7 +230,7 @@
         "categoryName": "tsybulevi",
         "sectionName": "ovochi",
         "label": "Цибуля-батун",
-        "to": "articles/ovochi/tsybulia-batun",
+        "to": "/articles/ovochi/tsybulevi/tsybulia-batun",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "tsybulia-batun"
       },
@@ -238,7 +238,7 @@
         "categoryName": "tsybulevi",
         "sectionName": "ovochi",
         "label": "Цибуля зелена",
-        "to": "articles/ovochi/tsybulia-zelena",
+        "to": "/articles/ovochi/tsybulevi/tsybulia-zelena",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "tsybulia-zelena"
       },
@@ -246,7 +246,7 @@
         "categoryName": "tsybulevi",
         "sectionName": "ovochi",
         "label": "Цибуля-слизун",
-        "to": "articles/ovochi/tsybulia-slyzun",
+        "to": "/articles/ovochi/tsybulevi/tsybulia-slyzun",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "tsybulia-slyzun"
       },
@@ -254,7 +254,7 @@
         "categoryName": "tsybulevi",
         "sectionName": "ovochi",
         "label": "Цибуля-шалот",
-        "to": "articles/ovochi/tsybulia-shalot",
+        "to": "/articles/ovochi/tsybulevi/tsybulia-shalot",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "tsybulia-shalot"
       },
@@ -262,7 +262,7 @@
         "categoryName": "tsybulevi",
         "sectionName": "ovochi",
         "label": "Цибуля-батун",
-        "to": "articles/ovochi/tsybulia-batun",
+        "to": "/articles/ovochi/tsybulevi/tsybulia-batun",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "tsybulia-batun"
       },
@@ -270,7 +270,7 @@
         "categoryName": "tsybulevi",
         "sectionName": "ovochi",
         "label": "Цибуля-чорнушка",
-        "to": "articles/ovochi/tsybulia-chornushka",
+        "to": "/articles/ovochi/tsybulevi/tsybulia-chornushka",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "tsybulia-chornushka"
       },
@@ -278,7 +278,7 @@
         "categoryName": "tsybulevi",
         "sectionName": "ovochi",
         "label": "Часник",
-        "to": "articles/ovochi/chasnyk",
+        "to": "/articles/ovochi/tsybulevi/chasnyk",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "chasnyk"
       }
@@ -295,7 +295,7 @@
         "categoryName": "paslionovi",
         "sectionName": "ovochi",
         "label": "Томати",
-        "to": "articles/ovochi/tomaty",
+        "to": "/articles/ovochi/paslionovi/tomaty",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "tomaty"
       },
@@ -303,7 +303,7 @@
         "categoryName": "paslionovi",
         "sectionName": "ovochi",
         "label": "Баклажани",
-        "to": "articles/ovochi/baklazhany",
+        "to": "/articles/ovochi/paslionovi/baklazhany",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "baklazhany"
       },
@@ -311,7 +311,7 @@
         "categoryName": "paslionovi",
         "sectionName": "ovochi",
         "label": "Перець",
-        "to": "articles/ovochi/perets",
+        "to": "/articles/ovochi/paslionovi/perets",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "perets"
       },
@@ -319,7 +319,7 @@
         "categoryName": "paslionovi",
         "sectionName": "ovochi",
         "label": "Кімнатний перець",
-        "to": "articles/ovochi/kimnatnyi-perets",
+        "to": "/articles/ovochi/paslionovi/kimnatnyi-perets",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "kimnatnyi-perets"
       }
@@ -336,7 +336,7 @@
         "categoryName": "priano-smakovi-roslyny",
         "sectionName": "ovochi",
         "label": "Кріп",
-        "to": "articles/ovochi/krip",
+        "to": "/articles/ovochi/priano-smakovi-roslyny/krip",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "krip"
       },
@@ -344,7 +344,7 @@
         "categoryName": "priano-smakovi-roslyny",
         "sectionName": "ovochi",
         "label": "Кмин",
-        "to": "articles/ovochi/kmyn",
+        "to": "/articles/ovochi/priano-smakovi-roslyny/kmyn",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "kmyn"
       },
@@ -352,7 +352,7 @@
         "categoryName": "priano-smakovi-roslyny",
         "sectionName": "ovochi",
         "label": "М'ята перцева",
-        "to": "articles/ovochi/miata-pertseva",
+        "to": "/articles/ovochi/priano-smakovi-roslyny/miata-pertseva",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "miata-pertseva"
       },
@@ -360,7 +360,7 @@
         "categoryName": "priano-smakovi-roslyny",
         "sectionName": "ovochi",
         "label": "Майоран",
-        "to": "articles/ovochi/maioran",
+        "to": "/articles/ovochi/priano-smakovi-roslyny/maioran",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "maioran"
       },
@@ -368,7 +368,7 @@
         "categoryName": "priano-smakovi-roslyny",
         "sectionName": "ovochi",
         "label": "Базилік",
-        "to": "articles/ovochi/bazylik",
+        "to": "/articles/ovochi/priano-smakovi-roslyny/bazylik",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "bazylik"
       },
@@ -376,7 +376,7 @@
         "categoryName": "priano-smakovi-roslyny",
         "sectionName": "ovochi",
         "label": "Естрагон",
-        "to": "articles/ovochi/estrahon",
+        "to": "/articles/ovochi/priano-smakovi-roslyny/estrahon",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "estrahon"
       },
@@ -384,7 +384,7 @@
         "categoryName": "priano-smakovi-roslyny",
         "sectionName": "ovochi",
         "label": "Імбир",
-        "to": "articles/ovochi/imbyr",
+        "to": "/articles/ovochi/priano-smakovi-roslyny/imbyr",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "imbyr"
       }
@@ -401,7 +401,7 @@
         "categoryName": "harbuzovi",
         "sectionName": "ovochi",
         "label": "Огірки",
-        "to": "articles/ovochi/ohirky",
+        "to": "/articles/ovochi/harbuzovi/ohirky",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "ohirky"
       },
@@ -409,7 +409,7 @@
         "categoryName": "harbuzovi",
         "sectionName": "ovochi",
         "label": "Кабачки, патисони",
-        "to": "articles/ovochi/kabachky,-patysony",
+        "to": "/articles/ovochi/harbuzovi/kabachky,-patysony",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "kabachky,-patysony"
       },
@@ -417,7 +417,7 @@
         "categoryName": "harbuzovi",
         "sectionName": "ovochi",
         "label": "Посадка кабачків",
-        "to": "articles/ovochi/posadka-kabachkiv",
+        "to": "/articles/ovochi/harbuzovi/posadka-kabachkiv",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "posadka-kabachkiv"
       },
@@ -425,7 +425,7 @@
         "categoryName": "harbuzovi",
         "sectionName": "ovochi",
         "label": "Гарбуз",
-        "to": "articles/ovochi/harbuz",
+        "to": "/articles/ovochi/harbuzovi/harbuz",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "harbuz"
       }
@@ -442,7 +442,7 @@
         "categoryName": "salatni",
         "sectionName": "ovochi",
         "label": "Салат",
-        "to": "articles/ovochi/salat",
+        "to": "/articles/ovochi/salatni/salat",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "salat"
       },
@@ -450,7 +450,7 @@
         "categoryName": "salatni",
         "sectionName": "ovochi",
         "label": "Салат-латук",
-        "to": "articles/ovochi/salat-latuk",
+        "to": "/articles/ovochi/salatni/salat-latuk",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "salat-latuk"
       },
@@ -458,7 +458,7 @@
         "categoryName": "salatni",
         "sectionName": "ovochi",
         "label": "Крес-салат",
-        "to": "articles/ovochi/kres-salat",
+        "to": "/articles/ovochi/salatni/kres-salat",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "kres-salat"
       },
@@ -466,7 +466,7 @@
         "categoryName": "salatni",
         "sectionName": "ovochi",
         "label": "Щавель",
-        "to": "articles/ovochi/schavel",
+        "to": "/articles/ovochi/salatni/schavel",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "schavel"
       },
@@ -474,7 +474,7 @@
         "categoryName": "salatni",
         "sectionName": "ovochi",
         "label": "Шпінат",
-        "to": "articles/ovochi/shpinat",
+        "to": "/articles/ovochi/salatni/shpinat",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "shpinat"
       },
@@ -482,7 +482,7 @@
         "categoryName": "salatni",
         "sectionName": "ovochi",
         "label": "Ревінь",
-        "to": "articles/ovochi/revin",
+        "to": "/articles/ovochi/salatni/revin",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "revin"
       },
@@ -490,7 +490,7 @@
         "categoryName": "salatni",
         "sectionName": "ovochi",
         "label": "Рукола",
-        "to": "articles/ovochi/rukola",
+        "to": "/articles/ovochi/salatni/rukola",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "rukola"
       }
@@ -507,7 +507,7 @@
         "categoryName": "yahidni-roslyny",
         "sectionName": "ovochi",
         "label": "Полуниця",
-        "to": "articles/ovochi/polunytsia",
+        "to": "/articles/ovochi/yahidni-roslyny/polunytsia",
         "pictureSrc": "/images/articles/preview/полуниця.png",
         "articleName": "polunytsia"
       },
@@ -515,7 +515,7 @@
         "categoryName": "yahidni-roslyny",
         "sectionName": "ovochi",
         "label": "Полуниця ремонтантна",
-        "to": "articles/ovochi/polunytsia-remontantna",
+        "to": "/articles/ovochi/yahidni-roslyny/polunytsia-remontantna",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "polunytsia-remontantna"
       },
@@ -523,7 +523,7 @@
         "categoryName": "yahidni-roslyny",
         "sectionName": "ovochi",
         "label": "Кучерява полуниця",
-        "to": "articles/ovochi/kucheriava-polunytsia",
+        "to": "/articles/ovochi/yahidni-roslyny/kucheriava-polunytsia",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "kucheriava-polunytsia"
       },
@@ -531,7 +531,7 @@
         "categoryName": "yahidni-roslyny",
         "sectionName": "ovochi",
         "label": "Полуниця із насіння",
-        "to": "articles/ovochi/polunytsia-iz-nasinnia",
+        "to": "/articles/ovochi/yahidni-roslyny/polunytsia-iz-nasinnia",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "polunytsia-iz-nasinnia"
       },
@@ -539,7 +539,7 @@
         "categoryName": "yahidni-roslyny",
         "sectionName": "ovochi",
         "label": "Малина",
-        "to": "articles/ovochi/malyna",
+        "to": "/articles/ovochi/yahidni-roslyny/malyna",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "malyna"
       },
@@ -547,7 +547,7 @@
         "categoryName": "yahidni-roslyny",
         "sectionName": "ovochi",
         "label": "Малина із насіння",
-        "to": "articles/ovochi/malyna-iz-nasinnia",
+        "to": "/articles/ovochi/yahidni-roslyny/malyna-iz-nasinnia",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "malyna-iz-nasinnia"
       },
@@ -555,7 +555,7 @@
         "categoryName": "yahidni-roslyny",
         "sectionName": "ovochi",
         "label": "Аґрус",
-        "to": "articles/ovochi/agrus",
+        "to": "/articles/ovochi/yahidni-roslyny/agrus",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "agrus"
       },
@@ -563,7 +563,7 @@
         "categoryName": "yahidni-roslyny",
         "sectionName": "ovochi",
         "label": "Смородина",
-        "to": "articles/ovochi/smorodyna",
+        "to": "/articles/ovochi/yahidni-roslyny/smorodyna",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "smorodyna"
       }
@@ -580,7 +580,7 @@
         "categoryName": "vyroschuvannia-rozsady",
         "sectionName": "ovochi",
         "label": "Розсада капусти",
-        "to": "articles/ovochi/rozsada-kapusty",
+        "to": "/articles/ovochi/vyroschuvannia-rozsady/rozsada-kapusty",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "rozsada-kapusty"
       },
@@ -588,7 +588,7 @@
         "categoryName": "vyroschuvannia-rozsady",
         "sectionName": "ovochi",
         "label": "Розсада томатів",
-        "to": "articles/ovochi/rozsada-tomativ",
+        "to": "/articles/ovochi/vyroschuvannia-rozsady/rozsada-tomativ",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "rozsada-tomativ"
       },
@@ -596,7 +596,7 @@
         "categoryName": "vyroschuvannia-rozsady",
         "sectionName": "ovochi",
         "label": "Розсада баклажанів",
-        "to": "articles/ovochi/rozsada-baklazhaniv",
+        "to": "/articles/ovochi/vyroschuvannia-rozsady/rozsada-baklazhaniv",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "rozsada-baklazhaniv"
       },
@@ -604,7 +604,7 @@
         "categoryName": "vyroschuvannia-rozsady",
         "sectionName": "ovochi",
         "label": "Розсада перцю",
-        "to": "articles/ovochi/rozsada-pertsiu",
+        "to": "/articles/ovochi/vyroschuvannia-rozsady/rozsada-pertsiu",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "rozsada-pertsiu"
       },
@@ -612,7 +612,7 @@
         "categoryName": "vyroschuvannia-rozsady",
         "sectionName": "ovochi",
         "label": "Розсада огірків, кабачків, гарбуза",
-        "to": "articles/ovochi/rozsada-ohirkiv,-kabachkiv,-harbuza",
+        "to": "/articles/ovochi/vyroschuvannia-rozsady/rozsada-ohirkiv,-kabachkiv,-harbuza",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "rozsada-ohirkiv,-kabachkiv,-harbuza"
       },
@@ -620,7 +620,7 @@
         "categoryName": "vyroschuvannia-rozsady",
         "sectionName": "ovochi",
         "label": "Розсада селери",
-        "to": "articles/ovochi/rozsada-selery",
+        "to": "/articles/ovochi/vyroschuvannia-rozsady/rozsada-selery",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "rozsada-selery"
       },
@@ -628,7 +628,7 @@
         "categoryName": "vyroschuvannia-rozsady",
         "sectionName": "ovochi",
         "label": "Розсада цибулі",
-        "to": "articles/ovochi/rozsada-tsybuli",
+        "to": "/articles/ovochi/vyroschuvannia-rozsady/rozsada-tsybuli",
         "pictureSrc": "/images/fallback/fallback-200x200.png",
         "articleName": "rozsada-tsybuli"
       }
