@@ -9,12 +9,11 @@ export class Category extends CoreCategory {
     super(categoryNameUkr, sectionName);
 
     this.setArticles(articles, allServerImages);
-    this.setToPath();
     this.setPictureSrc(allServerImages);
   }
 
-  setToPath() {
-    this.to = `/category/${this.categoryName}`;
+  setToPath(path: string) {
+    this.to = path;
   }
 
   setPictureSrc(allServerImages: string[]) {
@@ -23,8 +22,11 @@ export class Category extends CoreCategory {
 
   setArticles(articles?: string[], allServerImages?: string[]) {
     if (!articles || !articles.length || !allServerImages) {
+      this.setToPath(`/articles/${this.sectionName}/${this.categoryName}`);
       return;
     }
+
+    this.setToPath(`/category/${this.categoryName}`);
 
     this.articles = articles.map(
       (articleNameUkr) => new Article(articleNameUkr, this.sectionName, this.label, allServerImages),
