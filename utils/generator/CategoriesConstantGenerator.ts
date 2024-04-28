@@ -14,7 +14,7 @@ export const generateConstants = (constantsFolder: string, sectionCategoriesMap:
     ([sectionName, sectionContent]) => {
       if (!fs.existsSync(constantsFolder)) {
         fs.mkdirSync(constantsFolder, { recursive: true });
-        console.log(`Folder "${constantsFolder}" created successfully.`);
+        console.log(`[Constants] Folder "${constantsFolder}" created successfully.`);
       }
 
       const transliteratedSectionName = transliterate(sectionName, true);
