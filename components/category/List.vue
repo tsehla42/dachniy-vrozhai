@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { SectionsEnum } from '~/utils/types/SectionsTypes';
 import type { Category } from '~/utils/generator/classes/Category';
+import type { Article } from '~/utils/generator/classes/Article';
 
-const { sectionName, categoryName } = defineProps({
+const props = defineProps({
   sectionName: {
-    type: String as PropType<SectionsEnum>,
+    type: String as PropType<keyof typeof SectionsEnum>,
     required: true,
   },
   categoryName: {
@@ -13,18 +14,19 @@ const { sectionName, categoryName } = defineProps({
   },
 });
 
-const categoriesToDisplay = ref<Category[]>();
+const isArticleView = ref(!!props.categoryName);
+const categoriesToDisplay = ref<Category[] | Article[]>([]);
+const { sectionsMap } = useSectionsStore();
 
-if (sectionName) {
-  const { sectionsMap } = useSectionsStore();
-  const categoriesBySection = sectionsMap[sectionName] as Category[];
-  const isSubcategoryView = !!categoryName;
+if (props.sectionName && sectionsMap) {
+  const categoriesBySection = sectionsMap[props.sectionName] as Category[];
+  const articleView = isArticleView.value;
 
-  const subcategoriesByCategory = isSubcategoryView
-    ? categoriesBySection.find((category) => category.categoryName === categoryName)?.subcategories
+  const articlesByCategory = articleView
+    ? categoriesBySection.find((category) => category.categoryName === props.categoryName)?.articles ?? []
     : [];
 
-  categoriesToDisplay.value = isSubcategoryView ? subcategoriesByCategory : categoriesBySection;
+  categoriesToDisplay.value = articleView ? articlesByCategory : categoriesBySection;
 }
 </script>
 

@@ -2,7 +2,7 @@
 title: 'Хвороби овочів'
 description: 'meta опис сторінки'
 
-section: 'shkidnykyIKhvoroby'
+section: 'shkidnyky-i-khvoroby'
 category: 'khvoroby-ovochiv'
 ---
 

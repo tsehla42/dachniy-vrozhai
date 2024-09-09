@@ -1,7 +1,7 @@
 type CategoryNameUkr = string;
 
-type Subcategories = string[];
+type Articles = string[];
 
-export type CategoryTemplate = [CategoryNameUkr, Subcategories?];
+export type CategoryTemplate = [CategoryNameUkr, Articles?];
 
 export type CategoryTemplateCollection = CategoryTemplate[];
