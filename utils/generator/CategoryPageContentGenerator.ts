@@ -1,5 +1,6 @@
 import { Category } from '~/utils/generator/classes/Category';
-import fs from 'fs';
+import { createFolder, createFile } from '~/utils/FileUtils';
+import path from 'path';
 
 export const generateCategoryPageContent = (categoryFolder: string, categories: Category[]) => {
   const createContent = (category: Category) => {
@@ -19,20 +20,16 @@ export const generateCategoryPageContent = (categoryFolder: string, categories: 
 
   const createMarkdownFile = (category: Category) => {
     const { categoryName, articles } = category;
-    const filePath = `${categoryFolder}/${categoryName}.md`;
+    const filePath = path.resolve(categoryFolder, `${categoryName}.md`);
+    const prefix = 'Category';
 
     if (!articles.length) {
-      console.log(`[Category] File ${categoryName}.md doesn't belong to Categories folder. Skipping creation.`);
-
+      console.log(`[${prefix}] File ${categoryName}.md doesn't belong to Categories folder. Skipping creation.`);
       return;
     }
 
-    if (!fs.existsSync(filePath)) {
-      fs.writeFileSync(filePath, createContent(category));
-      console.log(`\n[Category] File ${categoryName}.md created.\n`);
-    } else {
-      console.log(`[Category] File ${categoryName}.md already exists. Skipping creation.`);
-    }
+    createFolder(categoryFolder, prefix);
+    createFile(filePath, createContent(category), prefix);
   };
 
   categories.forEach((category: Category) => {

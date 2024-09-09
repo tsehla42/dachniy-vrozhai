@@ -1,9 +1,9 @@
-import fs from 'fs';
 import { Category } from '~/utils/generator/classes/Category';
 import type { SectionsMapUA } from '~/utils/types/SectionsTypes';
 import type { Entries } from 'type-fest';
 import { transliterate } from '~/utils/Transliteration';
 import path from 'path';
+import { createFolder, createFile } from '~/utils/FileUtils';
 
 export const generateConstants = (constantsFolder: string, sectionCategoriesMap: SectionsMapUA<Category[]>) => {
   const createContent = (sectionContent: Category[]) => {
@@ -12,17 +12,12 @@ export const generateConstants = (constantsFolder: string, sectionCategoriesMap:
 
   (Object.entries(sectionCategoriesMap) as Entries<typeof sectionCategoriesMap>).forEach(
     ([sectionName, sectionContent]) => {
-      if (!fs.existsSync(constantsFolder)) {
-        fs.mkdirSync(constantsFolder, { recursive: true });
-        console.log(`[Constants] Folder "${constantsFolder}" created successfully.`);
-      }
-
-      const transliteratedSectionName = transliterate(sectionName, true);
+      const prefix = 'Constants';
+      const transliteratedSectionName = transliterate(sectionName);
       const filePath = path.resolve(constantsFolder, `${transliteratedSectionName}.json`);
-      const fileContent = createContent(sectionContent);
-      fs.writeFileSync(filePath, fileContent);
 
-      console.log(`[Constants] File "${filePath}" created successfully.`);
+      createFolder(constantsFolder, prefix);
+      createFile(filePath, createContent(sectionContent), prefix, true);
     },
   );
 
