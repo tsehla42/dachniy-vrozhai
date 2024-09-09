@@ -24,7 +24,7 @@ const { pictureSrc } = defineProps({
   <DelayHydration>
     <NuxtLink
       class="category group relative flex items-center justify-center cursor-pointer w-full active:scale-110"
-      :to="to"
+      :to
     >
       <h3
         class="name absolute z-[2] p-1 bg-black bg-opacity-35 backdrop-blur-sm rounded-lg text-center text-lg text-orange-100 font-primary group-hover:text-orange-300 w-min max-w-48 overflow-hidden text-ellipsis transition-colors"

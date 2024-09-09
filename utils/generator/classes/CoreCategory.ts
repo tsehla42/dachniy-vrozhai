@@ -18,7 +18,7 @@ export class CoreCategory {
   }
 
   setSectionName(sectionName: string) {
-    this.sectionName = this.transliterateField(sectionName, true);
+    this.sectionName = this.transliterateField(sectionName);
   }
 
   setCategoryName() {

@@ -1,6 +1,6 @@
-import fs from 'fs';
 import path from 'path';
 import { Category } from '~/utils/generator/classes/Category';
+import { createFolder, createFile } from '~/utils/FileUtils';
 
 export const generateArticlesPageContent = (articlesFolder: string, categories: Category[]) => {
   const createContent = (sectionName: string, categoryName: string, articleName: string, label: string) => {
@@ -19,41 +19,25 @@ export const generateArticlesPageContent = (articlesFolder: string, categories: 
   };
 
   const createMarkdownFile = (folderPath: string, category: Category) => {
+    const prefix = 'Article';
+
     category.articles.forEach(({ sectionName, categoryName, articleName, label }) => {
       const articleFolderPath = path.resolve(folderPath, sectionName, categoryName);
       const articleFilePath = path.resolve(articleFolderPath, `${articleName}.md`);
+      const articleContent = createContent(sectionName, categoryName, articleName, label);
 
-      if (!fs.existsSync(articleFolderPath)) {
-        fs.mkdirSync(articleFolderPath, { recursive: true });
-        console.log(`Folder "${articleFolderPath}" created successfully.`);
-      }
-
-      if (!fs.existsSync(articleFilePath)) {
-        fs.writeFileSync(articleFilePath, createContent(sectionName, categoryName, articleName, label));
-        console.log(`\n[Article] File ${sectionName}/${categoryName}.md created.`);
-      } else {
-        console.log(`[Article] File ${sectionName}/${categoryName}.md already exists. Skipping creation.`);
-      }
+      createFolder(articleFolderPath, prefix);
+      createFile(articleFilePath, articleContent, prefix);
     });
 
     if (!category.articles.length) {
-      console.log('asssssssssssssssssssssssssssssssss');
       const { sectionName, categoryName, label } = category;
-
       const articleFolderPath = path.resolve(folderPath, sectionName);
       const articleFilePath = path.resolve(articleFolderPath, `${categoryName}.md`);
+      const articleContent = createContent(sectionName, categoryName, categoryName, label);
 
-      if (!fs.existsSync(articleFolderPath)) {
-        fs.mkdirSync(articleFolderPath, { recursive: true });
-        console.log(`Folder "${articleFolderPath}" created successfully.`);
-      }
-
-      if (!fs.existsSync(articleFilePath)) {
-        fs.writeFileSync(articleFilePath, createContent(sectionName, categoryName, categoryName, label));
-        console.log(`\n[Article] File ${sectionName}/${categoryName}.md created.`);
-      } else {
-        console.log(`[Article] File ${sectionName}/${categoryName}.md already exists. Skipping creation.`);
-      }
+      createFolder(articleFolderPath, prefix);
+      createFile(articleFilePath, articleContent, prefix);
     }
   };
 

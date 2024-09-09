@@ -13,7 +13,7 @@ export class Article extends CoreCategory {
   }
 
   setToPath() {
-    this.to = `articles/${this.sectionName}/${this.articleName}`;
+    this.to = `/articles/${this.sectionName}/${this.categoryName}/${this.articleName}`;
   }
 
   setArticleName(articleNameUkr: string) {
