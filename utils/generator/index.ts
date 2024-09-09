@@ -8,11 +8,11 @@ import { generateCategoryPageContent } from '~/utils/generator/CategoryPageConte
 import { generateConstants } from '~/utils/generator/CategoriesConstantGenerator';
 import { getAllImagesOnServer } from '~/utils/Images';
 import { generateArticlesPageContent } from '~/utils/generator/ArticlesPageContentGenerator';
-import { OVOCHI_TEMPLATE } from '~/templates/Ovochi';
-import { KVITY_TEMPLATE } from '~/templates/Kvity';
-import { SHKIDNYKY_I_KHVOROBY_TEMPLATE } from '~/templates/ShkidnykyIKhvoroby';
-import { DOBRYVA_TEMPLATE } from '~/templates/Dobryva';
-import { INVENTAR_TEMPLATE } from '~/templates/Inventar';
+import { OVOCHI_TEMPLATE } from '~/templates/ovochi';
+import { KVITY_TEMPLATE } from '~/templates/kvity';
+import { SHKIDNYKY_I_KHVOROBY_TEMPLATE } from '~/templates/shkidnyky-i-khvoroby';
+import { DOBRYVA_TEMPLATE } from '~/templates/dobryva';
+import { INVENTAR_TEMPLATE } from '~/templates/inventar';
 
 const rootPath = process.cwd();
 const contentFolder = path.resolve(rootPath, 'content');
