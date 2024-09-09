@@ -2,7 +2,7 @@
 title: "Хвороби малини"
 description: 'meta опис сторінки'
 
-section: 'shkidnykyIKhvoroby'
+section: 'shkidnyky-i-khvoroby'
 category: 'khvoroby-yahidnykiv'
 article: 'khvoroby-malyny'
 ---
