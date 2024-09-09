@@ -2,7 +2,7 @@
 title: "Хвороби смородини і агрусу"
 description: 'meta опис сторінки'
 
-section: 'shkidnykyIKhvoroby'
+section: 'shkidnyky-i-khvoroby'
 category: 'khvoroby-yahidnykiv'
 article: 'khvoroby-smorodyny-i-ahrusu'
 ---

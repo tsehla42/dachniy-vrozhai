@@ -2,7 +2,7 @@
 title: "Хвороби капусти"
 description: 'meta опис сторінки'
 
-section: 'shkidnykyIKhvoroby'
+section: 'shkidnyky-i-khvoroby'
 category: 'khvoroby-ovochiv'
 article: 'khvoroby-kapusty'
 ---

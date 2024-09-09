@@ -2,7 +2,7 @@
 title: "Шкідники полуниці"
 description: 'meta опис сторінки'
 
-section: 'shkidnykyIKhvoroby'
+section: 'shkidnyky-i-khvoroby'
 category: 'shkidnyky-yahidnykiv'
 article: 'shkidnyky-polunytsi'
 ---

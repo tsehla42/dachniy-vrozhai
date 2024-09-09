@@ -3,6 +3,7 @@ import type { SectionsMapEN } from '~/utils/types/SectionsTypes';
 import { readFileSync } from 'fs';
 import path from 'path';
 import type { Category } from '~/utils/generator/classes/Category';
+import { transliterate } from '~/utils/Transliteration';
 
 export default defineNuxtPlugin(() => {
   const rootPath = process.cwd();
@@ -14,8 +15,9 @@ export default defineNuxtPlugin(() => {
     return readFileSync(filePath);
   };
 
-  const sectionCategoriesMap = Object.keys(SectionsEnum).reduce(
-    (acc, sectionName) => {
+  const sectionCategoriesMap = Object.values(SectionsEnum).reduce(
+    (acc, sectionNameUkr) => {
+      const sectionName = transliterate(sectionNameUkr);
       const categories = JSON.parse(String(readCategoryJSONFile(sectionName))) as Category[];
 
       // console.log('categories', categories);
