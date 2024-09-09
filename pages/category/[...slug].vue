@@ -21,7 +21,7 @@ const getDoc = (doc: any) => {
       </template>
     </ContentDoc>
 
-    <RandomArticle />
+    <RandomArticle v-if="!!documentProperties" />
   </div>
 </template>
 
