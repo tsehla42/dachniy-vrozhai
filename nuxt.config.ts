@@ -27,11 +27,11 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxt/ui',
-    '@nuxtjs/eslint-module',
-    'nuxt-delay-hydration',
     '@nuxt/image',
-    '@pinia/nuxt',
     '@nuxt/content',
+    '@nuxt/eslint',
+    'nuxt-delay-hydration',
+    '@pinia/nuxt',
     'vue3-carousel-nuxt',
   ],
 
@@ -49,4 +49,6 @@ export default defineNuxtConfig({
     debug: process.env.NODE_ENV === 'development',
     mode: 'manual',
   },
+
+  compatibilityDate: '2025-05-24',
 });
