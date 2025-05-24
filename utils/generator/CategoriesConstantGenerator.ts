@@ -1,4 +1,4 @@
-import { Category } from '~/utils/generator/classes/Category';
+import type { Category } from '~/utils/generator/classes/Category';
 import type { SectionsMapUA } from '~/utils/types/SectionsTypes';
 import type { Entries } from 'type-fest';
 import { transliterate } from '~/utils/Transliteration';
