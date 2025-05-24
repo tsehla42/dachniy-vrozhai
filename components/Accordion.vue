@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import type { PropType } from 'vue';
-import { SectionsEnum } from '~/utils/types/SectionsTypes';
+import type { SectionsEnum } from '~/utils/types/SectionsTypes';
 import { SVG_ICON_COMPONENTS_MAP } from '~/constants/SvgIconComponentsMap';
 
 const { activeSections } = defineProps({

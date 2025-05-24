@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { SectionsEnum } from '~/utils/types/SectionsTypes';
+import type { SectionsEnum } from '~/utils/types/SectionsTypes';
 import type { Category } from '~/utils/generator/classes/Category';
 import type { Article } from '~/utils/generator/classes/Article';
 
