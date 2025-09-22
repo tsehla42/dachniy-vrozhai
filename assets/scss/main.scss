@@ -1,6 +1,8 @@
+
 /*
 main.scss imports all variables and styles that are used in components without them being imported
 */
 
-@import "abstracts";
-@import "components";
+@use "abstracts";
+@use "components";
+

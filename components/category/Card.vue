@@ -1,19 +1,16 @@
 <script setup lang="ts">
-const { pictureSrc } = defineProps({
+defineProps({
   label: {
     type: String,
     required: true,
-    default: '',
   },
   to: {
     type: String,
     required: true,
-    default: '/',
   },
   pictureSrc: {
     type: String,
     required: true,
-    default: '/',
   },
 });
 
@@ -35,7 +32,7 @@ const { pictureSrc } = defineProps({
         class="absolute w-full h-full max-w-40 sm:max-w-52 bg-gray-200 bg-opacity-[8%] z-[1] group-hover:opacity-0 transition-all"
       />
       <NuxtImg
-        class="picture w-full max-w-40 sm:max-w-52 saturate-[70%] group-hover:saturate-100 transition-all"
+        class="picture w-full max-w-40 sm:max-w-52 saturate-[70%] group-hover:saturate-100 transition-all rounded-md border-4 border-solid border-black"
         :src="pictureSrc"
         width="200"
         height="200"
@@ -44,12 +41,3 @@ const { pictureSrc } = defineProps({
     </NuxtLink>
   </DelayHydration>
 </template>
-
-<style scoped lang="scss">
-.category {
-  .picture {
-    border-radius: 5px;
-    border: 3px solid $black;
-  }
-}
-</style>
