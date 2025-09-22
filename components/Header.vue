@@ -26,6 +26,10 @@ const { contentSections } = useSectionsStore();
 </template>
 
 <style scoped lang="scss">
+//@use 'abstracts/mixins.scss';
+//@use 'abstracts/colors.scss';
+@use 'abstracts/fonts.scss';
+
 $header-height: 180px;
 $progress-bar-height: 8px;
 
@@ -39,7 +43,7 @@ header {
     justify-content: space-between;
     height: $header-height;
     padding: 0 24px;
-    background: linear-gradient(290deg, $orange-400 20.28%, $secondary 52.52%);
+    background: linear-gradient(290deg, colors.$orange-400 20.28%, colors.$secondary 52.52%);
 
     .logo-wrapper {
       display: flex;
@@ -51,17 +55,17 @@ header {
     }
 
     .header-text {
-      @include flex-center();
+      @include mixins.flex-center();
 
       p {
         margin: 28px 0 0;
-        font-family: $font-family-primary;
+        font-family: fonts.$font-family-primary;
       }
     }
   }
 
   .progress-bar {
-    border-bottom: 3px solid $green-800;
+    border-bottom: 3px solid colors.$green-800;
   }
 
   .header-links {
@@ -72,7 +76,7 @@ header {
   }
 
   .link {
-    font-family: $font-family-secondary;
+    font-family: fonts.$font-family-secondary;
   }
 }
 </style>

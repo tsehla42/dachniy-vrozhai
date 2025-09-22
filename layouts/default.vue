@@ -13,13 +13,15 @@
 </template>
 
 <style scoped lang="scss">
+//@use 'abstracts/colors.scss';
+
 .app-wrapper {
   min-height: 100%;
   display: grid;
   grid-template-rows: auto 1fr auto;
 
   main {
-    background: $orange-100;
+    background: colors.$orange-100;
     margin: 18px 0;
   }
 }

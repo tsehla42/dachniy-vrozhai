@@ -1,7 +1,9 @@
+@use "../abstracts/colors";
+
 
 @mixin section-category-dropdown-link() {
-  background-color: $green-400;
-  border: 3px solid $green-800;
+  background-color: colors.$green-400;
+  border: 3px solid colors.$green-800;
   transition: all 0.1s;
 
   &:first-of-type {
@@ -13,13 +15,13 @@
   }
 
   &:hover {
-    background: $orange-300;
-    border: 3px solid $orange-900;
+    background: colors.$orange-300;
+    border: 3px solid colors.$orange-900;
   }
 
   &:has(.active) {
-    background: $orange-400;
-    border: 3px solid $orange-700;
+    background: colors.$orange-400;
+    border: 3px solid colors.$orange-700;
   }
 }
 

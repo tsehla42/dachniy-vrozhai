@@ -3,12 +3,15 @@ styles.scss serves for styling content globally
 Also can use variables
 */
 
-@import "styles/style-reset";
+@use "styles/style-reset";
+@use "abstracts/fonts";
+@use "abstracts/colors";
+@use "abstracts/mixins";
 
 body {
-  font-family: $font-family-primary;
-  background: $orange-100;
-  @include custom-scrollbar()
+  font-family: fonts.$font-family-primary;
+  background: colors.$orange-100;
+  @include mixins.custom-scrollbar()
 }
 
 page {
@@ -18,7 +21,7 @@ page {
   h4,
   h5,
   h6 {
-    font-family: $font-family-primary;
+    font-family: fonts.$font-family-primary;
     font-weight: 400;
     text-transform: uppercase;
   }
@@ -39,7 +42,7 @@ a {
 p,
 span,
 a {
-  font-family: $font-family-secondary;
+  font-family: fonts.$font-family-secondary;
   //word-break: break-all;
 }
 
