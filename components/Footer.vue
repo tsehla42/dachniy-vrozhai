@@ -30,18 +30,15 @@ const footerLinks = [
 </template>
 
 <style scoped lang="scss">
-//@use 'abstracts/colors.scss';
-//@use 'abstracts/mixins.scss';
-
 footer {
   display: flex;
   flex-flow: column;
   height: 160px;
-  border-top: 6px solid colors.$green-800;
+  border-top: 6px solid $green-800;
   background: $green-600;
 
   .footer-content {
-    @include mixins.flex-center;
+    @include flex-center;
     height: 100%;
     background: url('../assets/svg/logo-letters-dv.svg') no-repeat;
     background-size: contain;
@@ -55,7 +52,7 @@ footer {
       background-color: rgba($black, 0.42);
 
       .link {
-        @include mixins.flex-center();
+        @include flex-center();
         gap: 8px;
         color: $orange-150;
 

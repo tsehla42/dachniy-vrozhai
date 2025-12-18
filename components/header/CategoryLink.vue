@@ -60,16 +60,12 @@ const triggerUi = {
 </template>
 
 <style lang="scss">
-//@use 'abstracts/colors.scss';
-//@use 'abstracts/mixins.scss';
-@use 'abstracts/fonts.scss';
-
 .category-link {
   .category-trigger-wrapper .activator-second-level {
     padding: 5px 18px;
 
     span {
-      font-family: fonts.$font-family-primary;
+      font-family: $font-family-primary;
       font-size: 20px;
     }
   }
@@ -79,15 +75,15 @@ const triggerUi = {
     margin-top: -5px !important;
 
     .article-dropdown div {
-      @include mixins.dropdown-style;
+      @include dropdown-style;
     }
 
     .article-link {
       display: block;
       padding: 6px 18px;
-      font-family: fonts.$font-family-primary;
+      font-family: $font-family-primary;
       font-size: 16px;
-      @include mixins.section-category-dropdown-link;
+      @include section-category-dropdown-link;
     }
   }
 }

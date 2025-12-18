@@ -14,6 +14,10 @@ export default defineNuxtConfig({
     },
   },
 
+  nitro: {
+    preset: 'static'
+  },
+
   devtools: { enabled: true },
 
   // base styles
@@ -25,7 +29,11 @@ export default defineNuxtConfig({
       preprocessorOptions: {
         scss: {
           api: 'modern-compiler',
-          additionalData: `@use "${join(currentDir, './assets/scss/main.scss')}" as *;`,
+          additionalData: `
+            @use "${join(currentDir, './assets/scss/abstracts/_colors.scss')}" as *;
+            @use "${join(currentDir, './assets/scss/abstracts/_fonts.scss')}" as *;
+            @use "${join(currentDir, './assets/scss/abstracts/_mixins.scss')}" as *;
+          `,
         },
       },
     },

@@ -1,4 +1,4 @@
-@use "colors";
+@use "colors" as *;
 
 @mixin flex-center {
   display: flex;
@@ -16,8 +16,8 @@
 @mixin custom-scrollbar(
   $width: 10px,
   $border-radius: 4px,
-  $thumb-color: colors.$green-600,
-  $track-color: colors.$orange-100
+  $thumb-color: $green-600,
+  $track-color: $orange-100
 ) {
   &::-webkit-scrollbar {
     width: $width;
@@ -34,7 +34,7 @@
     border-radius: $border-radius;
 
     &:hover {
-      background-color: colors.$green-800;
+      background-color: $green-800;
     }
   }
 
@@ -42,3 +42,35 @@
     background: $track-color;
   }
 }
+
+@mixin section-category-dropdown-link() {
+  background-color: $green-400;
+  border: 3px solid $green-800;
+  transition: all 0.1s;
+
+  &:first-of-type {
+    border-radius: 0 18px 0 0;
+  }
+
+  &:last-of-type {
+    border-radius: 0 0 18px 18px;
+  }
+
+  &:hover {
+    background: $orange-300;
+    border: 3px solid $orange-900;
+  }
+
+  &:has(.active) {
+    background: $orange-400;
+    border: 3px solid $orange-700;
+  }
+}
+
+@mixin dropdown-style() {
+  display: flex;
+  flex-flow: column;
+  gap: 4px;
+}
+
+
