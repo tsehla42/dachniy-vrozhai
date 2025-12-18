@@ -23,6 +23,12 @@ export default defineNuxtConfig({
     }
   },
 
+  image: {
+    // For static site generation, use 'none' provider to disable runtime optimization
+    // Images will be served as-is from the public folder
+    provider: 'none',
+  },
+
   devtools: { enabled: true },
 
   // base styles
