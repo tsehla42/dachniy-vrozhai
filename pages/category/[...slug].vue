@@ -1,27 +1,18 @@
 <script setup lang="ts">
-const documentProperties = ref(null);
-const getDoc = (doc: any) => {
-  documentProperties.value = doc;
-};
+const route = useRoute();
+const { data: doc } = await useAsyncData('page-data', () => queryContent(route.path).findOne());
 </script>
 
 <template>
   <div class="category-page container mx-auto px-4 sm:px-8 md:px-16">
-    <ContentDoc>
-      <template #default="{ doc }">
-        {{ getDoc(doc) }}
-        <ContentRenderer :value="doc" />
-        <div class="my-8">
-          <CategoryList :section-name="doc.section || ''" :category-name="doc.category" />
-        </div>
-      </template>
-
-      <template #not-found>
-        <NotFoundContent />
-      </template>
-    </ContentDoc>
-
-    <RandomArticle v-if="!!documentProperties" />
+    <div v-if="doc">
+      <ContentRenderer :value="doc" />
+      <div class="my-8">
+        <CategoryList :section-name="doc.section || ''" :category-name="doc.category" />
+      </div>
+      <RandomArticle />
+    </div>
+    <NotFoundContent v-else />
   </div>
 </template>
 

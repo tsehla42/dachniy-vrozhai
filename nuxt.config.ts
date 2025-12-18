@@ -15,7 +15,12 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    preset: 'static'
+    preset: 'static',
+    prerender: {
+      failOnError: false,
+      // Ignore routes that fail (like missing images)
+      ignore: ['/api', '/_ipx']
+    }
   },
 
   devtools: { enabled: true },
