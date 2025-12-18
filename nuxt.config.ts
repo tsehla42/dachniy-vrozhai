@@ -1,4 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { dirname, join } from 'path';
+import { fileURLToPath } from 'url';
+
+const currentDir = dirname(fileURLToPath(import.meta.url));
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -12,14 +17,15 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   // base styles
-  css: ['@/assets/scss/styles.scss'],
+  // css: ['@/assets/scss/styles.scss'],
 
   // variables, fonts, mixins, etc.
   vite: {
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "~/assets/scss/main.scss" as *;',
+          api: 'modern-compiler',
+          additionalData: `@use "${join(currentDir, './assets/scss/main.scss')}" as *;`,
         },
       },
     },
@@ -27,11 +33,11 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxt/ui',
-    '@nuxtjs/eslint-module',
-    'nuxt-delay-hydration',
     '@nuxt/image',
-    '@pinia/nuxt',
     '@nuxt/content',
+    '@nuxt/eslint',
+    'nuxt-delay-hydration',
+    '@pinia/nuxt',
     'vue3-carousel-nuxt',
   ],
 
@@ -49,4 +55,6 @@ export default defineNuxtConfig({
     debug: process.env.NODE_ENV === 'development',
     mode: 'manual',
   },
+
+  compatibilityDate: '2025-05-24',
 });

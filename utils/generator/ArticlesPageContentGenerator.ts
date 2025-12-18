@@ -1,5 +1,5 @@
 import path from 'path';
-import { Category } from '~/utils/generator/classes/Category';
+import type { Category } from '~/utils/generator/classes/Category';
 import { createFolder, createFile } from '~/utils/FileUtils';
 
 export const generateArticlesPageContent = (articlesFolder: string, categories: Category[]) => {
