@@ -12,7 +12,7 @@ const slides = [
     to: '/test',
     heading: 'Вирощування полуниці',
     text: 'Поради та інструкції',
-    picture: 'полуниця',
+    picture: 'polunytsia',
     meta: '1', // todo: investigate data attributes SEO
   },
   {

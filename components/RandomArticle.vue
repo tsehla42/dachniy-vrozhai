@@ -1,25 +1,25 @@
 <script setup lang="ts">
 const items = [
-  { id: 0, articleLabel: 'Капустяні', to: '/test', picturePath: '/images/categories/капустяні.png' },
-  { id: 1, articleLabel: 'Бобові', to: '/test', picturePath: '/images/categories/бобові.png' },
-  { id: 2, articleLabel: 'Бульбоплоди', to: '/test', picturePath: '/images/categories/бульбоплоди.png' },
-  { id: 3, articleLabel: 'Коренеплоди', to: '/test', picturePath: '/images/categories/коренеплоди.png' },
-  { id: 4, articleLabel: 'Пасльонові', to: '/test', picturePath: '/images/categories/пасльонові.png' },
+  { id: 0, articleLabel: 'Капустяні', to: '/test', picturePath: '/images/categories/kapustiani.png' },
+  { id: 1, articleLabel: 'Бобові', to: '/test', picturePath: '/images/categories/bobovi.png' },
+  { id: 2, articleLabel: 'Бульбоплоди', to: '/test', picturePath: '/images/categories/bulboplody.png' },
+  { id: 3, articleLabel: 'Коренеплоди', to: '/test', picturePath: '/images/categories/koreneplody.png' },
+  { id: 4, articleLabel: 'Пасльонові', to: '/test', picturePath: '/images/categories/paslionovi.png' },
   {
     id: 5,
     articleLabel: 'Пряно смакові рослини',
     to: '/test',
-    picturePath: '/images/categories/пряно-смакові-рослини.png',
+    picturePath: '/images/categories/priano-smakovi-roslyny.png',
   },
-  { id: 6, articleLabel: 'Розсада', to: '/test', picturePath: '/images/categories/вирощування-розсади.png' },
-  { id: 7, articleLabel: 'Салатні', to: '/test', picturePath: '/images/categories/салатні.png' },
-  { id: 8, articleLabel: 'Цибулеві', to: '/test', picturePath: '/images/categories/цибулеві.png' },
-  { id: 9, articleLabel: 'Гарбузові', to: '/test', picturePath: '/images/categories/гарбузові.png' },
-  { id: 10, articleLabel: 'Ягідні', to: '/test', picturePath: '/images/categories/ягідні-рослини.png' },
+  { id: 6, articleLabel: 'Розсада', to: '/test', picturePath: '/images/categories/vyroschuvannia-rozsady.png' },
+  { id: 7, articleLabel: 'Салатні', to: '/test', picturePath: '/images/categories/salatni.png' },
+  { id: 8, articleLabel: 'Цибулеві', to: '/test', picturePath: '/images/categories/tsybulevi.png' },
+  { id: 9, articleLabel: 'Гарбузові', to: '/test', picturePath: '/images/categories/harbuzovi.png' },
+  { id: 10, articleLabel: 'Ягідні', to: '/test', picturePath: '/images/categories/yahidni-roslyny.png' },
   { id: 11, articleLabel: 'template-200x200', to: '/test', picturePath: '/images/categories/template-200x200.png' },
   { id: 12, articleLabel: 'fallback-200x200', to: '/test', picturePath: '/images/fallback/fallback-200x200.png' },
-  { id: 13, articleLabel: 'Капустяні 14', to: '/test', picturePath: '/images/categories/капуста-білокачанна.png' },
-  { id: 14, articleLabel: 'Капустяні 15', to: '/test', picturePath: '/images/categories/капустяні.png' },
+  { id: 13, articleLabel: 'Капустяні 14', to: '/test', picturePath: '/images/categories/kapusta-bilokachanna.png' },
+  { id: 14, articleLabel: 'Капустяні 15', to: '/test', picturePath: '/images/categories/kapustiani.png' },
 ];
 
 type CardRefValue<T = HTMLDivElement> = T | null;
