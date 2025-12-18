@@ -4,14 +4,14 @@
     "sectionName": "ovochi",
     "label": "Капустяні",
     "to": "/category/kapustiani",
-    "pictureSrc": "/images/categories/капустяні.png",
+    "pictureSrc": "/images/categories/kapustiani.png",
     "articles": [
       {
         "categoryName": "kapustiani",
         "sectionName": "ovochi",
         "label": "Капуста білокачанна",
         "to": "/articles/ovochi/kapustiani/kapusta-bilokachanna",
-        "pictureSrc": "/images/articles/preview/капуста-білокачанна.png",
+        "pictureSrc": "/images/articles/preview/kapusta-bilokachanna.png",
         "articleName": "kapusta-bilokachanna"
       },
       {
@@ -69,7 +69,7 @@
     "sectionName": "ovochi",
     "label": "Бобові",
     "to": "/category/bobovi",
-    "pictureSrc": "/images/categories/бобові.png",
+    "pictureSrc": "/images/categories/bobovi.png",
     "articles": [
       {
         "categoryName": "bobovi",
@@ -94,7 +94,7 @@
     "sectionName": "ovochi",
     "label": "Бульбоплоди",
     "to": "/category/bulboplody",
-    "pictureSrc": "/images/categories/бульбоплоди.png",
+    "pictureSrc": "/images/categories/bulboplody.png",
     "articles": [
       {
         "categoryName": "bulboplody",
@@ -119,7 +119,7 @@
     "sectionName": "ovochi",
     "label": "Коренеплоди",
     "to": "/category/koreneplody",
-    "pictureSrc": "/images/categories/коренеплоди.png",
+    "pictureSrc": "/images/categories/koreneplody.png",
     "articles": [
       {
         "categoryName": "koreneplody",
@@ -216,7 +216,7 @@
     "sectionName": "ovochi",
     "label": "Цибулеві",
     "to": "/category/tsybulevi",
-    "pictureSrc": "/images/categories/цибулеві.png",
+    "pictureSrc": "/images/categories/tsybulevi.png",
     "articles": [
       {
         "categoryName": "tsybulevi",
@@ -289,7 +289,7 @@
     "sectionName": "ovochi",
     "label": "Пасльонові",
     "to": "/category/paslionovi",
-    "pictureSrc": "/images/categories/пасльонові.png",
+    "pictureSrc": "/images/categories/paslionovi.png",
     "articles": [
       {
         "categoryName": "paslionovi",
@@ -330,7 +330,7 @@
     "sectionName": "ovochi",
     "label": "Пряно-смакові рослини",
     "to": "/category/priano-smakovi-roslyny",
-    "pictureSrc": "/images/categories/пряно-смакові-рослини.png",
+    "pictureSrc": "/images/categories/priano-smakovi-roslyny.png",
     "articles": [
       {
         "categoryName": "priano-smakovi-roslyny",
@@ -395,7 +395,7 @@
     "sectionName": "ovochi",
     "label": "Гарбузові",
     "to": "/category/harbuzovi",
-    "pictureSrc": "/images/categories/гарбузові.png",
+    "pictureSrc": "/images/categories/harbuzovi.png",
     "articles": [
       {
         "categoryName": "harbuzovi",
@@ -436,7 +436,7 @@
     "sectionName": "ovochi",
     "label": "Салатні",
     "to": "/category/salatni",
-    "pictureSrc": "/images/categories/салатні.png",
+    "pictureSrc": "/images/categories/salatni.png",
     "articles": [
       {
         "categoryName": "salatni",
@@ -501,14 +501,14 @@
     "sectionName": "ovochi",
     "label": "Ягідні рослини",
     "to": "/category/yahidni-roslyny",
-    "pictureSrc": "/images/categories/ягідні-рослини.png",
+    "pictureSrc": "/images/categories/yahidni-roslyny.png",
     "articles": [
       {
         "categoryName": "yahidni-roslyny",
         "sectionName": "ovochi",
         "label": "Полуниця",
         "to": "/articles/ovochi/yahidni-roslyny/polunytsia",
-        "pictureSrc": "/images/articles/preview/полуниця.png",
+        "pictureSrc": "/images/articles/preview/polunytsia.png",
         "articleName": "polunytsia"
       },
       {
@@ -574,7 +574,7 @@
     "sectionName": "ovochi",
     "label": "Вирощування розсади",
     "to": "/category/vyroschuvannia-rozsady",
-    "pictureSrc": "/images/categories/вирощування-розсади.png",
+    "pictureSrc": "/images/categories/vyroschuvannia-rozsady.png",
     "articles": [
       {
         "categoryName": "vyroschuvannia-rozsady",
