@@ -100,19 +100,15 @@ console.log('carousel, non delayed hydration', Date.now());
 </template>
 
 <style lang="scss">
-//@use 'abstracts/mixins.scss';
-//@use 'abstracts/colors.scss';
-//@use 'abstracts/fonts.scss';
-
 .carousel__item {
-  @include mixins.flex-center;
+  @include flex-center;
   position: relative;
   width: 100%;
 
-  background-color: colors.$orange-150;
-  color: colors.$white;
+  background-color: $orange-150;
+  color: $white;
   font-size: 20px;
-  border: 4px solid colors.$black;
+  border: 4px solid $black;
   border-radius: 20px;
   overflow: hidden;
 
@@ -133,18 +129,18 @@ console.log('carousel, non delayed hydration', Date.now());
     height: 120px;
     padding: 0 2em;
 
-    background-color: rgba(colors.$black, 42%);
+    background-color: rgba($black, 42%);
 
     h3 {
-      font-family: fonts.$font-family-primary;
+      font-family: $font-family-primary;
       font-size: 1.8em;
-      -webkit-text-stroke: 2px colors.$black;
+      -webkit-text-stroke: 2px $black;
     }
 
     p {
-      font-family: fonts.$font-family-primary;
+      font-family: $font-family-primary;
       font-size: 1.2em;
-      -webkit-text-stroke: 1px colors.$black;
+      -webkit-text-stroke: 1px $black;
       margin: 0;
     }
   }
@@ -176,11 +172,11 @@ console.log('carousel, non delayed hydration', Date.now());
 
   &-item {
     .carousel__pagination-button:after {
-      background-color: rgba(colors.$green-900, 42%);
+      background-color: rgba($green-900, 42%);
     }
 
     .carousel__pagination-button--active:after {
-      background-color: colors.$primary;
+      background-color: $primary;
     }
   }
 }
