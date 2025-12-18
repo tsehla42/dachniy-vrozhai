@@ -1,3 +1,5 @@
+@use "colors";
+
 @mixin flex-center {
   display: flex;
   justify-content: center;
@@ -14,8 +16,8 @@
 @mixin custom-scrollbar(
   $width: 10px,
   $border-radius: 4px,
-  $thumb-color: $green-600,
-  $track-color: $orange-100
+  $thumb-color: colors.$green-600,
+  $track-color: colors.$orange-100
 ) {
   &::-webkit-scrollbar {
     width: $width;
@@ -32,7 +34,7 @@
     border-radius: $border-radius;
 
     &:hover {
-      background-color: $green-800;
+      background-color: colors.$green-800;
     }
   }
 

@@ -58,11 +58,15 @@ const triggerUi = {
 </template>
 
 <style lang="scss">
+//@use 'abstracts/mixins.scss';
+//@use 'abstracts/colors.scss';
+@use 'abstracts/fonts.scss';
+
 .header-section {
   .section-trigger-wrapper .activator-first-level {
     padding: 10px 18px 4px;
-    background: $green-400;
-    border: 3px solid $green-800;
+    background: colors.$green-400;
+    border: 3px solid colors.$green-800;
     border-top: none;
     border-radius: 0 0 18px 18px;
     outline: none;
@@ -70,20 +74,20 @@ const triggerUi = {
 
     &:hover {
       padding: 12px 18px 6px;
-      background: $orange-300;
-      border: 3px solid $orange-900;
+      background: colors.$orange-300;
+      border: 3px solid colors.$orange-900;
       border-top: none;
     }
 
     span {
-      font-family: $font-family-primary;
+      font-family: fonts.$font-family-primary;
       font-size: clamp(1.25rem, 1rem + 0.4vw, 1.5rem);
     }
 
     &.active {
       padding: 12px 18px;
-      background: $orange-400;
-      border: 3px solid $orange-focus;
+      background: colors.$orange-400;
+      border: 3px solid colors.$orange-focus;
     }
   }
 
@@ -92,12 +96,12 @@ const triggerUi = {
     padding-top: 2px !important;
 
     .category-dropdown div {
-      @include dropdown-style;
+      @include mixins.dropdown-style;
     }
 
     .category-link-wrapper {
       font-size: 20px;
-      @include section-category-dropdown-link;
+      @include mixins.section-category-dropdown-link;
     }
   }
 }
