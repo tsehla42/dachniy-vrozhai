@@ -30,11 +30,13 @@ $header-height: 180px;
 $progress-bar-height: 8px;
 
 header {
+  width: 100%;
   position: sticky;
   top: -$header-height;
   z-index: 10;
 
   .header-top {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     height: $header-height;
@@ -65,6 +67,7 @@ header {
   }
 
   .header-links {
+    width: 100%;
     position: sticky;
     top: 0;
     height: 52px;
