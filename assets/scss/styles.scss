@@ -9,6 +9,8 @@ Also can use variables
 @use "abstracts/mixins";
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: fonts.$font-family-primary;
   background: colors.$orange-100;
   @include mixins.custom-scrollbar()
