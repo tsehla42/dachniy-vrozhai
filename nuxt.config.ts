@@ -35,7 +35,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   // base styles
-  // css: ['@/assets/scss/styles.scss'],
+  css: ['@/assets/scss/styles.scss'],
 
   // variables, fonts, mixins, etc.
   vite: {
