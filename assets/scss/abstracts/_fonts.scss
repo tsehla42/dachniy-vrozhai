@@ -1,19 +1,6 @@
-@font-face {
-  font-family: "Anime Ace v05";
-  src: url("../../fonts/anime acev05.ttf") format("ttf");
-  font-weight: 125 950;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "Montserrat";
-  src: url("../../fonts/Montserrat-VariableFont_wght.ttf") format("ttf");
-  font-weight: 125 950;
-  font-stretch: 75% 125%;
-  font-style: normal;
-}
+// Font families are defined in /public/fonts/fonts.css and loaded via HTML head
+// This file only exports the font family variables for use in SCSS
 
 $font-family-primary: "Anime Ace v05", Montserrat, Calibri, Helvetica, sans-serif;
 $font-family-secondary: Montserrat, Calibri, Helvetica, sans-serif;
 $font-family-tertiary: Calibri, Helvetica, sans-serif;
-
