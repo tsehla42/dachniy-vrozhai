@@ -13,7 +13,7 @@
     "start": "npm run generate && npm run serve",
     "postinstall": "nuxt prepare",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
-    "generate-content": "tsx utils/generator"
+    "generate-content": "tsx scripts/generate-content.ts"
   },
   "devDependencies": {
     "@iconify-json/heroicons": "1.2.3",
