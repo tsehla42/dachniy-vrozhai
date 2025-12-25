@@ -2,6 +2,7 @@
 import type { PropType } from 'vue';
 import type { SectionsEnum } from '~/utils/types/SectionsTypes';
 import { SVG_ICON_COMPONENTS_MAP } from '~/constants/SvgIconComponentsMap';
+import useSections from '~/composables/useSections';
 
 const { activeSections } = defineProps({
   activeSections: {
@@ -10,7 +11,7 @@ const { activeSections } = defineProps({
   },
 });
 
-const { contentSections } = useSectionsStore();
+const { contentSections } = useSections();
 const sectionsToDisplay = contentSections.filter(
   (section) => activeSections.includes(section.sectionName) || !activeSections.length,
 );
