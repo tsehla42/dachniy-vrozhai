@@ -8,6 +8,11 @@ Also can use variables
 @use "abstracts/colors";
 @use "abstracts/mixins";
 
+@import "tailwindcss" layer(base);
+@import "tailwindcss" layer(components);
+@import "tailwindcss" layer(utilities);
+
+
 body {
   margin: 0;
   padding: 0;
