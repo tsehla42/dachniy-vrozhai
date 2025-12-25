@@ -2,6 +2,7 @@
 import type { SectionsEnum } from '~/utils/types/SectionsTypes';
 import type { Category } from '~/utils/generator/classes/Category';
 import type { Article } from '~/utils/generator/classes/Article';
+import useSections from '~/composables/useSections';
 
 const props = defineProps({
   sectionName: {
@@ -16,7 +17,7 @@ const props = defineProps({
 
 const isArticleView = ref(!!props.categoryName);
 const categoriesToDisplay = ref<Category[] | Article[]>([]);
-const { sectionsMap } = useSectionsStore();
+const { sectionsMap } = useSections();
 
 if (props.sectionName && sectionsMap) {
   const categoriesBySection = sectionsMap[props.sectionName] as Category[];

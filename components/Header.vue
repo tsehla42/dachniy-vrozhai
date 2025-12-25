@@ -1,5 +1,7 @@
 <script setup lang="ts">
-const { contentSections } = useSectionsStore();
+import useSections from '~/composables/useSections';
+
+const { contentSections } = useSections();
 </script>
 
 <template>
