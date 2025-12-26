@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { dirname, join } from 'path';
-import { fileURLToPath } from 'url';
+import { dirname, join } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 const currentDir = dirname(fileURLToPath(import.meta.url));
 
@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   },
 
   nitro: {
-    preset: 'static',
+    static: true,
     prerender: {
       failOnError: false,
       // Ignore routes that fail (like missing images)
@@ -42,11 +42,10 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          api: 'modern-compiler',
           additionalData: `
-            @use "${join(currentDir, './assets/scss/abstracts/_colors.scss')}" as *;
-            @use "${join(currentDir, './assets/scss/abstracts/_fonts.scss')}" as *;
-            @use "${join(currentDir, './assets/scss/abstracts/_mixins.scss')}" as *;
+            @use "${join(currentDir, './app/assets/scss/abstracts/_colors.scss')}" as *;
+            @use "${join(currentDir, './app/assets/scss/abstracts/_fonts.scss')}" as *;
+            @use "${join(currentDir, './app/assets/scss/abstracts/_mixins.scss')}" as *;
           `,
         },
       },

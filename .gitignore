@@ -24,4 +24,5 @@ logs
 !.env.example
 
 # vibecoding configs
-llm-context.md
+.github/*
+.github/copilot-instructions.md
