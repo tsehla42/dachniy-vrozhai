@@ -43,9 +43,9 @@ export default defineNuxtConfig({
       preprocessorOptions: {
         scss: {
           additionalData: `
-            @use "${join(currentDir, './assets/scss/abstracts/_colors.scss')}" as *;
-            @use "${join(currentDir, './assets/scss/abstracts/_fonts.scss')}" as *;
-            @use "${join(currentDir, './assets/scss/abstracts/_mixins.scss')}" as *;
+            @use "${join(currentDir, './app/assets/scss/abstracts/_colors.scss')}" as *;
+            @use "${join(currentDir, './app/assets/scss/abstracts/_fonts.scss')}" as *;
+            @use "${join(currentDir, './app/assets/scss/abstracts/_mixins.scss')}" as *;
           `,
         },
       },
