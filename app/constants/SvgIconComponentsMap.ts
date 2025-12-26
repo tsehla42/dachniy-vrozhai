@@ -1,11 +1,14 @@
-import SvgIconTomato from '../components/svg/IconTomato.vue';
-import SvgIconFlower from '../components/svg/IconFlower.vue';
-import SvgIconBug from '../components/svg/IconBug.vue';
-import SvgIconBag from '../components/svg/IconBag.vue';
-import SvgIconPickaxe from '../components/svg/IconPickaxe.vue';
+import {
+  SvgIconTomato,
+  SvgIconFlower,
+  SvgIconBug,
+  SvgIconBag,
+  SvgIconPickaxe,
+} from '~/components/svg';
 
 import type { SectionsMapEN } from '~/utils/types/SectionsTypes';
 import type { Component } from 'vue';
+import { markRaw } from 'vue';
 
 export const SVG_ICON_COMPONENTS_MAP: SectionsMapEN<Component> = {
   ovochi: markRaw(SvgIconTomato),
