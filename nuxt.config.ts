@@ -1,8 +1,4 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
-
-const currentDir = dirname(fileURLToPath(import.meta.url));
 
 export default defineNuxtConfig({
   app: {
@@ -19,16 +15,9 @@ export default defineNuxtConfig({
 
   nitro: {
     static: true,
-    prerender: {
-      failOnError: false,
-      // Ignore routes that fail (like missing images)
-      ignore: ['/api', '/_ipx']
-    }
   },
 
   image: {
-    // For static site generation, use 'none' provider to disable runtime optimization
-    // Images will be served as-is from the public folder
     provider: 'none',
   },
 
@@ -42,11 +31,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: `
-            @use "${join(currentDir, './app/assets/scss/abstracts/_colors.scss')}" as *;
-            @use "${join(currentDir, './app/assets/scss/abstracts/_fonts.scss')}" as *;
-            @use "${join(currentDir, './app/assets/scss/abstracts/_mixins.scss')}" as *;
-          `,
+          additionalData: `@use "@/assets/scss/abstracts/colors" as *; @use "@/assets/scss/abstracts/fonts" as *; @use "@/assets/scss/abstracts/mixins" as *;`,
         },
       },
     },
