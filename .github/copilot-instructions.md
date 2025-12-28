@@ -11,6 +11,4 @@ Always use context7 when I need code generation, setup or configuration steps, o
 library/API documentation. This means you should automatically use the Context7 MCP
 tools to resolve library id and get library docs without being explicitly asked to do that.
 
-Always use nuxt-mcp for Nuxt related stuff.
-
 Mention in your answers which MCP tools you used to get information.

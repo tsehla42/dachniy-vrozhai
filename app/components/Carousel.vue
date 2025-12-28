@@ -64,14 +64,27 @@ const slides = [
 </script>
 
 <template>
-  <article class="carousel-container">
-    <UCarousel v-slot="{ item: slide }" arrows dots loop :items="slides" class="carousel">
-      <NuxtLink :to="slide.to" class="carousel__item">
+  <article class="carousel-container w-full mb-12 border-4 border-black rounded-[20px] overflow-hidden">
+    <UCarousel 
+      v-slot="{ item: slide }" 
+      arrows 
+      dots 
+      loop 
+      :items="slides" 
+      class="carousel"
+      :ui="{
+        viewport: 'viewport overflow-hidden min-h-[300px]',
+        item: 'item min-w-full shrink-0 grow-0 basis-full',
+        prev: 'btn-prev absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white shadow-lg inline-flex items-center justify-center',
+        next: 'btn-next absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white/80 hover:bg-white shadow-lg inline-flex items-center justify-center',
+        dots: 'dots-container absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-10',
+        dot: ' dot w-3 h-3 rounded-full bg-white/50 hover:bg-white transition-all cursor-pointer data-[state=active]:bg-white data-[state=active]:w-8'
+      }"
+    >
+      <NuxtLink :to="slide.to" class="carousel__item relative block w-full h-full min-h-[300px] text-white text-xl">
         <NuxtImg 
           :src="getPicturePath(slide.picture)" 
           :placeholder="[100, 50]"
-          width="1200"
-          height="600"
           loading="lazy"
         />
         <div class="bottom-text">
@@ -84,53 +97,9 @@ const slides = [
 </template>
 
 <style lang="scss">
-.carousel-container {
-  width: 100%;
-  max-width: 100%;
-  
-  .carousel {
-    width: 100%;
-    max-width: 100%;
-    margin-bottom: 3rem;
-    
-    // Force viewport to take full width and constrain overflow
-    :deep([data-slot="viewport"]) {
-      width: 100%;
-      max-width: 100%;
-      min-height: 300px;
-      overflow: hidden;
-    }
-    
-    // Container holds all slides in a row
-    :deep([data-slot="container"]) {
-      width: 100%;
-      height: 100%;
-    }
-    
-    // Each item should take full viewport width
-    :deep([data-slot="item"]) {
-      width: 100%;
-      height: 100%;
-      flex: 0 0 100%;
-      min-width: 100%;
-    }
-  }
-}
-
 .carousel__item {
   @include flex-center;
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-  min-height: 300px;
-
   background-color: $orange-150;
-  color: $white;
-  font-size: 20px;
-  border: 4px solid $black;
-  border-radius: 20px;
-  overflow: hidden;
 
   img {
     width: 100%;
