@@ -1,8 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import { dirname, join } from 'node:path';
-import { fileURLToPath } from 'node:url';
-
-const currentDir = dirname(fileURLToPath(import.meta.url));
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineNuxtConfig({
   app: {
@@ -12,41 +9,34 @@ export default defineNuxtConfig({
       meta: [{ name: 'description', content: 'My amazing site' }],
       link: [
         { rel: 'icon', href: 'favicon.svg' },
-        { rel: 'stylesheet', href: '/fonts/fonts.css' }
+        { rel: 'stylesheet', href: '/fonts/fonts.css' },
       ],
     },
   },
 
   nitro: {
     static: true,
-    prerender: {
-      failOnError: false,
-      // Ignore routes that fail (like missing images)
-      ignore: ['/api', '/_ipx']
-    }
   },
 
   image: {
-    // For static site generation, use 'none' provider to disable runtime optimization
-    // Images will be served as-is from the public folder
     provider: 'none',
   },
 
   devtools: { enabled: true },
 
   // base styles
-  css: ['@/assets/scss/styles.scss'],
+  css: ['@/assets/css/tailwind.css', '@/assets/scss/styles.scss'],
 
   // variables, fonts, mixins, etc.
   vite: {
+    plugins: [tailwindcss()],
+    build: {
+      sourcemap: false,
+    },
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: `
-            @use "${join(currentDir, './app/assets/scss/abstracts/_colors.scss')}" as *;
-            @use "${join(currentDir, './app/assets/scss/abstracts/_fonts.scss')}" as *;
-            @use "${join(currentDir, './app/assets/scss/abstracts/_mixins.scss')}" as *;
-          `,
+          additionalData: `@use "@/assets/scss/abstracts/colors" as *; @use "@/assets/scss/abstracts/fonts" as *; @use "@/assets/scss/abstracts/mixins" as *;`,
         },
       },
     },
