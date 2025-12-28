@@ -49,12 +49,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     'nuxt-delay-hydration',
     '@pinia/nuxt',
-    'vue3-carousel-nuxt',
   ],
-
-  carousel: {
-    prefix: 'U',
-  },
 
   delayHydration: {
     // enables nuxt-delay-hydration in dev mode for testing

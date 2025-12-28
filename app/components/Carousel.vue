@@ -1,11 +1,7 @@
 <script setup lang="ts">
-import { CAROUSEL_TRANSLATIONS } from '~/constants/localizations/CarouselTranslations';
-
 const getPicturePath = (pictureName: string) => {
   return `images/${pictureName}.png`;
 };
-
-const translations = CAROUSEL_TRANSLATIONS;
 
 const slides = [
   {
@@ -65,45 +61,69 @@ const slides = [
     meta: '8',
   },
 ];
-
-const carousel = ref(null);
-const next = () => {
-  carousel.value?.next();
-};
-const prev = () => {
-  carousel.value?.prev();
-};
-
-console.log('carousel, non delayed hydration', Date.now());
 </script>
 
 <template>
   <article class="carousel-container">
-    <UCarousel ref="carousel" :wrap-around="true" :i18n="translations">
-      <USlide v-for="slide in slides" :key="slide.meta">
-        <NuxtLink :to="slide.to" class="carousel__item">
-          <NuxtImg :src="getPicturePath(slide.picture)" :placeholder="[100, 50]" />
-          <div class="bottom-text">
-            <h3>{{ slide.heading }}</h3>
-            <p>{{ slide.text }}</p>
-          </div>
-        </NuxtLink>
-      </USlide>
-
-      <template #addons>
-        <DvCarouselNavigationButton direction="prev" :handler="prev" />
-        <DvCarouselNavigationButton direction="next" :handler="next" />
-        <UPagination />
-      </template>
+    <UCarousel v-slot="{ item: slide }" arrows dots loop :items="slides" class="carousel">
+      <NuxtLink :to="slide.to" class="carousel__item">
+        <NuxtImg 
+          :src="getPicturePath(slide.picture)" 
+          :placeholder="[100, 50]"
+          width="1200"
+          height="600"
+          loading="lazy"
+        />
+        <div class="bottom-text">
+          <h3>{{ slide.heading }}</h3>
+          <p>{{ slide.text }}</p>
+        </div>
+      </NuxtLink>
     </UCarousel>
   </article>
 </template>
 
 <style lang="scss">
+.carousel-container {
+  width: 100%;
+  max-width: 100%;
+  
+  .carousel {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 3rem;
+    
+    // Force viewport to take full width and constrain overflow
+    :deep([data-slot="viewport"]) {
+      width: 100%;
+      max-width: 100%;
+      min-height: 300px;
+      overflow: hidden;
+    }
+    
+    // Container holds all slides in a row
+    :deep([data-slot="container"]) {
+      width: 100%;
+      height: 100%;
+    }
+    
+    // Each item should take full viewport width
+    :deep([data-slot="item"]) {
+      width: 100%;
+      height: 100%;
+      flex: 0 0 100%;
+      min-width: 100%;
+    }
+  }
+}
+
 .carousel__item {
   @include flex-center;
   position: relative;
+  display: block;
   width: 100%;
+  height: 100%;
+  min-height: 300px;
 
   background-color: $orange-150;
   color: $white;
@@ -114,6 +134,8 @@ console.log('carousel, non delayed hydration', Date.now());
 
   img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .bottom-text {
@@ -142,41 +164,6 @@ console.log('carousel, non delayed hydration', Date.now());
       font-size: 1.2em;
       -webkit-text-stroke: 1px $black;
       margin: 0;
-    }
-  }
-}
-
-.carousel__slide {
-  padding: 10px;
-}
-
-.carousel__prev,
-.carousel__next {
-  box-sizing: content-box;
-  height: 90%;
-  padding: 0 16px;
-
-  &:hover {
-    svg g {
-      opacity: 0.8;
-    }
-  }
-}
-
-.carousel__prev {
-  transform: translateY(-50%) scaleX(-1);
-}
-
-.carousel__pagination {
-  margin: 0;
-
-  &-item {
-    .carousel__pagination-button:after {
-      background-color: rgba($green-900, 42%);
-    }
-
-    .carousel__pagination-button--active:after {
-      background-color: $primary;
     }
   }
 }
