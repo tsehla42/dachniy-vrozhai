@@ -26,3 +26,4 @@ logs
 # vibecoding configs
 .github/*
 .github/copilot-instructions.md
+llm-context.md
