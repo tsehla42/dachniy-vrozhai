@@ -52,10 +52,6 @@ export default defineNuxtConfig({
     'vue3-carousel-nuxt',
   ],
 
-  colorMode: {
-    preference: 'light',
-  },
-
   carousel: {
     prefix: 'U',
   },
