@@ -1,4 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineNuxtConfig({
   app: {
@@ -8,7 +9,7 @@ export default defineNuxtConfig({
       meta: [{ name: 'description', content: 'My amazing site' }],
       link: [
         { rel: 'icon', href: 'favicon.svg' },
-        { rel: 'stylesheet', href: '/fonts/fonts.css' }
+        { rel: 'stylesheet', href: '/fonts/fonts.css' },
       ],
     },
   },
@@ -24,10 +25,14 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   // base styles
-  css: ['@/assets/scss/styles.scss'],
+  css: ['@/assets/css/tailwind.css', '@/assets/scss/styles.scss'],
 
   // variables, fonts, mixins, etc.
   vite: {
+    plugins: [tailwindcss()],
+    build: {
+      sourcemap: false,
+    },
     css: {
       preprocessorOptions: {
         scss: {
