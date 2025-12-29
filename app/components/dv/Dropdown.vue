@@ -24,8 +24,8 @@ defineProps({
 </script>
 
 <template>
-  <UDropdownMenu :items="items" :mode="mode" :popper="{ placement, offsetDistance: offset }" :ui="ui">
-    <slot name="trigger" />
+  <UDropdownMenu :items="items" :mode="mode" :popper="{ placement, offsetDistance: offset }" :ui="ui" :modal="false">
+    <slot />
 
     <template #item="{ item }">
       <slot name="item" :item="item" />
