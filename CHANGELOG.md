@@ -8,7 +8,13 @@
 - Updated HeaderSectionDropdown to v4 API: changed UI prop slots (wrapper/trigger/container → content/viewport/group/item)
 - Added main.scss to nuxt.config.ts CSS imports for global styles
 - Added modal="false" to DvDropdown to allow page scrolling when dropdown is open
-- Added ring: '' to UI config to remove default black ring border from dropdowns
+- Removed all shadows from dropdowns (ring, glow, box-shadow) using CSS variable overrides
 - Implemented nested dropdowns using children property for categories with articles (except inventory section)
 - Removed HeaderCategoryLink component usage in favor of native nested dropdown structure
+- Added font-family: Anime Ace to all dropdown items (both category and article levels)
+- Changed dropdown item spacing from 4px to 2px gap in dropdown-style mixin
+- Restored use of section-category-dropdown-link mixin for nested article items instead of duplicating styles
+- Added console.log debugging for empty dropdown issue investigation
+
+
 
