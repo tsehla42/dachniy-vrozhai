@@ -24,15 +24,13 @@ defineProps({
 </script>
 
 <template>
-  <UDropdown :items="items" :mode="mode" :popper="{ placement, offsetDistance: offset }" :ui="ui">
-    <template #default>
-      <slot name="trigger" />
-    </template>
+  <UDropdownMenu :items="items" :mode="mode" :popper="{ placement, offsetDistance: offset }" :ui="ui" :modal="false">
+    <slot />
 
     <template #item="{ item }">
       <slot name="item" :item="item" />
     </template>
-  </UDropdown>
+  </UDropdownMenu>
 </template>
 
 <style scoped lang="scss"></style>
