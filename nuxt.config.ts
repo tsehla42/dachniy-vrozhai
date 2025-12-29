@@ -25,7 +25,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   // base styles
-  css: ['@/assets/css/tailwind.css', '@/assets/scss/styles.scss'],
+  css: ['@/assets/css/tailwind.css', '@/assets/scss/styles.scss', '@/assets/scss/main.scss'],
 
   // variables, fonts, mixins, etc.
   vite: {

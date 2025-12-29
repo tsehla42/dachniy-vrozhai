@@ -11,22 +11,11 @@ const categoryArticles = computed(() => {
 });
 
 const dropdownUi = {
-  strategy: 'override',
-  wrapper: 'category-link',
-  trigger: 'category-trigger-wrapper',
-  container: 'article-dropdown-container',
-  base: 'article-dropdown bg-none',
-  background: 'bg-none',
-  width: '',
-  shadow: '',
+  content: 'article-dropdown-container',
+  viewport: 'article-dropdown-viewport',
+  group: 'article-dropdown-group',
+  item: 'article-link',
   ring: '',
-  item: {
-    base: 'article-link',
-    rounded: '',
-    padding: '',
-    active: '',
-    inactive: '',
-  },
 };
 
 const triggerUi = {
@@ -48,20 +37,20 @@ const triggerUi = {
 </script>
 
 <template>
-  <DvDropdown :items="categoryArticles" :ui="dropdownUi" placement="right-start">
-    <template #trigger>
-      <DvButton :ui="triggerUi" :label="category.label" :to="category.to" />
-    </template>
+  <div class="category-link">
+    <DvDropdown :items="categoryArticles" :ui="dropdownUi" placement="right-start">
+      <DvButton class="activator-second-level" :ui="triggerUi" :label="category.label" :to="category.to" />
 
-    <template #item="{ item }">
-      {{ item.label }}
-    </template>
-  </DvDropdown>
+      <template #item="{ item }">
+        {{ item.label }}
+      </template>
+    </DvDropdown>
+  </div>
 </template>
 
 <style lang="scss">
 .category-link {
-  .category-trigger-wrapper .activator-second-level {
+  .activator-second-level {
     padding: 5px 18px;
 
     span {
@@ -69,22 +58,23 @@ const triggerUi = {
       font-size: 20px;
     }
   }
+}
 
-  .article-dropdown-container {
-    width: max-content;
-    margin-top: -5px !important;
+.article-dropdown-container {
+  width: max-content !important;
+  margin-top: -5px !important;
 
-    .article-dropdown div {
-      @include dropdown-style;
-    }
+  .article-dropdown-viewport {
+    @include dropdown-style;
+  }
 
-    .article-link {
-      display: block;
-      padding: 6px 18px;
-      font-family: $font-family-primary;
-      font-size: 16px;
-      @include section-category-dropdown-link;
-    }
+  .article-link {
+    display: block !important;
+    padding: 6px 18px !important;
+    font-family: $font-family-primary !important;
+    font-size: 16px !important;
+    @include section-category-dropdown-link;
   }
 }
+
 </style>
