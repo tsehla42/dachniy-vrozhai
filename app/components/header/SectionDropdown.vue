@@ -8,6 +8,12 @@ const { section } = defineProps({
 
 const sectionCategories = computed(() => {
   if (!section.categories || !Array.isArray(section.categories)) {
+    console.warn('No categories for section:', section.sectionName, section);
+    return [[]];
+  }
+  
+  if (section.categories.length === 0) {
+    console.warn('Empty categories array for section:', section.sectionName);
     return [[]];
   }
   
@@ -29,6 +35,7 @@ const sectionCategories = computed(() => {
     return item;
   });
   
+  console.log('Section categories for', section.sectionName, ':', categoriesWithChildren);
   return [categoriesWithChildren];
 });
 
@@ -103,21 +110,35 @@ const triggerUi = {
 .category-dropdown-container {
   width: fit-content !important;
   padding-top: 2px !important;
+  
+  // Remove all shadows (ring and glow)
+  --tw-ring-shadow: 0 0 #0000 !important;
+  --tw-shadow: 0 0 #0000 !important;
+  --tw-shadow-colored: 0 0 #0000 !important;
+  box-shadow: none !important;
 
   .category-dropdown-viewport {
       @include dropdown-style;
     }
 
     .category-link-wrapper {
+      font-family: $font-family-primary !important;
       font-size: 20px;
       @include section-category-dropdown-link;
     }
   }
 
 // Nested article dropdown styles
-[data-slot="content"][class*="article-dropdown"] {
+[data-slot="content"][class*="article-dropdown"],
+[data-slot="content"].category-dropdown-container [data-slot="content"] {
   width: max-content !important;
   margin-top: -5px !important;
+  
+  // Remove all shadows (ring and glow)
+  --tw-ring-shadow: 0 0 #0000 !important;
+  --tw-shadow: 0 0 #0000 !important;
+  --tw-shadow-colored: 0 0 #0000 !important;
+  box-shadow: none !important;
   
   [data-slot="viewport"] {
     @include dropdown-style;
