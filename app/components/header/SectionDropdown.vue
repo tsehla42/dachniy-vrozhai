@@ -19,14 +19,14 @@ const sectionCategories = computed(() => {
   
   const isInventory = section.sectionName === 'inventar';
   const categoriesWithChildren = section.categories.map(category => {
-    const item = {
+    const item: any = {
       label: category.label,
       to: category.to,
     };
     
     // Add articles as children for nested dropdown (if not inventory and has articles)
     if (!isInventory && category.articles && category.articles.length > 0) {
-      item.children = [category.articles.map(article => ({
+      item.children = [category.articles.map((article: any) => ({
         label: article.label,
         to: article.to,
       }))];
@@ -118,15 +118,15 @@ const triggerUi = {
   box-shadow: none !important;
 
   .category-dropdown-viewport {
-      @include dropdown-style;
-    }
-
-    .category-link-wrapper {
-      font-family: $font-family-primary !important;
-      font-size: 20px;
-      @include section-category-dropdown-link;
-    }
+    @include dropdown-style;
   }
+
+  .category-link-wrapper {
+    font-family: $font-family-primary !important;
+    font-size: 20px;
+    @include section-category-dropdown-link;
+  }
+}
 
 // Nested article dropdown styles
 [data-slot="content"][class*="article-dropdown"],
