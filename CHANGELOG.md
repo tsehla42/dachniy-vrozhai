@@ -15,6 +15,6 @@
 - Changed dropdown item spacing from 4px to 2px gap in dropdown-style mixin
 - Restored use of section-category-dropdown-link mixin for nested article items instead of duplicating styles
 - Added console.log debugging for empty dropdown issue investigation
-
-
-
+- Fixed merge conflict issues: restored v4 API structure after git filter-repo operation
+- Removed some files from git tracking
+- Fixed TypeScript errors: added type annotations for item and article parameters
