@@ -19,14 +19,14 @@ const sectionCategories = computed(() => {
 
   const isInventory = section.sectionName === 'inventar';
   const categoriesWithChildren = section.categories.map(category => {
-    const item = {
+    const item: any = {
       label: category.label,
       to: category.to,
     };
 
     // Add articles as children for nested dropdown (if not inventory and has articles)
     if (!isInventory && category.articles && category.articles.length > 0) {
-      item.children = [category.articles.map(article => ({
+      item.children = [category.articles.map((article: any) => ({
         label: article.label,
         to: article.to,
       }))];
@@ -40,22 +40,11 @@ const sectionCategories = computed(() => {
 });
 
 const dropdownUi = {
-  strategy: 'override',
-  wrapper: 'header-section',
-  trigger: 'section-trigger-wrapper',
-  container: 'category-dropdown-container',
-  base: 'category-dropdown bg-none',
-  background: 'bg-none',
-  width: '',
-  shadow: '',
+  content: 'category-dropdown-container',
+  viewport: 'category-dropdown-viewport',
+  group: 'category-dropdown-group',
+  item: 'category-link-wrapper',
   ring: '',
-  item: {
-    base: 'category-link-wrapper',
-    rounded: '',
-    padding: '',
-    active: '',
-    inactive: '',
-  },
 };
 
 const triggerUi = {
@@ -77,20 +66,18 @@ const triggerUi = {
 </script>
 
 <template>
-  <DvDropdown :items="sectionCategories" :ui="dropdownUi">
-    <template #trigger>
-      <DvButton :ui="triggerUi" :label="section.sectionLabel" :is-link="false" />
-    </template>
+  <div class="header-section">
+    <DvDropdown :items="sectionCategories" :ui="dropdownUi">
+      <DvButton class="activator-first-level" :ui="triggerUi" :label="section.sectionLabel" :is-link="false" />
 
-    <template #item="{ item }">
-      <HeaderCategoryLink :category="item" />
-    </template>
-  </DvDropdown>
+      <!-- Items with children will automatically render nested dropdown -->
+    </DvDropdown>
+  </div>
 </template>
 
 <style lang="scss">
 .header-section {
-  .section-trigger-wrapper .activator-first-level {
+  .activator-first-level {
     padding: 10px 18px 4px;
     background: $green-400;
     border: 3px solid $green-800;
@@ -118,20 +105,28 @@ const triggerUi = {
     }
   }
 
-  .category-dropdown-container {
-    width: fit-content;
-    padding-top: 2px !important;
+}
 
-    .category-dropdown div {
-      @include dropdown-style;
-    }
+.category-dropdown-container {
+  width: fit-content !important;
+  padding-top: 2px !important;
+  
+  // Remove all shadows (ring and glow)
+  --tw-ring-shadow: 0 0 #0000 !important;
+  --tw-shadow: 0 0 #0000 !important;
+  --tw-shadow-colored: 0 0 #0000 !important;
+  box-shadow: none !important;
 
-    .category-link-wrapper {
-      font-family: $font-family-primary !important;
-      font-size: 20px;
-      @include section-category-dropdown-link;
-    }
+  .category-dropdown-viewport {
+    @include dropdown-style;
   }
+
+  .category-link-wrapper {
+    font-family: $font-family-primary !important;
+    font-size: 20px;
+    @include section-category-dropdown-link;
+  }
+}
 
 // Nested article dropdown styles
 [data-slot="content"][class*="article-dropdown"],
@@ -156,6 +151,5 @@ const triggerUi = {
     font-size: 16px !important;
     @include section-category-dropdown-link;
   }
-}
 }
 </style>
