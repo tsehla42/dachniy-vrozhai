@@ -11,19 +11,19 @@ const sectionCategories = computed(() => {
     console.warn('No categories for section:', section.sectionName, section);
     return [[]];
   }
-  
+
   if (section.categories.length === 0) {
     console.warn('Empty categories array for section:', section.sectionName);
     return [[]];
   }
-  
+
   const isInventory = section.sectionName === 'inventar';
   const categoriesWithChildren = section.categories.map(category => {
     const item = {
       label: category.label,
       to: category.to,
     };
-    
+
     // Add articles as children for nested dropdown (if not inventory and has articles)
     if (!isInventory && category.articles && category.articles.length > 0) {
       item.children = [category.articles.map(article => ({
@@ -31,20 +31,31 @@ const sectionCategories = computed(() => {
         to: article.to,
       }))];
     }
-    
+
     return item;
   });
-  
+
   console.log('Section categories for', section.sectionName, ':', categoriesWithChildren);
   return [categoriesWithChildren];
 });
 
 const dropdownUi = {
-  content: 'category-dropdown-container',
-  viewport: 'category-dropdown-viewport',
-  group: 'category-dropdown-group',
-  item: 'category-link-wrapper',
+  strategy: 'override',
+  wrapper: 'header-section',
+  trigger: 'section-trigger-wrapper',
+  container: 'category-dropdown-container',
+  base: 'category-dropdown bg-none',
+  background: 'bg-none',
+  width: '',
+  shadow: '',
   ring: '',
+  item: {
+    base: 'category-link-wrapper',
+    rounded: '',
+    padding: '',
+    active: '',
+    inactive: '',
+  },
 };
 
 const triggerUi = {
@@ -66,18 +77,20 @@ const triggerUi = {
 </script>
 
 <template>
-  <div class="header-section">
-    <DvDropdown :items="sectionCategories" :ui="dropdownUi">
-      <DvButton class="activator-first-level" :ui="triggerUi" :label="section.sectionLabel" :is-link="false" />
+  <DvDropdown :items="sectionCategories" :ui="dropdownUi">
+    <template #trigger>
+      <DvButton :ui="triggerUi" :label="section.sectionLabel" :is-link="false" />
+    </template>
 
-      <!-- Items with children will automatically render nested dropdown -->
-    </DvDropdown>
-  </div>
+    <template #item="{ item }">
+      <HeaderCategoryLink :category="item" />
+    </template>
+  </DvDropdown>
 </template>
 
 <style lang="scss">
 .header-section {
-  .activator-first-level {
+  .section-trigger-wrapper .activator-first-level {
     padding: 10px 18px 4px;
     background: $green-400;
     border: 3px solid $green-800;
@@ -105,19 +118,11 @@ const triggerUi = {
     }
   }
 
-}
+  .category-dropdown-container {
+    width: fit-content;
+    padding-top: 2px !important;
 
-.category-dropdown-container {
-  width: fit-content !important;
-  padding-top: 2px !important;
-  
-  // Remove all shadows (ring and glow)
-  --tw-ring-shadow: 0 0 #0000 !important;
-  --tw-shadow: 0 0 #0000 !important;
-  --tw-shadow-colored: 0 0 #0000 !important;
-  box-shadow: none !important;
-
-  .category-dropdown-viewport {
+    .category-dropdown div {
       @include dropdown-style;
     }
 
@@ -133,17 +138,17 @@ const triggerUi = {
 [data-slot="content"].category-dropdown-container [data-slot="content"] {
   width: max-content !important;
   margin-top: -5px !important;
-  
+
   // Remove all shadows (ring and glow)
   --tw-ring-shadow: 0 0 #0000 !important;
   --tw-shadow: 0 0 #0000 !important;
   --tw-shadow-colored: 0 0 #0000 !important;
   box-shadow: none !important;
-  
+
   [data-slot="viewport"] {
     @include dropdown-style;
   }
-  
+
   [data-slot="item"] {
     display: block !important;
     padding: 6px 18px !important;
@@ -151,5 +156,6 @@ const triggerUi = {
     font-size: 16px !important;
     @include section-category-dropdown-link;
   }
+}
 }
 </style>
